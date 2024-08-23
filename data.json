@@ -658,18 +658,23 @@
     ],
     "zauber": [
         {
-            "name": "Flammenstrahl",
-            "merkmale": ["Einfluss", "Feuer"],
+            "name": "Abvenenum Reine Speise",
+            "merkmale": ["Objekt"],
             "steigerungskategorie": "C"
         },
         {
-            "name": "Heiliger Blitz",
-            "merkmale": ["Einfluss", "Liturgie"],
-            "steigerungskategorie": "B"
+            "name": "Accuratum Zaubernadel",
+            "merkmale": ["Objekt"],
+            "steigerungskategorie": "C"
         },
         {
-            "name": "Levitation",
-            "merkmale": ["Eigenschaft", "Luft"],
+            "name": "Adamantium Erzstruktur",
+            "merkmale": ["Objekt", "Elementar (Erz)"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Adlerauge Luchsenohr",
+            "merkmale": ["Hellsicht", "Eigenschaften"],
             "steigerungskategorie": "B"
         }
     ],
