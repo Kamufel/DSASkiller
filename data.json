@@ -658,7 +658,7 @@
     ],
     "zauber": [
         {
-            "name": "Abvenenum Reine Speise",
+            "name": "Abvenenum reine Speise",
             "merkmale": ["Objekt"],
             "steigerungskategorie": "C"
         },
@@ -676,7 +676,183 @@
             "name": "Adlerauge Luchsenohr",
             "merkmale": ["Hellsicht", "Eigenschaften"],
             "steigerungskategorie": "B"
+        },
+        {
+            "name": "Adlerschwinge Wolfsgestalt",
+            "merkmale": ["Form"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Aeolitus Windgebraus",
+            "merkmale": ["Umwelt", "Elementar (Luft)"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Aerofugo Vakuum",
+            "merkmale": ["Umwelt", "Elementar (Luft)"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Aerogelo Atemqual",
+            "merkmale": ["Umwelt", "Elementar (Luft)"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Alpgestalt",
+            "merkmale": ["Einfluss", "Herrschaft"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Analys Arcanstruktur",
+            "merkmale": ["Hellsicht", "Metamagie"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Ängste lindern",
+            "merkmale": ["Einfluss"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Animatio stummer Diener",
+            "merkmale": ["Telekinese"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Applicatus Zauberspeicher",
+            "merkmale": ["Objekt", "Metamagie"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Arachnea Krabbeltier",
+            "merkmale": ["Herbeirufung"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Arcanovi Artefakt",
+            "merkmale": ["Objekt", "Metamagie"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Armatrutz",
+            "merkmale": ["Eigenschaften", "Elementar (Erz)"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Atemnot",
+            "merkmale": ["Eigenschaften"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Attributo",
+            "merkmale": ["Eigenschaften"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Aufgeblasen abgehoben",
+            "merkmale": ["Elementar (Erz)", "Form"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Auge des Limbus",
+            "merkmale": ["Limbus", "Kraft"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Aureolus Güldenglanz",
+            "merkmale": ["Illusion"],
+            "steigerungskategorie": "A"
+        },
+        {
+            "name": "Auris Nasus Oculus",
+            "merkmale": ["Illusion"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Axxeleratus Blitzgeschwind",
+            "merkmale": ["Eigenschaften"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Balsam Salabunde",
+            "merkmale": ["Heilung", "Form"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Band und Fessel",
+            "merkmale": ["Einfluss"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Bannbaladin",
+            "merkmale": ["Einfluss"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Bärenruhe Winterschlaf",
+            "merkmale": ["Form"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Beherrschung brechen",
+            "merkmale": ["Antimagie", "Herrschaft"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Beschwörung vereiteln",
+            "merkmale": ["Antimagie", "Beschwörung"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Bewegung stören",
+            "merkmale": ["Telekinese", "Antimagie"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Blendwerk",
+            "merkmale": ["Illusion"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Blick aufs Wesen",
+            "merkmale": ["Hellsicht"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Blick durch fremde Augen",
+            "merkmale": ["Hellsicht", "Verständigung"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Blick in die Gedanken",
+            "merkmale": ["Hellsicht"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Blick in die Vergangenheit",
+            "merkmale": ["Hellsicht", "Temporal"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Blitz dich Find",
+            "merkmale": ["Einfluss"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Böser Blick",
+            "merkmale": ["Einfluss"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Brenne, toter Stoff!",
+            "merkmale": ["Objekt", "Elementar (Feuer)"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Caldofrigo Heiss und Kalt",
+            "merkmale": ["Objekt", "Umwelt", "Elementar (Feuer)", "Elementar (Eis)"],
+            "steigerungskategorie": "E"
         }
+
     ],
     "andere": [
         {

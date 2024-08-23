@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
+            setupEventListeners(data); // Füge diese Zeile hinzu, um die Event Listener einzurichten
         })
         .catch(error => console.error('Error loading JSON data:', error));
 });
@@ -37,6 +38,26 @@ function populateDropdowns(data) {
     });
 }
 
+// Füge Event Listener hinzu, um die Steigerungskategorie automatisch zu setzen
+function setupEventListeners(data) {
+    document.querySelectorAll('.talent-select, .zauber-select, .anderes-select').forEach(select => {
+        select.addEventListener('change', (event) => {
+            const selectedName = event.target.value;
+            const row = event.target.closest('.talent-row, .zauber-row, .anderes-row');
+            const categorySelect = row.querySelector('.steigerungskategorie-select');
+
+            let selectedItem = data.talente.find(talent => talent.name === selectedName) ||
+                data.zauber.find(zauber => zauber.name === selectedName) ||
+                data.andere.find(item => item.name === selectedName);
+            console.log(selectedItem);  
+
+            if (selectedItem) {
+                categorySelect.value = selectedItem.steigerungskategorie;
+            }
+        });
+    });
+}
+
 function addTalentRow() {
     const container = document.getElementById('talent-container');
 
@@ -44,49 +65,8 @@ function addTalentRow() {
     row.className = 'talent-row';
 
     row.innerHTML = `
-    <select class="talent-select">
-        <option value="" disabled selected>Talent</option>
-    </select>
-    <select class="steigerungskategorie-select">
-        <option value="A+">A+</option>
-        <option value="A">A</option>
-        <option value="B">B</option>
-        <option value="C">C</option>
-        <option value="D">D</option>
-        <option value="E">E</option>
-        <option value="F">F</option>
-        <option value="G">G</option>
-        <option value="H">H</option>
-    </select>
-
-    <input type="number" class="current-value" placeholder="Start" min="0">
-
-    <input type="number" class="desired-value" placeholder="Ziel" min="0">
-
-    <input type="number" class="ap-cost" placeholder="Benötigt" readonly>
-
-    <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
-
-    <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
-`;
-
-    container.appendChild(row);
-
-    // Erneut alle Talente für das neue Dropdown laden
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => populateDropdowns({ talente: data.talente, zauber: [], andere: []}));
-}
-
-function addZauberRow() {
-    const container = document.getElementById('talent-container');
-
-    const row = document.createElement('div');
-    row.className = 'zauber-row';
-
-        row.innerHTML = `
-        <select class="zauber-select">
-            <option value="" disabled selected>Zauber</option>
+        <select class="talent-select">
+            <option value="" disabled selected>Wähle ein Talent</option>
         </select>
         <select class="steigerungskategorie-select">
             <option value="A+">A+</option>
@@ -100,11 +80,56 @@ function addZauberRow() {
             <option value="H">H</option>
         </select>
 
-        <input type="number" class="current-value" placeholder="Start" min="0">
+        <input type="number" class="current-value" placeholder="Start" min="0" max="20">
 
-        <input type="number" class="desired-value" placeholder="Ziel" min="0">
+        <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="Benötigt" readonly>
+        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+
+        <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
+
+        <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
+    `;
+
+    container.appendChild(row);
+
+    // Erneut alle Talente für das neue Dropdown laden
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            populateDropdowns({ talente: data.talente, zauber: [], andere: [], eigenschaften: [] });
+            setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
+        });
+}
+
+function addZauberRow() {
+    const container = document.getElementById('talent-container');
+
+    const row = document.createElement('div');
+    row.className = 'zauber-row';
+
+    row.innerHTML = `
+        <select class="zauber-select">
+            <option value="" disabled selected>Wähle einen Zauber</option>
+        </select>
+
+        <select class="steigerungskategorie-select">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+            <option value="H">H</option>
+        </select>
+
+        <input type="number" class="current-value" placeholder="Start" min="0" max="20">
+
+        <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
+
+        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
 
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
 
@@ -116,7 +141,10 @@ function addZauberRow() {
     // Erneut alle Zauber für das neue Dropdown laden
     fetch('data.json')
         .then(response => response.json())
-        .then(data => populateDropdowns({ talente: [], zauber: data.zauber, andere: []}));
+        .then(data => {
+            populateDropdowns({ talente: [], zauber: data.zauber, andere: [], eigenschaften: [] });
+            setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
+        });
 }
 
 function addAnderesRow() {
@@ -127,7 +155,7 @@ function addAnderesRow() {
 
     row.innerHTML = `
         <select class="anderes-select">
-            <option value="" disabled selected>Anderes</option>
+            <option value="" disabled selected>Wähle eine andere Eigenschaft</option>
         </select>
         <select class="steigerungskategorie-select">
             <option value="A+">A+</option>
@@ -141,11 +169,11 @@ function addAnderesRow() {
             <option value="H">H</option>
         </select>
 
-        <input type="number" class="current-value" placeholder="Start" min="0">
+        <input type="number" class="current-value" placeholder="Start" min="0" max="20">
 
-        <input type="number" class="desired-value" placeholder="Ziel" min="0">
+        <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="Benötigt" readonly>
+        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
 
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
 
@@ -156,7 +184,10 @@ function addAnderesRow() {
     // Erneut alle Daten für das neue Dropdown laden
     fetch('data.json')
         .then(response => response.json())
-        .then(data => populateDropdowns({ talente: [], zauber: [], andere: data.andere}));
+        .then(data => {
+            populateDropdowns({ talente: [], zauber: [], andere: data.andere, eigenschaften: data.eigenschaften });
+            setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
+        });
 }
 
 function deleteRow(button) {
