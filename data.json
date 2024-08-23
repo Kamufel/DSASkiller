@@ -673,53 +673,126 @@
             "steigerungskategorie": "B"
         }
     ],
-    "eigenschaften": [
-        {
-            "name": "Körperkraft",
-            "gruppe": "Körperkraft",
-            "steigerungskategorie": "D"
-        },
-        {
-            "name": "Gewandtheit",
-            "gruppe": "Gewandtheit",
-            "steigerungskategorie": "D"
-        },
-        {
-            "name": "Fingerfertigkeit",
-            "gruppe": "Fingerfertigkeit",
-            "steigerungskategorie": "D"
-        }
-    ],
     "andere": [
         {
-            "name": "Lebensenergie",
-            "gruppe": "Lebensenergie",
-            "steigerungskategorie": "C"
+            "name": "Empathie",
+            "gruppe": ["Empathie", "Gabe"],
+            "steigerungskategorie": "F"
         },
         {
-            "name": "Astralenergie",
-            "gruppe": "Astralenergie",
-            "steigerungskategorie": "C"
+            "name": "Gefahreninstinkt",
+            "gruppe": ["Gefahreninstinkt", "Gabe"],
+            "steigerungskategorie": "F"
         },
         {
-            "name": "Ausdauer",
-            "gruppe": "Ausdauer",
-            "steigerungskategorie": "B"
+            "name": "Geräuschhexerei",
+            "gruppe": ["Geräuschhexerei", "Gabe"],
+            "steigerungskategorie": "F"
         },
         {
-            "name": "Magieresistenz",
-            "gruppe": "Magieresistenz",
-            "steigerungskategorie": "C"
+            "name": "Kräfteschub",
+            "gruppe": ["Kräfteschub", "Gabe"],
+            "steigerungskategorie": "F"
         },
         {
-            "name": "Ritualkenntnis",
-            "gruppe": "Ritualkenntnis",
-            "steigerungskategorie": "B"
+            "name": "Magiegespür",
+            "gruppe": ["Magiegespür", "Gabe"],
+            "steigerungskategorie": "F"
+        },
+        {
+            "name": "Prophezeien",
+            "gruppe": ["Prophezeien", "Gabe"],
+            "steigerungskategorie": "F"
+        },
+        {
+            "name": "Talentschub",
+            "gruppe": ["Talentschub", "Gabe"],
+            "steigerungskategorie": "F"
+        },
+        {
+            "name": "Tierempathie",
+            "gruppe": ["Tierempathie", "Gabe"],
+            "steigerungskategorie": "F"
+        },
+        {
+            "name": "Zwergennase",
+            "gruppe": ["Zwergennase", "Gabe"],
+            "steigerungskategorie": "F"
         },
         {
             "name": "Liturgiekenntnis",
-            "gruppe": "Liturgiekenntnis",
-            "steigerungskategorie": "B"
+            "gruppe": ["Liturgiekenntnis"],
+            "steigerungskategorie": "F"
+        },
+        {
+            "name": "Ritualkenntnis allgemein",
+            "gruppe": ["Ritualkenntnis allgemein"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Ritualkenntnis Alchimist",
+            "gruppe": ["Ritualkenntnis Alchimist"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Ritualkenntnis Scharlatan",
+            "gruppe": ["Ritualkenntnis Scharlatan"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Ausdauer",
+            "gruppe": ["Ausdauer"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Astralenergie",
+            "gruppe": ["Astralenergie"],
+            "steigerungskategorie": "G"
+        },
+        {
+            "name": "Lebensenergie",
+            "gruppe": ["Lebensenergie"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Mut",
+            "gruppe": ["Mut, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Klugheit",
+            "gruppe": ["Klugheit, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Intuition",
+            "gruppe": ["Intuition, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Charisma",
+            "gruppe": ["Charisma, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Fingerfertigkeit",
+            "gruppe": ["Fingerfertigkeit, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Gewandtheit",
+            "gruppe": ["Gewandtheit, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Konstitution",
+            "gruppe": ["Konstitution, Eigenschaft"],
+            "steigerungskategorie": "H"
+        },
+        {
+            "name": "Körperkraft",
+            "gruppe": ["Körperkraft, Eigenschaft"],
+            "steigerungskategorie": "H"
         }
     ]
 }

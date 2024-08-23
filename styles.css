@@ -29,20 +29,31 @@ h1 {
     margin-bottom: 10px;
 }
 
-.talent-select, .zauber-select, .anderes-select, .steigerungskategorie-select, .current-value, .desired-value, .ap-cost {
+.talent-select, .zauber-select, .anderes-select, .steigerungskategorie-select, .current-value, .desired-value, .ap-cost, .note-field {
     padding: 10px;
     margin-right: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
-    width: flex;
+    width: 10px;
+
 }
 
-.talent-select, .zauber-select, .anderes-select, .steigerungskategorie-select {
+.talent-select, .zauber-select, .anderes-select {
     flex: 2;
 }
-
-.current-value, .desired-value, .ap-cost {
+.steigerungskategorie-select {
+    width: 60px;
+}
+.current-value, .desired-value, .ap-cost, .note-field {
     flex: 1;
+}
+
+.note-field {
+    flex: 2;
+    resize: none;
+    height: flex; /* Höhe anpassen, um Platz für Notizen zu bieten */
+    font-family: Arial, sans-serif;
+
 }
 
 /* Container für die Buttons */
@@ -103,7 +114,22 @@ button.calculate-button {
 button.calculate-button:hover {
     background-color: #e0a800;
 }
+/* Stil für das X-Symbol */
+.delete-button {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 10px;
+    flex: 0;
+}
 
+.delete-button:hover {
+    color: darkred;
+}
 #total-cost-container {
     margin-top: 20px;
     text-align: right;
