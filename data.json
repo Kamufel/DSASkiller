@@ -1,0 +1,725 @@
+{
+    "talente": [
+        {
+            "name": "Anderthalbhänder",
+            "gruppe": ["Anderthalbhänder","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Armbrust",
+            "gruppe": ["Armbrust","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Belagerungswaffen",
+            "gruppe": ["Belagerungswaffen","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Blasrohr",
+            "gruppe": ["Blasrohr","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Bogen",
+            "gruppe": ["Bogen","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Diskus",
+            "gruppe": ["Diskus","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Dolche",
+            "gruppe": ["Dolche","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Fechtwaffen",
+            "gruppe": ["Fechtwaffen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Hiebwaffen",
+            "gruppe": ["Hiebwaffen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Infanteriewaffen",
+            "gruppe": ["Infanteriewaffen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Kettenwaffen",
+            "gruppe": ["Kettenwaffen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Lanzenreiten",
+            "gruppe": ["Lanzenreiten","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Peitsche",
+            "gruppe": ["Peitsche","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Raufen",
+            "gruppe": ["Raufen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Ringen",
+            "gruppe": ["Ringen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Säbel",
+            "gruppe": ["Säbel","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Schleuder",
+            "gruppe": ["Schleuder","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Schwerter",
+            "gruppe": ["Schwerter","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Speere",
+            "gruppe": ["Speere","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Stäbe",
+            "gruppe": ["Stäbe","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Wurfbeile",
+            "gruppe": ["Wurfbeile","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Wurfmesser",
+            "gruppe": ["Wurfmesser","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Wurfspeere",
+            "gruppe": ["Wurfspeere","Fernkampftalent", "Kampftalent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Zweihand-Hiebwaffen",
+            "gruppe": ["Zweihand-Hiebwaffen","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Zweihandschwerter/-säbel",
+            "gruppe": ["Zweihandschwerter/-säbel","Nahkampftalent", "Kampftalent"],
+            "steigerungskategorie": "E"
+        },
+        {
+            "name": "Akrobatik",
+            "gruppe": ["Akrobatik","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Athletik",
+            "gruppe": ["Athletik","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Fliegen",
+            "gruppe": ["Fliegen","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Gaukeleien",
+            "gruppe": ["Gaukeleien","Körperliches Talent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Klettern",
+            "gruppe": ["Klettern","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Körperbeherrschung",
+            "gruppe": ["Körperbeherrschung","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Reiten",
+            "gruppe": ["Reiten","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Schleichen",
+            "gruppe": ["Schleichen","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Schwimmen",
+            "gruppe": ["Schwimmen","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Selbstbeherrschung",
+            "gruppe": ["Selbstbeherrschung","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Sich Verstecken",
+            "gruppe": ["Sich Verstecken","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Singen",
+            "gruppe": ["Singen","Körperliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Sinnenschärfe",
+            "gruppe": ["Sinnenschärfe","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Skifahren",
+            "gruppe": ["Skifahren","Körperliches Talent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Stimmen Imitieren",
+            "gruppe": ["Stimmen Imitieren","Körperliches Talent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Tanzen",
+            "gruppe": ["Tanzen","Körperliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Taschendiebstahl",
+            "gruppe": ["Akrobatik","Körperliches Talent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Zechen",
+            "gruppe": ["Akrobatik","Körperliches Talent"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Betören",
+            "gruppe": ["Betören","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Etikette",
+            "gruppe": ["Etikette","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Gassenwissen",
+            "gruppe": ["Gassenwissen","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Lehren",
+            "gruppe": ["Lehren","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Menschenkenntnis",
+            "gruppe": ["Menschenkenntnis","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Schauspielerei",
+            "gruppe": ["Schauspielerei","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Schriftlicher Ausdruck",
+            "gruppe": ["Schriftlicher Ausdruck","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Sich Verkleiden",
+            "gruppe": ["Sich Verkleiden","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Überreden",
+            "gruppe": ["Überreden","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Überzeugen",
+            "gruppe": ["Überzeugen","Gesellschaftliches Talent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Fährtensuchen",
+            "gruppe": ["Fährtensuchen","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Fallenstellen",
+            "gruppe": ["Fallenstellen","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Fesseln/Entfesseln",
+            "gruppe": ["Fesseln/Entfesseln","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Fischen/Angeln",
+            "gruppe": ["Fischen/Angeln","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Orientierung",
+            "gruppe": ["Orientierung","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Wettervorhersage",
+            "gruppe": ["Wettervorhersage","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Wildnisleben",
+            "gruppe": ["Wildnisleben","Naturtalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Anatomie",
+            "gruppe": ["Anatomie","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Baukunst",
+            "gruppe": ["Baukunst","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Brett-/Kartenspiel",
+            "gruppe": ["Brett-/Kartenspiel","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Geographie",
+            "gruppe": ["Geographie","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Geschichtswissen",
+            "gruppe": ["Geschichtswissen","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Gesteinskunde",
+            "gruppe": ["Gesteinskunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Götter/Kulte",
+            "gruppe": ["Götter/Kulte","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Heraldik",
+            "gruppe": ["Heraldik","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Hüttenkunde",
+            "gruppe": ["Hüttenkunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Kriegskunst",
+            "gruppe": ["Kriegskunst","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Kryptographie",
+            "gruppe": ["Kryptographie","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Magiekunde",
+            "gruppe": ["Magiekunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Mechanik",
+            "gruppe": ["Mechanik","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Pflanzenkunde",
+            "gruppe": ["Pflanzenkunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Philosophie",
+            "gruppe": ["Philosophie","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Rechnen",
+            "gruppe": ["Rechnen","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Rechtskunde",
+            "gruppe": ["Rechtskunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Sagen/Legenden",
+            "gruppe": ["Sagen/Legenden","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Schätzen",
+            "gruppe": ["Schätzen","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Sprachenkunde",
+            "gruppe": ["Sprachenkunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Staatskunst",
+            "gruppe": ["Staatskunst","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Sternkunde",
+            "gruppe": ["Sternkunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Tierkunde",
+            "gruppe": ["Tierkunde","Wissenstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Abrichten",
+            "gruppe": ["Abrichten","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Ackerbau",
+            "gruppe": ["Ackerbau","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Alchimie",
+            "gruppe": ["Alchimie","Handwerkstalent"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Bergbau",
+            "gruppe": ["Bergbau","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Bogenbau",
+            "gruppe": ["Bogenbau","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Boote Fahren",
+            "gruppe": ["Boote Fahren","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Brauer",
+            "gruppe": ["Brauer","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Drucker",
+            "gruppe": ["Drucker","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Fahrzeug Lenken",
+            "gruppe": ["Fahrzeug Lenken","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Falschspiel",
+            "gruppe": ["Falschspiel","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Feinmechanik",
+            "gruppe": ["Feinmechanik","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Feuersteinbearbeitung",
+            "gruppe": ["Feuersteinbearbeitung","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Fleischer",
+            "gruppe": ["Fleischer","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Gerber/Kürschner",
+            "gruppe": ["Gerber/Kürschner","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Glaskunst",
+            "gruppe": ["Glaskunst","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Grobschmied",
+            "gruppe": ["Grobschmied","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Handel",
+            "gruppe": ["Handel","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Hauswirtschaft",
+            "gruppe": ["Hauswirtschaft","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Heilkunde Gift",
+            "gruppe": ["Heilkunde Gift","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Heilkunde Krankheiten",
+            "gruppe": ["Heilkunde Krankheiten","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Heilkunde Seele",
+            "gruppe": ["Heilkunde Seele","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Heilkunde Wunden",
+            "gruppe": ["Heilkunde Wunden","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Holzbearbeitung",
+            "gruppe": ["Holzbearbeitung","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Instrumentenbauer",
+            "gruppe": ["Instrumentenbauer","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Kartographie",
+            "gruppe": ["Kartographie","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Kochen",
+            "gruppe": ["Kochen","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Kristallzucht",
+            "gruppe": ["Kristallzucht","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Lederarbeiten",
+            "gruppe": ["Lederarbeiten","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Malen/Zeichnen",
+            "gruppe": ["Malen/Zeichnen","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Maurer",
+            "gruppe": ["Maurer","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Metallguss",
+            "gruppe": ["Metallguss","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Musizieren",
+            "gruppe": ["Musizieren","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Schlösser Knacken",
+            "gruppe": ["Schlösser Knacken","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Schnaps Brennen",
+            "gruppe": ["Schnaps Brennen","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Schneidern",
+            "gruppe": ["Schneidern","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Seefahrt",
+            "gruppe": ["Seefahrt","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Seiler",
+            "gruppe": ["Seiler","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Steinmetz",
+            "gruppe": ["Steinmetz","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Steinschneider/Juwelier",
+            "gruppe": ["Steinschneider/Juwelier","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Stellmacher",
+            "gruppe": ["Stellmacher","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Stoffe Färben",
+            "gruppe": ["Stoffe Färben","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Tätowieren",
+            "gruppe": ["Tätowieren","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Töpfern",
+            "gruppe": ["Töpfern","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Viehzucht",
+            "gruppe": ["Viehzucht","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Webkunst",
+            "gruppe": ["Webkunst","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Winzer",
+            "gruppe": ["Winzer","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Zimmermann",
+            "gruppe": ["Abrichten","Handwerkstalent"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Sprachen/Schriften",
+            "gruppe": ["Sprachen/Schriften"],
+            "steigerungskategorie": "B"
+        }
+    ],
+    "zauber": [
+        {
+            "name": "Flammenstrahl",
+            "merkmale": ["Einfluss", "Feuer"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Heiliger Blitz",
+            "merkmale": ["Einfluss", "Liturgie"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Levitation",
+            "merkmale": ["Eigenschaft", "Luft"],
+            "steigerungskategorie": "B"
+        }
+    ],
+    "eigenschaften": [
+        {
+            "name": "Körperkraft",
+            "gruppe": "Körperkraft",
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Gewandtheit",
+            "gruppe": "Gewandtheit",
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Fingerfertigkeit",
+            "gruppe": "Fingerfertigkeit",
+            "steigerungskategorie": "D"
+        }
+    ],
+    "andere": [
+        {
+            "name": "Lebensenergie",
+            "gruppe": "Lebensenergie",
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Astralenergie",
+            "gruppe": "Astralenergie",
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Ausdauer",
+            "gruppe": "Ausdauer",
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Magieresistenz",
+            "gruppe": "Magieresistenz",
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Ritualkenntnis",
+            "gruppe": "Ritualkenntnis",
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Liturgiekenntnis",
+            "gruppe": "Liturgiekenntnis",
+            "steigerungskategorie": "B"
+        }
+    ]
+}

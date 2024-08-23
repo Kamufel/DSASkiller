@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#talent-container {
+    margin-bottom: 20px;
+}
+
+.talent-row, .zauber-row, .anderes-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.talent-select, .zauber-select, .anderes-select, .steigerungskategorie-select, .current-value, .desired-value, .ap-cost {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: flex;
+}
+
+.talent-select, .zauber-select, .anderes-select, .steigerungskategorie-select {
+    flex: 2;
+}
+
+.current-value, .desired-value, .ap-cost {
+    flex: 1;
+}
+
+/* Container für die Buttons */
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Stil für die Buttons */
+button {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+/* Stil für Talent-Button */
+button.talent-button {
+    background-color: #007BFF;
+}
+
+button.talent-button:hover {
+    background-color: #0056b3;
+}
+
+/* Stil für Zauber-Button */
+button.zauber-button {
+    background-color: #28a745;
+}
+
+button.zauber-button:hover {
+    background-color: #218838;
+}
+
+/* Stil für Anderes-Button */
+button.anderes-button {
+    background-color: #17a2b8;
+}
+
+button.anderes-button:hover {
+    background-color: #138496;
+}
+
+/* Stil für AP berechnen-Button */
+button.calculate-button {
+    background-color: #ffc107;
+    margin-top: 10px;
+}
+
+button.calculate-button:hover {
+    background-color: #e0a800;
+}
+
+#total-cost-container {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#total-cost {
+    width: 100px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

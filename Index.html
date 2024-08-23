@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Abenteuerpunkte Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DSA Abenteuerpunkte Tool</h1>
+
+        <div id="talent-container"> 
+        </div>
+
+        <div id="button-container">
+            <button class="talent-button" onclick="addTalentRow()">Neues Talent hinzufügen</button>
+            <button class="zauber-button" onclick="addZauberRow()">Neuen Zauber hinzufügen</button>
+            <button class="anderes-button" onclick="addAnderesRow()">Anderes hinzufügen</button>
+        </div>
+        
+        <button class="calculate-button" onclick="calculateAP()">AP berechnen</button>
+
+        <div id="total-cost-container">
+            <strong>Gesamte Steigerungskosten: </strong>
+            <input type="number" id="total-cost" value="0" readonly>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
