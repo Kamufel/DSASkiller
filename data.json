@@ -659,1372 +659,1372 @@
     "zauber": [
         {
             "name": "Abvenenum reine Speise",
-            "merkmale": ["Objekt"],
+            "merkmale": ["Zauber", "Objekt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Accuratum Zaubernadel",
-            "merkmale": ["Objekt"],
+            "merkmale": ["Zauber", "Objekt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Adamantium Erzstruktur",
-            "merkmale": ["Objekt", "Elementar (Erz)","Elementar"],
+            "merkmale": ["Zauber", "Objekt", "Elementar (Erz)","Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Adlerauge Luchsenohr",
-            "merkmale": ["Hellsicht", "Eigenschaften"],
+            "merkmale": ["Zauber", "Hellsicht", "Eigenschaften"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Adlerschwinge Wolfsgestalt",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Aeolitus Windgebraus",
-            "merkmale": ["Umwelt", "Elementar (Luft)","Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)","Elementar"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Aerofugo Vakuum",
-            "merkmale": ["Umwelt", "Elementar (Luft)","Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)","Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Aerogelo Atemqual",
-            "merkmale": ["Umwelt", "Elementar (Luft)","Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)","Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Alpgestalt",
-            "merkmale": ["Einfluss", "Herrschaft"],
+            "merkmale": ["Zauber", "Einfluss", "Herrschaft"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Analys Arcanstruktur",
-            "merkmale": ["Hellsicht", "Metamagie"],
+            "merkmale": ["Zauber", "Hellsicht", "Metamagie"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Ängste lindern",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Animatio stummer Diener",
-            "merkmale": ["Telekinese"],
+            "merkmale": ["Zauber", "Telekinese"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Applicatus Zauberspeicher",
-            "merkmale": ["Objekt", "Metamagie"],
+            "merkmale": ["Zauber", "Objekt", "Metamagie"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Arachnea Krabbeltier",
-            "merkmale": ["Herbeirufung"],
+            "merkmale": ["Zauber", "Herbeirufung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Arcanovi Artefakt",
-            "merkmale": ["Objekt", "Metamagie"],
+            "merkmale": ["Zauber", "Objekt", "Metamagie"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Armatrutz",
-            "merkmale": ["Eigenschaften", "Elementar (Erz)","Elementar"],
+            "merkmale": ["Zauber", "Eigenschaften", "Elementar (Erz)","Elementar"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Atemnot",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Attributo",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Aufgeblasen abgehoben",
-            "merkmale": ["Elementar (Erz)", "Form","Elementar"],
+            "merkmale": ["Zauber", "Elementar (Erz)", "Form","Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Auge des Limbus",
-            "merkmale": ["Limbus", "Kraft"],
+            "merkmale": ["Zauber", "Limbus", "Kraft"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Aureolus Güldenglanz",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Auris Nasus Oculus",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Axxeleratus Blitzgeschwind",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Balsam Salabunde",
-            "merkmale": ["Heilung", "Form"],
+            "merkmale": ["Zauber", "Heilung", "Form"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Band und Fessel",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Bannbaladin",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Bärenruhe Winterschlaf",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Beherrschung brechen",
-            "merkmale": ["Antimagie", "Herrschaft"],
+            "merkmale": ["Zauber", "Antimagie", "Herrschaft"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Beschwörung vereiteln",
-            "merkmale": ["Antimagie", "Beschwörung"],
+            "merkmale": ["Zauber", "Antimagie", "Beschwörung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Bewegung stören",
-            "merkmale": ["Telekinese", "Antimagie"],
+            "merkmale": ["Zauber", "Telekinese", "Antimagie"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Blendwerk",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Blick aufs Wesen",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Blick durch fremde Augen",
-            "merkmale": ["Hellsicht", "Verständigung"],
+            "merkmale": ["Zauber", "Hellsicht", "Verständigung"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Blick in die Gedanken",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Blick in die Vergangenheit",
-            "merkmale": ["Hellsicht", "Temporal"],
+            "merkmale": ["Zauber", "Hellsicht", "Temporal"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Blitz dich Find",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Böser Blick",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Brenne, toter Stoff!",
-            "merkmale": ["Objekt", "Elementar (Feuer)","Elementar"],
+            "merkmale": ["Zauber", "Objekt", "Elementar (Feuer)","Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Caldofrigo Heiß und Kalt",
-            "merkmale": ["Objekt", "Umwelt", "Elementar (Feuer)", "Elementar (Eis)","Elementar"],
+            "merkmale": ["Zauber", "Objekt", "Umwelt", "Elementar (Feuer)", "Elementar (Eis)","Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Chamaelioni Mimikry",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Chimaeroform Hybridgestalt",
-            "merkmale": ["Dämonisch", "Form"],
+            "merkmale": ["Zauber", "Dämonisch", "Form"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Chronoklassis Urfossil",
-            "merkmale": ["Herbeirufung", "Temporal"],
+            "merkmale": ["Zauber", "Herbeirufung", "Temporal"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Chrononautus Zeitenfahrt",
-            "merkmale": ["Temporal"],
+            "merkmale": ["Zauber", "Temporal"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Claudibus Clavistibor",
-            "merkmale": ["Objekt"],
+            "merkmale": ["Zauber", "Objekt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Corpofesso Gliederschmerz",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Corpocrescere Körpermacht",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Corpofrigo Kälteschock",
-            "merkmale": ["Eigenschaften", "Elementar (Eis)","Elementar"],
+            "merkmale": ["Zauber", "Eigenschaften", "Elementar (Eis)","Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Cryptographo Zauberschrift",
-            "merkmale": ["Objekt", "Verständigung"],
+            "merkmale": ["Zauber", "Objekt", "Verständigung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Custodosigil Diebesbannk",
-            "merkmale": ["Elementar (Feuer)", "Objekt", "Metamagie","Elementar"],
+            "merkmale": ["Zauber", "Elementar (Feuer)", "Objekt", "Metamagie","Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Dämonenbann",
-            "merkmale": ["Antimagie", "Dämonisch"],
+            "merkmale": ["Zauber", "Antimagie", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Delicioso Gaumenschmaus",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Desintegratus Pulverstaub",
-            "merkmale": ["Objekt", "Schaden"],
+            "merkmale": ["Zauber", "Objekt", "Schaden"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Destructibo Arcanitas",
-            "merkmale": ["Antimagie", "Metamagie", "Kraft"],
+            "merkmale": ["Zauber", "Antimagie", "Metamagie", "Kraft"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Dichter und Denker",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Dschinnenruf",
-            "merkmale": ["Elementar", "Herbeirufung","Elementar"],
+            "merkmale": ["Zauber", "Elementar", "Herbeirufung","Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Dunkelheit",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Duplicatus Doppelbild",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Ecliptifactus Schattenkraft",
-            "merkmale": ["Dämonisch", "Form"],
+            "merkmale": ["Zauber", "Dämonisch", "Form"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Eigenschaft Wiederherstellen",
-            "merkmale": ["Antimagie", "Eigenschaften"],
+            "merkmale": ["Zauber", "Antimagie", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Eigne Ängste quälen dich",
-            "merkmale": ["Einfluss", "Eigenschaften"],
+            "merkmale": ["Zauber", "Einfluss", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Einfluss bannen",
-            "merkmale": ["Antimagie", "Einfluss"],
+            "merkmale": ["Zauber", "Antimagie", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Eins mit der Natur",
-            "merkmale": ["Eigenschaften", "Elementar"],
+            "merkmale": ["Zauber", "Eigenschaften", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Eisenrost und Patina",
-            "merkmale": ["Objekt", "Temporal"],
+            "merkmale": ["Zauber", "Objekt", "Temporal"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Eiseskälte Kämpferherz",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Elementarbann",
-            "merkmale": ["Antimagie", "Elementar"],
+            "merkmale": ["Zauber", "Antimagie", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Elementarer Diener",
-            "merkmale": ["Elementar", "Herbeirufung"],
+            "merkmale": ["Zauber", "Elementar", "Herbeirufung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Elfenstimme Flötenton",
-            "merkmale": ["Verständigung"],
+            "merkmale": ["Zauber", "Verständigung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Erinnerung verlasse dich",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Exposami Lebenskraft",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Falkenauge Meisterschuss",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Favilludo Funkentanz",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Firnlauf",
-            "merkmale": ["Elementar (Eis)", "Eigenschaften","Elementar"],
+            "merkmale": ["Zauber", "Elementar (Eis)", "Eigenschaften","Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Flim Flam Funkel",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Fluch der Pestilenz",
-            "merkmale": ["Dämonisch"],
+            "merkmale": ["Zauber", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Foramen Foramino",
-            "merkmale": ["Hellsicht", "Telekinese"],
+            "merkmale": ["Zauber", "Hellsicht", "Telekinese"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Fortifex Arkane Wand",
-            "merkmale": ["Umwelt", "Elementar (Erz)","Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Erz)","Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Fulminictus Donnerkeil",
-            "merkmale": ["Schaden","Kraft"],
+            "merkmale": ["Zauber", "Schaden","Kraft"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Gardianum Zauberschild",
-            "merkmale": ["Antimagie", "Kraft", "Metamagie"],
+            "merkmale": ["Zauber", "Antimagie", "Kraft", "Metamagie"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Gedankenbilder Elfenruf",
-            "merkmale": ["Verständigung"],
+            "merkmale": ["Zauber", "Verständigung"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Gefäß der Jahre",
-            "merkmale": ["Form", "Temporal"],
+            "merkmale": ["Zauber", "Form", "Temporal"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Gefunden!",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Geisterbann",
-            "merkmale": ["Antimagie", "Geisterwesen"],
+            "merkmale": ["Zauber", "Antimagie", "Geisterwesen"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Geisterruf",
-            "merkmale": ["Geisterwesen", "Herbeirufung"],
+            "merkmale": ["Zauber", "Geisterwesen", "Herbeirufung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Granit und Marmor",
-            "merkmale": ["Form", "Elementar (Erz)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Erz)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Große Gier",
-            "merkmale": ["Einfluss", "Herrschaft"],
+            "merkmale": ["Zauber", "Einfluss", "Herrschaft"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Große Verwirrung",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Halluzination",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Harmlose Gestalt",
-            "merkmale": ["Einfluss", "Illusion"],
+            "merkmale": ["Zauber", "Einfluss", "Illusion"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Hartes schmelze!",
-            "merkmale": ["Objekt", "Elementar (Wasser)", "Elementar"],
+            "merkmale": ["Zauber", "Objekt", "Elementar (Wasser)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Haselbusch und Ginsterkraut",
-            "merkmale": ["Eigenschaften", "Elementar (Humus)", "Form", "Elementar"],
+            "merkmale": ["Zauber", "Eigenschaften", "Elementar (Humus)", "Form", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Heilkraft bannen",
-            "merkmale": ["Antimagie", "Heilung"],
+            "merkmale": ["Zauber", "Antimagie", "Heilung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Hellsicht trüben",
-            "merkmale": ["Antimagie", "Hellsicht"],
+            "merkmale": ["Zauber", "Antimagie", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Herbeirufung vereiteln",
-            "merkmale": ["Antimagie", "Herbeirufung"],
+            "merkmale": ["Zauber", "Antimagie", "Herbeirufung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Herr über das Tierreich",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Herzschlag ruhe!",
-            "merkmale": ["Dämonisch (Blakharaz)", "Eigenschaften", "Einfluss", "Dämonisch"],
+            "merkmale": ["Zauber", "Dämonisch (Blakharaz)", "Eigenschaften", "Einfluss", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Hexenblick",
-            "merkmale": ["Verständigung"],
+            "merkmale": ["Zauber", "Verständigung"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Hexengalle",
-            "merkmale": ["Schaden"],
+            "merkmale": ["Zauber", "Schaden"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Hexenholz",
-            "merkmale": ["Telekinese"],
+            "merkmale": ["Zauber", "Telekinese"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Hexenknoten",
-            "merkmale": ["Einfluss", "Illusion"],
+            "merkmale": ["Zauber", "Einfluss", "Illusion"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Hexenkrallen",
-            "merkmale": ["Eigenschaften", "Form"],
+            "merkmale": ["Zauber", "Eigenschaften", "Form"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Hexenspeichel",
-            "merkmale": ["Heilung"],
+            "merkmale": ["Zauber", "Heilung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Hilfreiche Tatze, rettende Schwinge",
-            "merkmale": ["Einfluss", "Verständigung"],
+            "merkmale": ["Zauber", "Einfluss", "Verständigung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Höllenpein zerreiße dich!",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Holterdipolter",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Horriphobus Schreckgestalt",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Ignifaxius Flammenstrahl",
-            "merkmale": ["Schaden", "Elementar (Feuer)", "Elementar"],
+            "merkmale": ["Zauber", "Schaden", "Elementar (Feuer)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Ignisphaero Feuerball",
-            "merkmale": ["Elementar (Feuer)", "Schaden", "Telekinese", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Feuer)", "Schaden", "Telekinese", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Ignorantia ungesehn",
-            "merkmale": ["Einfluss", "Illusion"],
+            "merkmale": ["Zauber", "Einfluss", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Illusion auflösen",
-            "merkmale": ["Antimagie", "Illusion"],
+            "merkmale": ["Zauber", "Antimagie", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Immortalis Lebenszeit",
-            "merkmale": ["Form", "Temporal"],
+            "merkmale": ["Zauber", "Form", "Temporal"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Imperavi Handlungszwang",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Impersona Maskenbild",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Infinitum Immerdar",
-            "merkmale": ["Metamagie", "Temporal"],
+            "merkmale": ["Zauber", "Metamagie", "Temporal"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Invercano Spiegeltrick",
-            "merkmale": ["Antimagie", "Kraft", "Metamagie"],
+            "merkmale": ["Zauber", "Antimagie", "Kraft", "Metamagie"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Invocatio Maior",
-            "merkmale": ["Beschwörung", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Dämonisch"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Invocatio Minor",
-            "merkmale": ["Beschwörung", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Iribaars Hand",
-            "merkmale": ["Einfluss", "Schaden"],
+            "merkmale": ["Zauber", "Einfluss", "Schaden"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Juckreiz, dämlicher!",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Karnifilo Raserei",
-            "merkmale": ["Einfluss", "Eigenschaften"],
+            "merkmale": ["Zauber", "Einfluss", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Katzenaugen",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Klarum Purum",
-            "merkmale": ["Form", "Heilung"],
+            "merkmale": ["Zauber", "Form", "Heilung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Klickeradomms",
-            "merkmale": ["Telekinese"],
+            "merkmale": ["Zauber", "Telekinese"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Koboldgeschenk",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Koboldovision",
-            "merkmale": ["Hellsicht", "Limbus"],
+            "merkmale": ["Zauber", "Hellsicht", "Limbus"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Komm Kobold Komm",
-            "merkmale": ["Herbeirufung"],
+            "merkmale": ["Zauber", "Herbeirufung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Körperlose Reise",
-            "merkmale": ["Limbus", "Verständigung"],
+            "merkmale": ["Zauber", "Limbus", "Verständigung"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Krabbelnder Schrecken",
-            "merkmale": ["Herbeirufung", "Dämonisch (Mishkhara)", "Dämonisch"],
+            "merkmale": ["Zauber", "Herbeirufung", "Dämonisch (Mishkhara)", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Kraft des Erzes",
-            "merkmale": ["Elementar (Eis)", "Objekt", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Eis)", "Objekt", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Krähenruf",
-            "merkmale": ["Einfluss", "Herbeirufung", "Limbus"],
+            "merkmale": ["Zauber", "Einfluss", "Herbeirufung", "Limbus"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Krötensprung",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Kulminatio Kugelblitz",
-            "merkmale": ["Schaden"],
+            "merkmale": ["Zauber", "Schaden"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Kusch!",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Lach dich gesund",
-            "merkmale": ["Heilung", "Einfluss"],
+            "merkmale": ["Zauber", "Heilung", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Lachkrampf",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Langer Lulatsch",
-            "merkmale": ["Form", "Objekt"],
+            "merkmale": ["Zauber", "Form", "Objekt"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Last des Alters",
-            "merkmale": ["Temporal", "Form"],
+            "merkmale": ["Zauber", "Temporal", "Form"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Leib der Erde",
-            "merkmale": ["Form", "Elementar (Humus)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Humus)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Leib der Wogen",
-            "merkmale": ["Form", "Elementar (Wasser)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Wasser)", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Leib des Eises",
-            "merkmale": ["Form", "Elementar (Eis)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Eis)", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Leib des Erzes",
-            "merkmale": ["Form", "Elementar (Erz)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Erz)", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Leib des Feuers",
-            "merkmale": ["Form", "Elementar (Feuer)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Feuer)", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Leib des Windes",
-            "merkmale": ["Form", "Elementar (Luft)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Luft)", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Leidensbund",
-            "merkmale": ["Heilung", "Verständigung"],
+            "merkmale": ["Zauber", "Heilung", "Verständigung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Levthans Feuer",
-            "merkmale": ["Einfluss", "Verständigung"],
+            "merkmale": ["Zauber", "Einfluss", "Verständigung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Limbus versiegeln",
-            "merkmale": ["Antimagie", "Limbus"],
+            "merkmale": ["Zauber", "Antimagie", "Limbus"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Lockruf und Feenfüße",
-            "merkmale": ["Telekinese", "Illusion"],
+            "merkmale": ["Zauber", "Telekinese", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Lunge des Leviatan",
-            "merkmale": ["Heilung"],
+            "merkmale": ["Zauber", "Heilung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Madas Spiegel",
-            "merkmale": ["Verständigung", "Hellsicht"],
+            "merkmale": ["Zauber", "Verständigung", "Hellsicht"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Magischer Raub",
-            "merkmale": ["Kraft", "Verständigung"],
+            "merkmale": ["Zauber", "Kraft", "Verständigung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Mahlstrom",
-            "merkmale": ["Elementar (Wasser)", "Umwelt", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Wasser)", "Umwelt", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Manifesto Element",
-            "merkmale": ["Elementar"],
+            "merkmale": ["Zauber", "Elementar"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Meister der Elemente",
-            "merkmale": ["Elementar", "Herbeirufung"],
+            "merkmale": ["Zauber", "Elementar", "Herbeirufung"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Meister minderer Geister",
-            "merkmale": ["Herbeirufung"],
+            "merkmale": ["Zauber", "Herbeirufung"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Memorabia Falsifir",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Memorans Gedächtniskraft",
-            "merkmale": ["Hellsicht", "Eigenschaften"],
+            "merkmale": ["Zauber", "Hellsicht", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Menetekel Flammenschrift",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Metamagie neutralisieren",
-            "merkmale": ["Antimagie", "Metamagie"],
+            "merkmale": ["Zauber", "Antimagie", "Metamagie"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Metamorpho Gletscherform",
-            "merkmale": ["Elementar (Eis)", "Objekt", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Eis)", "Objekt", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Motoricus Geisteshand",
-            "merkmale": ["Telekinese"],
+            "merkmale": ["Zauber", "Telekinese"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Movimento Dauerlauf",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Murks und Patz",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Nackedei",
-            "merkmale": ["Objekt", "Telekinese"],
+            "merkmale": ["Zauber", "Objekt", "Telekinese"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Nebelleib",
-            "merkmale": ["Form", "Elementar (Luft)", "Elementar (Wasser)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Luft)", "Elementar (Wasser)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Nebelwand und Morgendunst",
-            "merkmale": ["Umwelt", "Elementar (Luft)","Elementar (Wasser)", "Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)", "Elementar (Wasser)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Nekropathia Seelenreise",
-            "merkmale": ["Geisterwesen", "Verständigung"],
+            "merkmale": ["Zauber", "Geisterwesen", "Verständigung"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Nihilogravo Schwerelos",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Nuntiovolo Botenvogel",
-            "merkmale": ["Beschwörung", "Dämonisch (Lolgramoth)", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Dämonisch (Lolgramoth)", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Objecto Obscuro",
-            "merkmale": ["Objekt"],
+            "merkmale": ["Zauber", "Objekt"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Objectofixo",
-            "merkmale": ["Objekt", "Temporal"],
+            "merkmale": ["Zauber", "Objekt", "Temporal"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Objectovoco",
-            "merkmale": ["Verständigung"],
+            "merkmale": ["Zauber", "Verständigung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Objekt entzaubern",
-            "merkmale": ["Antimagie", "Objekt"],
+            "merkmale": ["Zauber", "Antimagie", "Objekt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Oculus Astralis",
-            "merkmale": ["Hellsicht", "Kraft", "Metamagie", "Limbus"],
+            "merkmale": ["Zauber", "Hellsicht", "Kraft", "Metamagie", "Limbus"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Odem Arcanum",
-            "merkmale": ["Hellsicht", "Kraft"],
+            "merkmale": ["Zauber", "Hellsicht", "Kraft"],
             "steigerungskategorie": "A"
         },
         {
             "name": "Pandaemonium",
-            "merkmale": ["Beschwörung", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Panik überkomme euch",
-            "merkmale": ["Einfluss", "Dämonisch (Amazeroth)", "Dämonisch"],
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch (Amazeroth)", "Dämonisch"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Papperlapapp",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Paralysis starr wie Stein",
-            "merkmale": ["Form", "Elementar (Erz)", "Elementar"],
+            "merkmale": ["Zauber", "Form", "Elementar (Erz)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pectetondo Zauberhaar",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Penetrizzel Tiefenblick",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pentagramma Sphärenbann",
-            "merkmale": ["Antimagie", "Beschwörung", "Dämonisch", "Geisterwesen"],
+            "merkmale": ["Zauber", "Antimagie", "Beschwörung", "Dämonisch", "Geisterwesen"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Pestilenz erspüren",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pfeil des Feuers",
-            "merkmale": ["Objekt", "Elementar","Elementar (Feuer)"],
+            "merkmale": ["Zauber", "Objekt", "Elementar", "Elementar (Feuer)"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pfeil des Wassers",
-            "merkmale": ["Objekt", "Elementar","Elementar (Wasser)"],
+            "merkmale": ["Zauber", "Objekt", "Elementar", "Elementar (Wasser)"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pfeil des Erzes",
-            "merkmale": ["Objekt", "Elementar","Elementar (Erz)"],
+            "merkmale": ["Zauber", "Objekt", "Elementar", "Elementar (Erz)"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pfeil des Luft",
-            "merkmale": ["Objekt", "Elementar","Elementar (Luft)"],
+            "merkmale": ["Zauber", "Objekt", "Elementar", "Elementar (Luft)"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pfeil des Humus",
-            "merkmale": ["Objekt", "Elementar","Elementar (Humus)"],
+            "merkmale": ["Zauber", "Objekt", "Elementar", "Elementar (Humus)"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Pfeil des Eises",
-            "merkmale": ["Objekt", "Elementar","Elementar (Eis)"],
+            "merkmale": ["Zauber", "Objekt", "Elementar", "Elementar (Eis)"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Planastrale Anderswelt",
-            "merkmale": ["Limbus"],
+            "merkmale": ["Zauber", "Limbus"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Plumbumbarum schwerer Arm",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Projektimago Ebenbild",
-            "merkmale": ["Verständigung", "Illusion"],
+            "merkmale": ["Zauber", "Verständigung", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Protectionis Kontrabann",
-            "merkmale": ["Antimagie","Kraft","Metamagie"],
+            "merkmale": ["Zauber", "Antimagie", "Kraft", "Metamagie"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Psychostabilis",
-            "merkmale": ["Antimagie", "Eigenschaften"],
+            "merkmale": ["Zauber", "Antimagie", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Radau",
-            "merkmale": ["Elementar (Luft)", "Telekinese", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Luft)", "Telekinese", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Reflectimago Spiegelschein",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Reptilea Natternnest",
-            "merkmale": ["Herbeirufung"],
+            "merkmale": ["Zauber", "Herbeirufung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Respondami Wahrheitszwang",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Reversalis Revidum",
-            "merkmale": ["Metamagie"],
+            "merkmale": ["Zauber", "Metamagie"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Ruhe Körper, ruhe Geist",
-            "merkmale": ["Heilung"],
+            "merkmale": ["Zauber", "Heilung"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Salander Mutander",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Sanftmut",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Sapefacta Zauberschwamm",
-            "merkmale": ["Telekinese", "Elementar (Wasser)", "Elementar (Luft)", "Elementar"],
+            "merkmale": ["Zauber", "Telekinese", "Elementar (Wasser)", "Elementar (Luft)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Satuarias Herrlichkeit",
-            "merkmale": ["Eigenschaften", "Illusion"],
+            "merkmale": ["Zauber", "Eigenschaften", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Schabernack",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Schadenszauber bannen",
-            "merkmale": ["Antimagie", "Schaden"],
+            "merkmale": ["Zauber", "Antimagie", "Schaden"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Schelmenkleister",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Schelmenlaune",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Schelmenmaske",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Schelmenrausch",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Schleier der Unwissenheit",
-            "merkmale": ["Eigenschaften", "Metamagie"],
+            "merkmale": ["Zauber", "Eigenschaften", "Metamagie"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Schwarz und Rot",
-            "merkmale": ["Eigenschaften", "Schaden"],
+            "merkmale": ["Zauber", "Eigenschaften", "Schaden"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Schwarzer Schrecken",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Seelentier erkennen",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Seelenwanderung",
-            "merkmale": ["Eigenschaften", "Verständigung"],
+            "merkmale": ["Zauber", "Eigenschaften", "Verständigung"],
             "steigerungskategorie": "F"
         },
         {
             "name": "Seidenweich Schuppengleich",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Seidenzunge Elfenwort",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Sensattacco Meisterstreich",
-            "merkmale": ["Eigenschaften", "Hellsicht"],
+            "merkmale": ["Zauber", "Eigenschaften", "Hellsicht"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Sensibar Empathicus",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Serpentialis Schlangenleib",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Silentium Schweigekreis",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Sinesigil Unerkannt",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Skelettarius Totenherr",
-            "merkmale": ["Dämonisch (Thargunitoth)", "Dämonisch"],
+            "merkmale": ["Zauber", "Dämonisch (Thargunitoth)", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Solidrid Weg aus Licht",
-            "merkmale": ["Umwelt", "Elementar (Luft)", "Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Somnigravis tiefer Schlaf",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Spinnenlauf",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Spurlos Trittlos",
-            "merkmale": ["Umwelt"],
+            "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Standfest Katzengleich",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Staub wandle!",
-            "merkmale": ["Elementar (Erz)", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Erz)", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Stein wandle!",
-            "merkmale": ["Beschwörung", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Dämonisch"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Stillstand",
-            "merkmale": ["Elementar (Eis)", "Umwelt", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Eis)", "Umwelt", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Sumus Elixiere",
-            "merkmale": ["Elementar (Humus)", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Humus)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Tauschrausch",
-            "merkmale": ["Limbus"],
+            "merkmale": ["Zauber", "Limbus"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Tempus Stasis",
-            "merkmale": ["Temporal"],
+            "merkmale": ["Zauber", "Temporal"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Tiere besprechen",
-            "merkmale": ["Heilung", "Form"],
+            "merkmale": ["Zauber", "Heilung", "Form"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Tiergedanken",
-            "merkmale": ["Hellsicht", "Verständigung"],
+            "merkmale": ["Zauber", "Hellsicht", "Verständigung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Tlalucs Odem Pestgestank",
-            "merkmale": ["Beschwörung", "Schaden", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Schaden", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Totes handle!",
-            "merkmale": ["Beschwörung", "Dämonisch (Thargunitoth)", "Dämonisch"],
+            "merkmale": ["Zauber", "Beschwörung", "Dämonisch (Thargunitoth)", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Transformatio Formgestalt",
-            "merkmale": ["Objekt"],
+            "merkmale": ["Zauber", "Objekt"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Transmutare Körperform",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Transversalis Teleport",
-            "merkmale": ["Limbus"],
+            "merkmale": ["Zauber", "Limbus"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Traumgestalt",
-            "merkmale": ["Verständigung"],
+            "merkmale": ["Zauber", "Verständigung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Unberührt von Satinav",
-            "merkmale": ["Objekt", "Temporal"],
+            "merkmale": ["Zauber", "Objekt", "Temporal"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Unitatio Geistesbund",
-            "merkmale": ["Verständigung", "Kraft"],
+            "merkmale": ["Zauber", "Verständigung", "Kraft"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Unsichtbarer Jäger",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Veränderung aufheben",
-            "merkmale": ["Antimagie", "Umwelt"],
+            "merkmale": ["Zauber", "Antimagie", "Umwelt"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Verschwindibus",
-            "merkmale": ["Limbus"],
+            "merkmale": ["Zauber", "Limbus"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Verständigung stören",
-            "merkmale": ["Antimagie", "Verständigung"],
+            "merkmale": ["Zauber", "Antimagie", "Verständigung"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Verwandlung beenden",
-            "merkmale": ["Antimagie", "Form"],
+            "merkmale": ["Zauber", "Antimagie", "Form"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Vipernblick",
-            "merkmale": ["Einfluss"],
+            "merkmale": ["Zauber", "Einfluss"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Visibili Vanitar",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Vocolimbo hohler Klang",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Vogelzwitschern Glockenspiel",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Wand aus Dornen",
-            "merkmale": ["Elementar (Humus)", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Humus)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Warmes Blut",
-            "merkmale": ["Eigenschaften", "Elementar (Feuer)", "Hellsicht", "Elementar"],
+            "merkmale": ["Zauber", "Eigenschaften", "Elementar (Feuer)", "Hellsicht", "Elementar"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Wasseratem",
-            "merkmale": ["Form"],
+            "merkmale": ["Zauber", "Form"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Weiches erstarre!",
-            "merkmale": ["Elementar (Erz)", "Umwelt" ,"Elementar"],
+            "merkmale": ["Zauber", "Elementar (Erz)", "Umwelt", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Weihrauchwolke Wohlgeruch",
-            "merkmale": ["Illusion"],
+            "merkmale": ["Zauber", "Illusion"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Weisheit der Bäume",
-            "merkmale": ["Elementar (Humus)", "Form", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Humus)", "Form", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Weiße Mähn' und gold'ner Huf",
-            "merkmale": ["Beschwörung"],
+            "merkmale": ["Zauber", "Beschwörung"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Wellenlauf",
-            "merkmale": ["Elementar (Wasser)", "Eigenschaften", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Wasser)", "Eigenschaften", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Wettermeisterschaft",
-            "merkmale": ["Elementar (Luft)", "Umwelt", "Elementar"],
+            "merkmale": ["Zauber", "Elementar (Luft)", "Umwelt", "Elementar"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Widerwille Ungemach",
-            "merkmale": ["Einfluss", "Illusion"],
+            "merkmale": ["Zauber", "Einfluss", "Illusion"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Windhose",
-            "merkmale": ["Umwelt", "Elementar (Luft)","Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Windstille",
-            "merkmale": ["Umwelt", "Elementar (Luft)", "Elementar"],
+            "merkmale": ["Zauber", "Umwelt", "Elementar (Luft)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Wipfellauf",
-            "merkmale": ["Eigenschaften", "Elementar (Humus)", "Elementar"],
+            "merkmale": ["Zauber", "Eigenschaften", "Elementar (Humus)", "Elementar"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Xenographus Schriftenkunde",
-            "merkmale": ["Hellsicht"],
+            "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Zagibu Ubigaz",
-            "merkmale": ["Objekt", "Elementar (Erz)", "Elementar"],
+            "merkmale": ["Zauber", "Objekt", "Elementar (Erz)", "Elementar"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Zappenduster",
-            "merkmale": ["Umwelt", "Antimagie"],
+            "merkmale": ["Zauber", "Umwelt", "Antimagie"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Zauberklinge Geisterspeer",
-            "merkmale": ["Objekt","Kraft"],
+            "merkmale": ["Zauber", "Objekt", "Kraft"],
             "steigerungskategorie": "D"
         },
         {
             "name": "Zaubernahrung Hungerbann",
-            "merkmale": ["Eigenschaften", "Einfluss"],
+            "merkmale": ["Zauber", "Eigenschaften", "Einfluss"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Zauberwesen der Natur",
-            "merkmale": ["Herbeirufung", "Verständigung"],
+            "merkmale": ["Zauber", "Herbeirufung", "Verständigung"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Zauberzwang",
-            "merkmale": ["Herbeirufung", "Schaden"],
+            "merkmale": ["Zauber", "Herbeirufung", "Schaden"],
             "steigerungskategorie": "E"
         },
         {
             "name": "Zorn der Elemente",
-            "merkmale": ["Elementar", "Schaden"],
+            "merkmale": ["Zauber", "Elementar", "Schaden"],
             "steigerungskategorie": "C"
         },
         {
             "name": "Zunge lähmen",
-            "merkmale": ["Eigenschaften"],
+            "merkmale": ["Zauber", "Eigenschaften"],
             "steigerungskategorie": "B"
         },
         {
             "name": "Zwingtanz",
-            "merkmale": ["Herrschaft"],
+            "merkmale": ["Zauber", "Herrschaft"],
             "steigerungskategorie": "D"
         }
         
@@ -2112,42 +2112,42 @@
         },
         {
             "name": "Mut",
-            "gruppe": ["Mut, Eigenschaft"],
+            "gruppe": ["Mut", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Klugheit",
-            "gruppe": ["Klugheit, Eigenschaft"],
+            "gruppe": ["Klugheit", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Intuition",
-            "gruppe": ["Intuition, Eigenschaft"],
+            "gruppe": ["Intuition", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Charisma",
-            "gruppe": ["Charisma, Eigenschaft"],
+            "gruppe": ["Charisma", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Fingerfertigkeit",
-            "gruppe": ["Fingerfertigkeit, Eigenschaft"],
+            "gruppe": ["Fingerfertigkeit", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Gewandtheit",
-            "gruppe": ["Gewandtheit, Eigenschaft"],
+            "gruppe": ["Gewandtheit", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Konstitution",
-            "gruppe": ["Konstitution, Eigenschaft"],
+            "gruppe": ["Konstitution", "Eigenschaft"],
             "steigerungskategorie": "H"
         },
         {
             "name": "Körperkraft",
-            "gruppe": ["Körperkraft, Eigenschaft"],
+            "gruppe": ["Körperkraft", "Eigenschaft"],
             "steigerungskategorie": "H"
         }
     ]

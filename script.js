@@ -3,10 +3,155 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
-            setupEventListeners(data); // Füge diese Zeile hinzu, um die Event Listener einzurichten
+            setupEventListeners(data);
         })
         .catch(error => console.error('Error loading JSON data:', error));
+    populateSidebarComboboxes();
+    setupImportExportEventListeners();
 });
+
+function populateSidebarComboboxes() {
+    // Arrays mit Optionen
+    const comboboxOptions = {
+        profanVorteile: [
+            "", "Akademische Ausbildung (Krieger)", "Beidhändig", "Eidetisches Gedächtnis", "Gutes Gedächtnis",
+            "Linkshänder", "Schlangenmensch", "Unstet"
+        ],
+        profanBegabungen: [
+            "", "Kampftalent", "Fernkampftalent", "Nahkampftalent", "Gesellschaftliches Talent", "Handwerkstalent",
+            "Körperliches Talent", "Naturtalent", "Sprachen und Schriften", "Wissenstalent"
+        ],
+        magischVorteile: [
+            "", "Akademische Ausbildung (Magier)", "Eigeboren", "Astraler Block", "Elfische Weltsicht (W.I.P)", "Sippenlos"
+        ],
+        magischBegabungen: [
+            "", "Antimagie", "Beschwörung", "Dämonisch", "Dämonisch (Agrimoth)", "Dämonisch (Amazeroth)", "Dämonisch (Belhalhar)",
+            "Dämonisch (Blakharaz)", "Dämonisch (Lolgramoth)", "Dämonisch (Mishkara)", "Dämonisch (Thargunitoth)",
+            "Eigenschaften", "Einfluss", "Elementar", "Elementar (Eis)", "Elementar (Erz)", "Elementar (Feuer)",
+            "Elementar (Humus)", "Elementar (Luft)", "Elementar (Wasser)", "Form", "Geisterwesen", "Heilung", "Hellsicht",
+            "Herbeirufung", "Herrschaft", "Illusion", "Kraft", "Limbus", "Metamagie", "Objekt", "Schaden", "Telekinese",
+            "Temporal", "Umwelt", "Verständigung"
+        ],
+        magischMerkmale: [
+            "", "Antimagie", "Beschwörung", "Dämonisch", "Dämonisch (Agrimoth)", "Dämonisch (Amazeroth)", "Dämonisch (Belhalhar)",
+            "Dämonisch (Blakharaz)", "Dämonisch (Lolgramoth)", "Dämonisch (Mishkara)", "Dämonisch (Thargunitoth)",
+            "Eigenschaften", "Einfluss", "Elementar", "Elementar (Eis)", "Elementar (Erz)", "Elementar (Feuer)",
+            "Elementar (Humus)", "Elementar (Luft)", "Elementar (Wasser)", "Form", "Geisterwesen", "Heilung", "Hellsicht",
+            "Herbeirufung", "Herrschaft", "Illusion", "Kraft", "Limbus", "Metamagie", "Objekt", "Schaden", "Telekinese",
+            "Temporal", "Umwelt", "Verständigung"
+        ]
+    };
+
+    // Mapping der Comboboxen
+    const comboboxes = document.querySelectorAll('.sidebar-combobox');
+
+    comboboxes.forEach((combobox, index) => {
+        let options = [];
+        if (index < 3) {
+            options = comboboxOptions.profanVorteile;
+        } else if (index < 6) {
+            options = comboboxOptions.profanBegabungen;
+        } else if (index < 9) {
+            options = comboboxOptions.profanBegabungen;  // Unfähigkeiten Profan use the same options as Begabungen Profan
+        } else if (index < 12) {
+            options = comboboxOptions.magischVorteile;
+        } else if (index < 15) {
+            options = comboboxOptions.magischBegabungen;
+        } else if (index < 18) {
+            options = comboboxOptions.magischBegabungen;  // Unfähigkeiten Magisch use the same options as Begabungen Magisch
+        } else if (index < 21) {
+            options = comboboxOptions.magischMerkmale;
+        }
+        fillCombobox(combobox, options);
+    });
+}
+
+function fillCombobox(combobox, items) {
+    items.forEach(item => {
+        const option = document.createElement("option");
+        option.value = item;
+        option.textContent = item;
+        combobox.appendChild(option);
+    });
+}
+
+// Export-Funktion
+function exportComboboxState() {
+    const state = {
+        profanVorteile: [],
+        profanBegabungen: [],
+        unfähigkeitenProfan: [],  // New state for Unfähigkeiten Profan
+        magischVorteile: [],
+        magischBegabungen: [],
+        unfähigkeitenMagisch: [],  // New state for Unfähigkeiten Magisch
+        magischMerkmale: []
+    };
+
+    const comboboxes = document.querySelectorAll('.sidebar-combobox');
+
+    comboboxes.forEach((combobox, index) => {
+        const selectedValue = combobox.value || null;
+        if (index < 3) {
+            state.profanVorteile.push(selectedValue);
+        } else if (index < 6) {
+            state.profanBegabungen.push(selectedValue);
+        } else if (index < 9) {
+            state.unfähigkeitenProfan.push(selectedValue);  // Assign values to Unfähigkeiten Profan
+        } else if (index < 12) {
+            state.magischVorteile.push(selectedValue);
+        } else if (index < 15) {
+            state.magischBegabungen.push(selectedValue);
+        } else if (index < 18) {
+            state.unfähigkeitenMagisch.push(selectedValue);  // Assign values to Unfähigkeiten Magisch
+        } else if (index < 21) {
+            state.magischMerkmale.push(selectedValue);
+        }
+    });
+
+    const json = JSON.stringify(state, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'combobox_state.json';
+    a.click();
+
+    URL.revokeObjectURL(url);
+}
+
+// Import-Funktion
+function importComboboxState(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        const content = e.target.result;
+        const state = JSON.parse(content);
+
+        const comboboxes = document.querySelectorAll('.sidebar-combobox');
+
+        comboboxes.forEach((combobox, index) => {
+            if (index < 3) {
+                combobox.value = state.profanVorteile[index] || '';
+            } else if (index >= 3 && index < 6) {
+                combobox.value = state.profanBegabungen[index - 3] || ''; 
+            } else if (index >= 6 && index < 9) {
+                combobox.value = state.unfähigkeitenProfan[index - 6] || '';  
+            } else if (index >= 9 && index < 12) {
+                combobox.value = state.magischVorteile[index - 9] || '';
+            } else if (index >= 12 && index < 15) {
+                combobox.value = state.magischBegabungen[index - 12] || '';
+            } else if (index >= 15 && index < 18) {
+                combobox.value = state.unfähigkeitenMagisch[index - 15] || '';  
+            } else if (index >= 18 && index < 21) {
+                combobox.value = state.magischMerkmale[index - 18] || '';
+            }
+        });
+    };
+    reader.readAsText(file);
+}
 
 function populateDropdowns(data) {
     const talentSelects = document.querySelectorAll('.talent-select');
@@ -45,17 +190,31 @@ function setupEventListeners(data) {
             const selectedName = event.target.value;
             const row = event.target.closest('.talent-row, .zauber-row, .anderes-row');
             const categorySelect = row.querySelector('.steigerungskategorie-select');
-
+            
             let selectedItem = data.talente.find(talent => talent.name === selectedName) ||
                 data.zauber.find(zauber => zauber.name === selectedName) ||
-                data.andere.find(item => item.name === selectedName);
-            console.log(selectedItem);  
+                data.andere.find(item => item.name === selectedName); 
 
             if (selectedItem) {
-                categorySelect.value = selectedItem.steigerungskategorie;
+                categorySelect.value = getRealFactor(selectedItem);
             }
         });
     });
+}
+function setupImportExportEventListeners() {
+    document.getElementById('export-btn').addEventListener('click', exportComboboxState);
+    
+    const importInput = document.createElement('input');
+    importInput.type = 'file';
+    importInput.accept = 'application/json';
+    importInput.style.display = 'none';
+    importInput.addEventListener('change', importComboboxState);
+
+    document.getElementById('import-btn').addEventListener('click', () => {
+        importInput.click();
+    });
+
+    document.body.appendChild(importInput);
 }
 
 function addTalentRow() {
@@ -97,7 +256,7 @@ function addTalentRow() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ talente: data.talente, zauber: [], andere: [], eigenschaften: [] });
+            populateDropdowns({ talente: data.talente, zauber: [], andere: []});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
@@ -142,7 +301,7 @@ function addZauberRow() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ talente: [], zauber: data.zauber, andere: [], eigenschaften: [] });
+            populateDropdowns({ talente: [], zauber: data.zauber, andere: []});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
@@ -185,7 +344,7 @@ function addAnderesRow() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ talente: [], zauber: [], andere: data.andere, eigenschaften: data.eigenschaften });
+            populateDropdowns({ talente: [], zauber: [], andere: data.andere});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
@@ -197,10 +356,209 @@ function deleteRow(button) {
 }
 
 function calculateAP() {
+
+    fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                getRealAPCost(data);
+            })
+            .catch(error => console.error('Error loading JSON data:', error)); 
+
+
+}
+
+let isSidebarOpen = false;
+
+function toggleNav() {
+    const sidebar = document.getElementById("sidebar");
+    const toggleButton = document.getElementById("toggleButton");
+
+    if (isSidebarOpen) {
+        sidebar.style.width = "0";
+        toggleButton.innerHTML = "&#9776; Menü";
+    } else {
+        sidebar.style.width = "400px";
+        toggleButton.innerHTML = "&#x2716; Schließen";
+    }
+
+    isSidebarOpen = !isSidebarOpen;
+}
+
+function getRealFactor(item)
+{
+    const faktoren = ['A+', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+    globalCounter=0;
+    const state = {
+        profanVorteile: [],
+        profanBegabungen: [],
+        unfähigkeitenProfan: [],  
+        magischVorteile: [],
+        magischBegabungen: [],
+        unfähigkeitenMagisch: [], 
+        magischMerkmale: []
+    };
+
+    const comboboxes = document.querySelectorAll('.sidebar-combobox');
+
+    comboboxes.forEach((combobox, index) => {
+        const selectedValue = combobox.value || null;
+        if (index < 3) {
+            state.profanVorteile.push(selectedValue);
+        } else if (index < 6) {
+            state.profanBegabungen.push(selectedValue);
+        } else if (index < 9) {
+            state.unfähigkeitenProfan.push(selectedValue); 
+        } else if (index < 12) {
+            state.magischVorteile.push(selectedValue);
+        } else if (index < 15) {
+            state.magischBegabungen.push(selectedValue);
+        } else if (index < 18) {
+            state.unfähigkeitenMagisch.push(selectedValue); 
+        } else if (index < 21) {
+            state.magischMerkmale.push(selectedValue);
+        }
+    });
+ 
+if (item.hasOwnProperty("gruppe")) 
+    {
+        item.gruppe.forEach(gruppe =>
+                {
+                state.profanBegabungen.forEach(begabung =>
+                    {
+                    if(gruppe === begabung)
+                        {
+                            globalCounter-=1;
+                            console.log(`Wir haben eine Begabung für ${gruppe}, das Steigern ist um ${globalCounter} Spalten verschoben`);
+                        }
+                        
+                });
+                state.unfähigkeitenProfan.forEach(unfähigkeit =>
+                    {
+                    if(gruppe === unfähigkeit)
+                        {
+                            globalCounter+=1;
+                            console.log(`Wir haben eine Unfähigkeit für ${gruppe}, das Steigern ist um ${globalCounter} Spalten verschoben`);
+                        }
+                        
+                });
+                state.profanBegabungen.forEach(begabung =>
+                    {
+                    if(gruppe==="Sprachen/Schriften" && begabung==="Sprachen und Schriften")
+                        {
+                            globalCounter-=1;
+                            console.log(`Wir haben eine Begabung für Sprachen/Schriften, das Steigern ist um ${globalCounter} Spalten verschoben`);
+                        }
+                        
+                });
+                state.profanVorteile.forEach(vorteil =>
+                    {
+                    if((gruppe==="Wissenstalent"|| gruppe==="Handwerkstalent") && vorteil === "Unstet")
+                        {
+                            globalCounter+=1;
+                            console.log(`Wir sind Unstet! Das Steigern von ${gruppe} ist um ${globalCounter} Spalten verschoben`);
+                        }
+                        
+                });
+                state.profanVorteile.forEach(vorteil =>
+                    {
+                    if((gruppe==="Ringen" || gruppe==="Akrobatik" || gruppe==="Gaukeleien" || gruppe==="Körperbeherrschung" || gruppe==="Schleichen" || gruppe==="Sich Verstecken" || gruppe==="Tanzen" || gruppe==="Fesseln/Entfesseln") && vorteil === "Schlangenmensch")
+                        {
+                            console.log("yip")
+                            globalCounter-=1;
+                            console.log(`Wir sind Schlangenmensch! Das Steigern von ${gruppe} ist um ${globalCounter} Spalten verschoben`);
+                        }
+                        
+                });
+                state.magischVorteile.forEach(vorteil =>
+                    {
+                    if(gruppe==="Charisma" && vorteil === "Eigeboren")
+                        {
+                            globalCounter-=1;
+                            console.log(`Wir sind Eigeboren! Das Steigern von Charisma ist um ${globalCounter} Spalten verschoben`);
+                        }
+                        
+                }); 
+        });
+        
+    } 
+else
+{
+    item.merkmale.forEach(merkmale =>
+        { 
+            state.magischBegabungen.forEach(begabung =>
+                {
+                    if(merkmale === begabung)
+                        {
+                            globalCounter-=1;
+                            console.log(`Wir haben eine Begabung für ${merkmale}, das Steigern ist um ${globalCounter} Spalten verschoben`);
+                        }
+                    
+                });
+            state.magischMerkmale.forEach(begabung =>
+                {
+                    if(merkmale === begabung)
+                        {
+                            globalCounter-=1;
+                            console.log(`Wir haben eine Merkmalskenntnis für ${merkmale}, das Steigern ist um ${globalCounter} Spalten verschoben`);
+                        }
+                            
+                });
+            state.unfähigkeitenMagisch.forEach(unfähigkeit =>
+                {
+                    if(merkmale === unfähigkeit)
+                        {
+                            globalCounter+=1;
+                            console.log(`Wir haben eine Unfähigkeit für ${merkmale}, das Steigern ist um ${globalCounter} Spalten verschoben`);
+                        }
+                                
+                });
+        });
+}
+
+
+
+    return faktoren[faktoren.indexOf(item.steigerungskategorie)+globalCounter];
+}
+
+
+function getRealAPCost(data)
+{
+            
     const talentRows = document.querySelectorAll('.talent-row');
     const zauberRows = document.querySelectorAll('.zauber-row');
     const anderesRows = document.querySelectorAll('.anderes-row');
     let totalCost = 0;
+
+    const state = {
+        profanVorteile: [],
+        profanBegabungen: [],
+        unfähigkeitenProfan: [],  
+        magischVorteile: [],
+        magischBegabungen: [],
+        unfähigkeitenMagisch: [], 
+        magischMerkmale: []
+    };
+
+    const comboboxes = document.querySelectorAll('.sidebar-combobox');
+
+    comboboxes.forEach((combobox, index) => {
+        const selectedValue = combobox.value || null;
+        if (index < 3) {
+            state.profanVorteile.push(selectedValue);
+        } else if (index < 6) {
+            state.profanBegabungen.push(selectedValue);
+        } else if (index < 9) {
+            state.unfähigkeitenProfan.push(selectedValue); 
+        } else if (index < 12) {
+            state.magischVorteile.push(selectedValue);
+        } else if (index < 15) {
+            state.magischBegabungen.push(selectedValue);
+        } else if (index < 18) {
+            state.unfähigkeitenMagisch.push(selectedValue); 
+        } else if (index < 21) {
+            state.magischMerkmale.push(selectedValue);
+        }
+    });
 
     // Berechnung der AP-Kosten für Talente
     talentRows.forEach(row => {
@@ -208,14 +566,41 @@ function calculateAP() {
         const desiredValue = parseInt(row.querySelector('.desired-value').value, 10) || 0;
         const steigerungskategorie = row.querySelector('.steigerungskategorie-select').value;
 
-        let apCost = 0;
 
-        for (let i = currentValue + 1; i <= desiredValue; i++) {
-            apCost += getAPCostForStep(i, steigerungskategorie);
-        }
 
+        document.querySelectorAll('.talent-select').forEach(select => {
+            apCost = 0;
+
+            for (let i = currentValue + 1; i <= desiredValue; i++) {
+                apCost += getAPCostForStep(i, steigerungskategorie);
+            }
+            console.log(data);
+            selectedItem = data.talente.find(talent => talent.name === select.value);
+
+                    console.log(selectedItem);
+
+                    state.profanVorteile.forEach(vorteil =>
+                        {
+                            console.log(selectedItem);
+                            selectedItem.gruppe.forEach(gruppe =>
+                                { 
+                                    if(vorteil === "Gutes Gedächtnis" && gruppe === "Sprachen/Schriften")
+                                        {
+                                            apCost = Math.round(apCost*0.75);
+                                        }
+                                    else if (vorteil === "Eidetisches Gedächtnis" && gruppe === "Sprachen/Schriften")
+                                        {
+                                            apCost = Math.round(apCost*0.50);
+                                        }
+                                    
+                            });                      
+        });
         row.querySelector('.ap-cost').value = apCost;
-        totalCost += apCost;
+
+    });
+    totalCost += apCost;
+    document.getElementById('total-cost').value = totalCost;
+
     });
 
     // Berechnung der AP-Kosten für Zauber
@@ -224,14 +609,38 @@ function calculateAP() {
         const desiredValue = parseInt(row.querySelector('.desired-value').value, 10) || 0;
         const steigerungskategorie = row.querySelector('.steigerungskategorie-select').value;
 
-        let apCost = 0;
+        
+
+        document.querySelectorAll('.zauber-select').forEach(select => {
+            apCost = 0;
 
         for (let i = currentValue + 1; i <= desiredValue; i++) {
             apCost += getAPCostForStep(i, steigerungskategorie);
         }
 
+            selectedItem = data.zauber.find(zauber => zauber.name === select.value);
+
+                    state.profanVorteile.forEach(vorteil =>
+                        {
+                            console.log(selectedItem);
+                            selectedItem.merkmale.forEach(merkmal =>
+                                { 
+                                    if(vorteil === "Gutes Gedächtnis" && merkmal === "Zauber")
+                                        {
+                                            apCost = Math.round(apCost*0.75);
+                                        }
+                                    else if(vorteil === "Eidetisches Gedächtnis" && merkmal === "Zauber")
+                                        {
+                                            apCost = Math.round(apCost*0.50);
+                                        }
+                                    
+                            });                      
+        });
         row.querySelector('.ap-cost').value = apCost;
-        totalCost += apCost;
+    });
+    totalCost += apCost;
+    document.getElementById('total-cost').value = totalCost;
+
     });
 
     // Berechnung der AP-Kosten für anderes
@@ -240,17 +649,41 @@ function calculateAP() {
         const desiredValue = parseInt(row.querySelector('.desired-value').value, 10) || 0;
         const steigerungskategorie = row.querySelector('.steigerungskategorie-select').value;
 
-        let apCost = 0;
 
-        for (let i = currentValue + 1; i <= desiredValue; i++) {
-            apCost += getAPCostForStep(i, steigerungskategorie);
-        }
+
+        document.querySelectorAll('.anderes-select').forEach(select => {
+            apCost = 0;
+
+            for (let i = currentValue + 1; i <= desiredValue; i++) {
+                apCost += getAPCostForStep(i, steigerungskategorie);
+            }
+            console.log(data);
+            selectedItem = data.andere.find(andere => andere.name === select.value);
+
+                    state.profanVorteile.forEach(vorteil =>
+                        {
+                            console.log(selectedItem);
+                            selectedItem.gruppe.forEach(gruppe =>
+                                { 
+                                    if(vorteil === "Gutes Gedächtnis" && (gruppe === "Ritualkenntnis allgemein"|| gruppe === "Ritualkenntnis Alchimist"|| gruppe === "Ritualkenntnis Scharlatan"|| gruppe === "Liturgiekenntnis"))
+                                        {
+                                            apCost = Math.round(apCost*0.75);
+                                        }
+                                    else if(vorteil === "Eidetisches Gedächtnis" && (gruppe === "Ritualkenntnis allgemein"|| gruppe === "Ritualkenntnis Alchimist"|| gruppe === "Ritualkenntnis Scharlatan"|| gruppe === "Liturgiekenntnis"))
+                                        {
+                                            apCost = Math.round(apCost*0.50);
+                                        }      
+                            });                      
+        });
 
         row.querySelector('.ap-cost').value = apCost;
-        totalCost += apCost;
+    });
+    totalCost += apCost;
+    document.getElementById('total-cost').value = totalCost;
     });
 
-    document.getElementById('total-cost').value = totalCost;
+    
+
 }
 
 function getAPCostForStep(value, category) {
@@ -258,15 +691,21 @@ function getAPCostForStep(value, category) {
         case 'A+':
         apvalue = Math.round(0.8*1*(Math.pow(value,1.2)))-2;
         if(apvalue<=0){apvalue=1}
+
         return apvalue;
+
         case 'A':
         apvalue = Math.round(0.8*1*(Math.pow(value,1.2)));
         if(apvalue==49){apvalue=50}
+
             return apvalue;
+
         case 'B':
         apvalue = Math.round(0.8*2*(Math.pow(value,1.2)));
         if(apvalue==99){apvalue=100}
+
             return apvalue;
+
         case 'C':
         apvalue = Math.round(0.8*3*(Math.pow(value,1.2)));
         if(apvalue==52){apvalue=51}
@@ -278,7 +717,9 @@ function getAPCostForStep(value, category) {
         if(apvalue==82){apvalue=80}
         if(apvalue==87){apvalue=85}
         if(apvalue==93){apvalue=95}
+
             return apvalue;
+
         case 'D':
         apvalue = Math.round(0.8*4*(Math.pow(value,1.2)));
         if(apvalue==51){apvalue=50}
@@ -294,7 +735,9 @@ function getAPCostForStep(value, category) {
         if(apvalue==124){apvalue=125}
         if(apvalue==174){apvalue=170}
         if(apvalue==197){apvalue=200}
+
             return apvalue;
+
         case 'E':
         apvalue = Math.round(0.8*5*(Math.pow(value,1.2)));
         if(apvalue==49){apvalue=48}
@@ -310,7 +753,9 @@ function getAPCostForStep(value, category) {
         if(apvalue==137){apvalue=135}
         if(apvalue==146){apvalue=145}
         if(apvalue==154){apvalue=155}
+
             return apvalue;  
+
         case 'F':
         apvalue = Math.round(0.8*8*(Math.pow(value,1.2)));
         if(apvalue==15){apvalue=14}
@@ -333,7 +778,9 @@ function getAPCostForStep(value, category) {
         if(apvalue==219){apvalue=210}
         if(apvalue==233){apvalue=220}
         if(apvalue==247){apvalue=230}
+
             return apvalue; 
+
         case 'G':
         apvalue = Math.round(0.8*10*(Math.pow(value,1.2)));
         if(apvalue==69){apvalue=70}
@@ -354,7 +801,9 @@ function getAPCostForStep(value, category) {
         if(apvalue==309){apvalue=310}
         if(apvalue==474){apvalue=480}
         if(apvalue==493){apvalue=500}
+
             return apvalue; 
+
         case 'H':
         apvalue = Math.round(0.8*20*(Math.pow(value,1.2)));
         if(apvalue==37){apvalue=35}
@@ -376,7 +825,9 @@ function getAPCostForStep(value, category) {
         if(apvalue==725){apvalue=720}
         if(apvalue==835){apvalue=830}
         if(apvalue==986){apvalue=1000}
+
             return apvalue;
+
         default:
             return 0;
     }
