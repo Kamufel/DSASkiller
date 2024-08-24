@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('data.json')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
@@ -253,7 +253,7 @@ function addTalentRow() {
     container.appendChild(row);
 
     // Erneut alle Talente für das neue Dropdown laden
-    fetch('data.json')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: data.talente, zauber: [], andere: []});
@@ -298,7 +298,7 @@ function addZauberRow() {
     container.appendChild(row);
 
     // Erneut alle Zauber für das neue Dropdown laden
-    fetch('data.json')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: data.zauber, andere: []});
@@ -341,7 +341,7 @@ function addAnderesRow() {
     container.appendChild(row);
 
     // Erneut alle Daten für das neue Dropdown laden
-    fetch('data.json')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: data.andere});
@@ -357,7 +357,7 @@ function deleteRow(button) {
 
 function calculateAP() {
 
-    fetch('data.json')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
             .then(response => response.json())
             .then(data => {
                 getRealAPCost(data);
