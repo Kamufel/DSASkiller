@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
+    fetch('https://raw.githubusercontent.com/Kamufel/DSASkiller/main/data.json?token=GHSAT0AAAAAACWPVXCISXDZXIKBQPEDFU74ZWMGXGA')
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
@@ -253,7 +253,7 @@ function addTalentRow() {
     container.appendChild(row);
 
     // Erneut alle Talente für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://raw.githubusercontent.com/Kamufel/DSASkiller/main/data.json?token=GHSAT0AAAAAACWPVXCISXDZXIKBQPEDFU74ZWMGXGA')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: data.talente, zauber: [], andere: []});
@@ -298,7 +298,7 @@ function addZauberRow() {
     container.appendChild(row);
 
     // Erneut alle Zauber für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://raw.githubusercontent.com/Kamufel/DSASkiller/main/data.json?token=GHSAT0AAAAAACWPVXCISXDZXIKBQPEDFU74ZWMGXGA')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: data.zauber, andere: []});
@@ -341,7 +341,7 @@ function addAnderesRow() {
     container.appendChild(row);
 
     // Erneut alle Daten für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://raw.githubusercontent.com/Kamufel/DSASkiller/main/data.json?token=GHSAT0AAAAAACWPVXCISXDZXIKBQPEDFU74ZWMGXGA')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: data.andere});
@@ -357,7 +357,7 @@ function deleteRow(button) {
 
 function calculateAP() {
 
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://raw.githubusercontent.com/Kamufel/DSASkiller/main/data.json?token=GHSAT0AAAAAACWPVXCISXDZXIKBQPEDFU74ZWMGXGA')
             .then(response => response.json())
             .then(data => {
                 getRealAPCost(data);
