@@ -728,6 +728,11 @@
             "steigerungskategorie": "D"
         },
         {
+            "name": "Arachnea Krabbeltier (Bor)",
+            "merkmale": ["Zauber", "Herbeirufung", "Dämonisch (Mishkhara)", "Dämonisch"],
+            "steigerungskategorie": "D"
+        },
+        {
             "name": "Arcanovi Artefakt",
             "merkmale": ["Zauber", "Objekt", "Metamagie"],
             "steigerungskategorie": "E"
@@ -780,6 +785,11 @@
         {
             "name": "Band und Fessel",
             "merkmale": ["Zauber", "Einfluss"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Band und Fessel (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch (Amazeroth)", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
@@ -843,8 +853,18 @@
             "steigerungskategorie": "C"
         },
         {
+            "name": "Böser Blick (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch (Amazeroth)", "Dämonisch"],
+            "steigerungskategorie": "C"
+        },
+        {
             "name": "Brenne, toter Stoff!",
             "merkmale": ["Zauber", "Objekt", "Elementar (Feuer)","Elementar"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Brenne, toter Stoff! (Bor)",
+            "merkmale": ["Zauber", "Objekt", "Dämonisch (Agrimoth)","Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
@@ -859,7 +879,7 @@
         },
         {
             "name": "Chimaeroform Hybridgestalt",
-            "merkmale": ["Zauber", "Dämonisch", "Form"],
+            "merkmale": ["Zauber","Dämonisch (Asfaloth)", "Dämonisch", "Form"],
             "steigerungskategorie": "F"
         },
         {
@@ -929,7 +949,7 @@
         },
         {
             "name": "Dschinnenruf",
-            "merkmale": ["Zauber", "Elementar", "Herbeirufung","Elementar"],
+            "merkmale": ["Zauber", "Elementar", "Herbeirufung"],
             "steigerungskategorie": "E"
         },
         {
@@ -955,6 +975,11 @@
         {
             "name": "Eigne Ängste quälen dich",
             "merkmale": ["Zauber", "Einfluss", "Eigenschaften"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Eigne Ängste quälen dich (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch (Amazeroth)", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
@@ -998,6 +1023,11 @@
             "steigerungskategorie": "D"
         },
         {
+            "name": "Erinnerung verlasse dich (Bor)",
+            "merkmale": ["Zauber", "Herrschaft", "Dämonisch (Amazeroth)", "Dämonisch"],
+            "steigerungskategorie": "D"
+        },
+        {
             "name": "Exposami Lebenskraft",
             "merkmale": ["Zauber", "Hellsicht"],
             "steigerungskategorie": "B"
@@ -1024,7 +1054,7 @@
         },
         {
             "name": "Fluch der Pestilenz",
-            "merkmale": ["Zauber", "Dämonisch"],
+            "merkmale": ["Zauber", "Dämonisch (Mishkhara)", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
@@ -1078,6 +1108,11 @@
             "steigerungskategorie": "D"
         },
         {
+            "name": "Granit und Marmor (Bor)",
+            "merkmale": ["Zauber", "Form", "Dämonisch (Agrimoth)", "Dämonisch"],
+            "steigerungskategorie": "D"
+        },
+        {
             "name": "Große Gier",
             "merkmale": ["Zauber", "Einfluss", "Herrschaft"],
             "steigerungskategorie": "C"
@@ -1103,6 +1138,11 @@
             "steigerungskategorie": "C"
         },
         {
+            "name": "Hartes schmelze! (Bor)",
+            "merkmale": ["Zauber", "Objekt", "Dämonisch (Agrimoth)", "Dämonisch"],
+            "steigerungskategorie": "C"
+        },
+        {
             "name": "Haselbusch und Ginsterkraut",
             "merkmale": ["Zauber", "Eigenschaften", "Elementar (Humus)", "Form", "Elementar"],
             "steigerungskategorie": "D"
@@ -1112,6 +1152,12 @@
             "merkmale": ["Zauber", "Antimagie", "Heilung"],
             "steigerungskategorie": "C"
         },
+        {
+            "name": "Heilkraft bannen (Bor)",
+            "merkmale": ["Zauber", "Antimagie", "Heilung", "Dämonisch (Mishkhara)", "Dämonisch"],
+            "steigerungskategorie": "C"
+        },
+        
         {
             "name": "Hellsicht trüben",
             "merkmale": ["Zauber", "Antimagie", "Hellsicht"],
@@ -1135,6 +1181,11 @@
         {
             "name": "Hexenblick",
             "merkmale": ["Zauber", "Verständigung"],
+            "steigerungskategorie": "B"
+        },
+        {
+            "name": "Hexenblick (Bor)",
+            "merkmale": ["Zauber", "Verständigung", "Dämonisch"],
             "steigerungskategorie": "B"
         },
         {
@@ -1173,6 +1224,11 @@
             "steigerungskategorie": "C"
         },
         {
+            "name": "Höllenpein zerreiße dich! (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch (Belhalhar)", "Dämonisch"],
+            "steigerungskategorie": "C"
+        },
+        {
             "name": "Holterdipolter",
             "merkmale": ["Zauber", "Umwelt"],
             "steigerungskategorie": "C"
@@ -1180,6 +1236,11 @@
         {
             "name": "Horriphobus Schreckgestalt",
             "merkmale": ["Zauber", "Einfluss"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Horriphobus Schreckgestalt (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
@@ -1239,7 +1300,7 @@
         },
         {
             "name": "Iribaars Hand",
-            "merkmale": ["Zauber", "Einfluss", "Schaden"],
+            "merkmale": ["Zauber", "Einfluss", "Schaden", "Dämonisch (Amazeroth)", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
@@ -1250,6 +1311,11 @@
         {
             "name": "Karnifilo Raserei",
             "merkmale": ["Zauber", "Einfluss", "Eigenschaften"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Karnifilo Raserei (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Eigenschaften", "Dämonisch (Belhalhar)", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
@@ -1373,6 +1439,11 @@
             "steigerungskategorie": "C"
         },
         {
+            "name": "Leidensbote",
+            "merkmale": ["Zauber", "Heilung", "Verständigung", "Dämonisch (Mishkhara)", "Dämonisch"],
+            "steigerungskategorie": "C"
+        },
+        {
             "name": "Levthans Feuer",
             "merkmale": ["Zauber", "Einfluss", "Verständigung"],
             "steigerungskategorie": "D"
@@ -1400,6 +1471,11 @@
         {
             "name": "Magischer Raub",
             "merkmale": ["Zauber", "Kraft", "Verständigung"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Magischer Raub (Bor)",
+            "merkmale": ["Zauber", "Kraft", "Verständigung", "Dämonisch (Amazeroth)", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
@@ -1613,6 +1689,11 @@
             "steigerungskategorie": "F"
         },
         {
+            "name": "Protectionis Kontrabann (Bor)",
+            "merkmale": ["Zauber", "Antimagie", "Dämonisch (Amazeroth)", "Dämonisch", "Metamagie"],
+            "steigerungskategorie": "F"
+        },
+        {
             "name": "Psychostabilis",
             "merkmale": ["Zauber", "Antimagie", "Eigenschaften"],
             "steigerungskategorie": "C"
@@ -1630,6 +1711,11 @@
         {
             "name": "Reptilea Natternnest",
             "merkmale": ["Zauber", "Herbeirufung"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Reptilea Natternnest",
+            "merkmale": ["Zauber", "Herbeirufung", "Dämonisch (Mishkhara)", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
@@ -1703,13 +1789,28 @@
             "steigerungskategorie": "D"
         },
         {
+            "name": "Schleier der Unwissenheit (Bor)",
+            "merkmale": ["Zauber", "Eigenschaften", "Metamagie", "Dämonisch (Amazeroth)", "Dämonisch"],
+            "steigerungskategorie": "D"
+        },
+        {
             "name": "Schwarz und Rot",
             "merkmale": ["Zauber", "Eigenschaften", "Schaden"],
             "steigerungskategorie": "D"
         },
         {
+            "name": "Schwarz und Rot (Bor)",
+            "merkmale": ["Zauber", "Eigenschaften", "Schaden", "Dämonisch (Blakharaz)", "Dämonisch"],
+            "steigerungskategorie": "D"
+        },
+        {
             "name": "Schwarzer Schrecken",
             "merkmale": ["Zauber", "Einfluss"],
+            "steigerungskategorie": "D"
+        },
+        {
+            "name": "Schwarzer Schrecken (Bor)",
+            "merkmale": ["Zauber", "Einfluss", "Dämonisch (Amazeroth)", "Dämonisch"],
             "steigerungskategorie": "D"
         },
         {
@@ -1930,6 +2031,11 @@
         {
             "name": "Weiches erstarre!",
             "merkmale": ["Zauber", "Elementar (Erz)", "Umwelt", "Elementar"],
+            "steigerungskategorie": "C"
+        },
+        {
+            "name": "Weiches erstarre! (Bor)",
+            "merkmale": ["Zauber", "Dämonisch (Agrimoth)", "Umwelt", "Dämonisch"],
             "steigerungskategorie": "C"
         },
         {
