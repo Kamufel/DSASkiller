@@ -2374,6 +2374,16 @@
             "kosten": "320"
         },
         {
+            "name": "Wissenstalentspezialisierung",
+            "gruppe": ["Wissenstalentspezialisierung"],
+            "kosten": "20"
+        },
+        {
+            "name": "Zweite Wissenstalentspezialisierung",
+            "gruppe": ["Wissenstalentspezialisierung"],
+            "kosten": "40"
+        },
+        {
             "name": "Aufmerksamkeit",
             "gruppe": ["Aufmerksamkeit", "Kampfsonderfertigkeit"],
             "kosten": "200"
@@ -3117,6 +3127,16 @@
             "name": "Zauberzeichen",
             "gruppe": ["Zauberzeichen", "Magische Sonderfertigkeit"],
             "kosten": "200"
+        },
+        {
+            "name": "Zauberspezialisierung",
+            "gruppe": ["Zauberspezialisierung","Magische Sonderfertigkeit"],
+            "kosten": "20"
+        },
+        {
+            "name": "Zweite Zauberspezialisierung",
+            "gruppe": ["Zauberspezialisierung","Magische Sonderfertigkeit"],
+            "kosten": "40"
         }
         
     ],
@@ -3128,12 +3148,12 @@
         },
         {
             "name": "Apport",
-            "gruppe": ["Apport", "Magische Sonderfertigkeit"],
+            "gruppe": ["Apport", "Magische Sonderfertigkeit", "Objektritual"],
             "kosten": "200"
         },
         {
             "name": "Bannschwert",
-            "gruppe": ["Bannschwert", "Magische Sonderfertigkeit"],
+            "gruppe": ["Bannschwert", "Magische Sonderfertigkeit", "Objektritual"],
             "kosten": "200"
         },
         {

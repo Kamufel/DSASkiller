@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
@@ -286,7 +286,7 @@ function addTalentRow() {
     container.appendChild(row);
 
     // Erneut alle Talente für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: data.talente, zauber: [], andere: [], sonderfertigkeiten: [], rituale: [], liturgien: []});
@@ -331,7 +331,7 @@ function addZauberRow() {
     container.appendChild(row);
 
     // Erneut alle Zauber für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: data.zauber, andere: [], sonderfertigkeiten: [], rituale: [], liturgien: []});
@@ -374,7 +374,7 @@ function addAnderesRow() {
     container.appendChild(row);
 
     // Erneut alle Daten für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: data.andere, sonderfertigkeiten: [], rituale: [], liturgien: []});
@@ -404,7 +404,7 @@ function addSonderfertigkeitRow() {
     container.appendChild(row);
 
     // Reload all Sonderfertigkeiten for the new dropdown
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({talente: [], zauber: [], andere: [], sonderfertigkeiten: data.sonderfertigkeiten , rituale: [], liturgien: []});
@@ -435,7 +435,7 @@ function addRitualeRow() {
     container.appendChild(row);
 
     // Reload all Rituale for the new dropdown
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({talente: [], zauber: [], andere: [], sonderfertigkeiten: [], rituale: data.rituale, liturgien: []});
@@ -474,7 +474,7 @@ function addLiturgienRow() {
     container.appendChild(row);
 
     // Reload all Liturgien for the new dropdown
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: [], sonderfertigkeiten: [], rituale: [], liturgien: data.liturgien});
@@ -489,7 +489,7 @@ function deleteRow(button) {
 
 function calculateAP() {
 
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277974829454065714/data.json?ex=66cf1e4e&is=66cdccce&hm=c38ba5797967237cba4850a876aea30b2dca37930f4a909efd2295679745b3af&')
             .then(response => response.json())
             .then(data => {
                 getRealAPCost(data);
@@ -644,7 +644,20 @@ else
                         }
                                 
                 });
-        });
+            
+        }
+    );
+
+            state.profanVorteile.forEach(vorteil =>
+                {
+                    if(vorteil === "Unstet" && (item.steigerungskategorie === "D"||item.steigerungskategorie === "E"||item.steigerungskategorie === "F"||item.steigerungskategorie === "G"||item.steigerungskategorie === "H"))
+                        {
+                            globalCounter+=1;
+                            console.log(`Wir sind unstet, das Steigern dieses Zaubers ist um ${globalCounter} Spalten verschoben`);
+                        }
+                    
+                });
+
 }
 
 
@@ -908,29 +921,28 @@ function getRealAPCost(data)
                             }
                         });
                 }
-             if(vorteil === "Gutes Gedächtnis")
+             if(vorteil === "Astraler Block")
                 {
                     selectedItem.gruppe.forEach(gruppe =>
                         {
     
-                        if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                        if(gruppe === "Regeneration")
                             {
-                                apCost = Math.round(apCost = apCost*0.75);
+                                apCost = Math.round(apCost = apCost*2);
                             }
                         });
-                }                       
-             if(vorteil === "Eidetisches Gedächtnis")
+                }
+             if(vorteil === "Schwache Ausstrahlung")
                 {
                     selectedItem.gruppe.forEach(gruppe =>
                         {
     
-                        if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                        if(gruppe === "Aura verhüllen")
                             {
                                 apCost = Math.round(apCost = apCost*0.5);
                             }
                         });
-                } 
-                                
+                }                                
         });
         state.profanVorteile.forEach(vorteil =>
             {
@@ -962,13 +974,23 @@ function getRealAPCost(data)
                                }
                            });
                    }
+                if(vorteil === "Linkshänder")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+                            if(gruppe === "Linkhand" || gruppe === "Beidhändiger Kampf")
+                               {
+                                   apCost = Math.round(apCost = apCost*0.75);
+                               }
+                           });
+                   }
                 if(vorteil === "Gutes Gedächtnis")
                    {
                        selectedItem.gruppe.forEach(gruppe =>
                            {
        
-                           if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
-                               {
+                            if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"||gruppe === "Wissenstalentspezialisierung"||gruppe === "Zauberspezialisierung"||gruppe === "Zweite Wissenstalentspezialisierung"||gruppe === "Zweite Zauberspezialisierung")
+                                {
                                    apCost = Math.round(apCost = apCost*0.75);
                                }
                            });
@@ -978,7 +1000,7 @@ function getRealAPCost(data)
                        selectedItem.gruppe.forEach(gruppe =>
                            {
        
-                           if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                            if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"||gruppe === "Wissenstalentspezialisierung"||gruppe === "Zauberspezialisierung"||gruppe === "Zweite Wissenstalentspezialisierung"||gruppe === "Zweite Zauberspezialisierung")
                                {
                                    apCost = Math.round(apCost = apCost*0.5);
                                }
@@ -1011,6 +1033,39 @@ function getRealAPCost(data)
                     {
                         apCost = Math.round(apCost*0.75);
                     }                  
+            });
+        state.profanVorteile.forEach(vorteil =>
+            {
+               if(vorteil === "Gutes Gedächtnis")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                            if(gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise"|| gruppe === "Objektritual"|| gruppe === "Stabritual"|| gruppe === "Kugelritual"|| gruppe === "Schalenritual"|| gruppe === "Ringritual"|| gruppe === "Druidenritual"|| gruppe === "Kristallomantenritual"|| gruppe === "Zibiljaritual")
+                                {
+                                    apCost = Math.round(apCost = apCost*0.5);
+                                }
+                            });
+                    }
+               if(vorteil === "Eigeboren")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                            if(gruppe === "Hexenfluch")
+                                {
+                                    apCost = Math.round(apCost = apCost*0.5);
+                                }
+                            });
+                    } 
+               if(vorteil === "Sippenlos")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                            if(gruppe === "Elfenlied")
+                                {
+                                    apCost = Math.round(apCost = apCost*2);
+                                }
+                            });
+                    }                                                          
             });
 
     row.querySelector('.ap-cost').value = apCost;
