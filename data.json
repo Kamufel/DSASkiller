@@ -4265,6 +4265,46 @@
             "name": "Zorn des Gottgefälligen",
             "gruppe": ["Zorn des Gottgefälligen", "Magische Sonderfertigkeit", "Derwischritual"],
             "kosten": "250"
+        },
+        {
+            "name": "BANN-UND SCHUTZKREISE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Geisterwesens",
+            "gruppe": ["Bann- und Schutzkreise gegen Geisterwesen", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "25"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Niedere Dämonen",
+            "gruppe": ["Bann- und Schutzkreise gegen Niedere Dämonen", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "50"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Elementare",
+            "gruppe": ["Bann- und Schutzkreise gegen Elementare", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "75"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Chimären",
+            "gruppe": ["Bann- und Schutzkreise gegen Chimären", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "75"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Ungeziefer",
+            "gruppe": ["Bann- und Schutzkreise gegen Ungeziefer", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "25"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Reptilien",
+            "gruppe": ["Bann- und Schutzkreise gegen Reptilien", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "25"
+        },
+        {
+            "name": "Bann- und Schutzkreise gegen Traumgänger",
+            "gruppe": ["Bann- und Schutzkreise gegen Geisterwesen", "Magische Sonderfertigkeit", "Bann- und Schutzkreise"],
+            "kosten": "50"
         }
     ],
     "liturgien":[

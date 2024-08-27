@@ -29,8 +29,8 @@ h1 {
     margin-bottom: 10px;
 }
 
-.talent-select, .zauber-select, .anderes-select, .sonderfertigkeit-select, .rituale-select, .liturgien-select, 
-.steigerungskategorie-select, .liturgien-grad, .current-value, .desired-value, .ap-cost, .note-field, .verbilligung-select {
+.talent-select, .zauber-select, .anderes-select, .sonderfertigkeit-select, .ritual-select, .liturgie-select, 
+.steigerungskategorie-select, .liturgiegrad-select, .current-value, .desired-value, .ap-cost, .note-field, .verbilligung-select {
     padding: 10px;
     margin-right: 10px;
     border-radius: 4px;
@@ -40,16 +40,16 @@ h1 {
 .talent-select, .zauber-select, .anderes-select{
     flex: 2;
 }
-.liturgien-select{
+.liturgie-select{
     width: 220px;
 }
 .verbilligung-select{
     width: 249px;
 }
-.steigerungskategorie-select, .liturgien-grad {
+.steigerungskategorie-select, .liturgiegrad-select {
     width: 95px;
 }
-.rituale-select, .sonderfertigkeit-select {
+.ritual-select, .sonderfertigkeit-select {
     width: 324px;
 }
 

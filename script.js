@@ -22,7 +22,7 @@ function populateSidebarComboboxes() {
             "Körperliches Talent", "Naturtalent", "Sprachen und Schriften", "Wissenstalent"
         ],
         magischVorteile: [
-            "", "Akademische Ausbildung (Magier)", "Eigeboren", "Astraler Block", "Elfische Weltsicht (W.I.P)", "Sippenlos"
+            "","Affinität zu Elementaren", "Akademische Ausbildung (Magier)", "Eigeboren", "Astraler Block", "Elfische Weltsicht (W.I.P)", "Sippenlos"
         ],
         magischBegabungen: [
             "", "Antimagie", "Beschwörung", "Dämonisch", "Dämonisch (Agrimoth)", "Dämonisch (Amazeroth)", "Dämonisch (Belhalhar)",
@@ -157,9 +157,9 @@ function populateDropdowns(data) {
     const talentSelects = document.querySelectorAll('.talent-select');
     const zauberSelects = document.querySelectorAll('.zauber-select');
     const anderesSelects = document.querySelectorAll('.anderes-select');
-    const sonderfertigkeitenSelects = document.querySelectorAll('.sonderfertigkeiten-select');
-    const ritualeSelects = document.querySelectorAll('.rituale-select');
-    const liturgienSelects = document.querySelectorAll('.liturgien-select');
+    const sonderfertigkeitSelects = document.querySelectorAll('.sonderfertigkeit-select');
+    const ritualSelects = document.querySelectorAll('.ritual-select');
+    const liturgieSelects = document.querySelectorAll('.liturgie-select');
 
     // Füllt die Talent-Dropdowns
     data.talente.forEach(talent => {
@@ -185,46 +185,52 @@ function populateDropdowns(data) {
         anderesSelects.forEach(select => select.appendChild(option.cloneNode(true)));
     });
 
-    // // Füllt die sonderfertigkeiten-Dropdowns
-    // data.sonderfertigkeiten.forEach(sonderfertigkeit => {
-    //     const option = document.createElement('option');
-    //     option.value = sonderfertigkeit.name;
-    //     option.textContent = sonderfertigkeit.name;
-    //     sonderfertigkeitenSelects.forEach(select => select.appendChild(option.cloneNode(true)));
-    // });
+    // Füllt die sonderfertigkeiten-Dropdowns
+    data.sonderfertigkeiten.forEach(sonderfertigkeit => {
+        const option = document.createElement('option');
+        option.value = sonderfertigkeit.name;
+        option.textContent = sonderfertigkeit.name;
+        sonderfertigkeitSelects.forEach(select => select.appendChild(option.cloneNode(true)));
+    });
 
-    // // Füllt die rituale-Dropdowns
-    // data.rituale.forEach(rituale => {
-    //     const option = document.createElement('option');
-    //     option.value = rituale.name;
-    //     option.textContent = rituale.name;
-    //     ritualeSelects.forEach(select => select.appendChild(option.cloneNode(true)));
-    // });
+    // Füllt die rituale-Dropdowns
+    data.rituale.forEach(ritual => {
+        const option = document.createElement('option');
+        option.value = ritual.name;
+        option.textContent = ritual.name;
+        ritualSelects.forEach(select => select.appendChild(option.cloneNode(true)));
+    });
 
-    // // Füllt die liturgien-Dropdowns
-    // data.liturgien.forEach(liturgien => {
-    //     const option = document.createElement('option');
-    //     option.value = liturgien.name;
-    //     option.textContent = liturgien.name;
-    //     liturgienSelects.forEach(select => select.appendChild(option.cloneNode(true)));
-    // });
+    // Füllt die liturgien-Dropdowns
+    data.liturgien.forEach(liturgie => {
+        const option = document.createElement('option');
+        option.value = liturgie.name;
+        option.textContent = liturgie.name;
+        liturgieSelects.forEach(select => select.appendChild(option.cloneNode(true)));
+    });
 }
 
 // Füge Event Listener hinzu, um die Steigerungskategorie automatisch zu setzen
 function setupEventListeners(data) {
-    document.querySelectorAll('.talent-select, .zauber-select, .anderes-select').forEach(select => {
+    document.querySelectorAll('.talent-select, .zauber-select, .anderes-select, .liturgie-select').forEach(select => {
         select.addEventListener('change', (event) => {
             const selectedName = event.target.value;
-            const row = event.target.closest('.talent-row, .zauber-row, .anderes-row');
+            const row = event.target.closest('.talent-row, .zauber-row, .anderes-row, .liturgien-row');
             const categorySelect = row.querySelector('.steigerungskategorie-select');
+            const gradSelect = row.querySelector('.liturgiegrad-select');
             
             let selectedItem = data.talente.find(talent => talent.name === selectedName) ||
                 data.zauber.find(zauber => zauber.name === selectedName) ||
-                data.andere.find(item => item.name === selectedName); 
+                data.andere.find(item => item.name === selectedName)|| data.liturgien.find(liturgie => liturgie.name === selectedName); 
 
-            if (selectedItem) {
+            if (selectedItem  && selectedItem.hasOwnProperty("steigerungskategorie")) 
+                {
                 categorySelect.value = getRealFactor(selectedItem);
-            }
+                }
+            else if(selectedItem  && selectedItem.hasOwnProperty("grad"))
+                {
+                    gradSelect.value = selectedItem.grad;
+                }
         });
     });
 }
@@ -283,7 +289,7 @@ function addTalentRow() {
     fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ talente: data.talente, zauber: [], andere: []});
+            populateDropdowns({ talente: data.talente, zauber: [], andere: [], sonderfertigkeiten: [], rituale: [], liturgien: []});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
@@ -328,7 +334,7 @@ function addZauberRow() {
     fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ talente: [], zauber: data.zauber, andere: []});
+            populateDropdowns({ talente: [], zauber: data.zauber, andere: [], sonderfertigkeiten: [], rituale: [], liturgien: []});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
@@ -371,7 +377,7 @@ function addAnderesRow() {
     fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ talente: [], zauber: [], andere: data.andere});
+            populateDropdowns({ talente: [], zauber: [], andere: data.andere, sonderfertigkeiten: [], rituale: [], liturgien: []});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
@@ -401,7 +407,7 @@ function addSonderfertigkeitRow() {
     fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ sonderfertigkeiten: data.sonderfertigkeiten });
+            populateDropdowns({talente: [], zauber: [], andere: [], sonderfertigkeiten: data.sonderfertigkeiten , rituale: [], liturgien: []});
             setupEventListeners(data);
         });
 }
@@ -413,7 +419,7 @@ function addRitualeRow() {
     row.className = 'rituale-row';
 
     row.innerHTML = `
-        <select class="rituale-select">
+        <select class="ritual-select">
             <option value="" disabled selected>Wähle ein Ritual</option>
         </select>
         <select class="verbilligung-select">
@@ -432,7 +438,7 @@ function addRitualeRow() {
     fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ rituale: data.rituale });
+            populateDropdowns({talente: [], zauber: [], andere: [], sonderfertigkeiten: [], rituale: data.rituale, liturgien: []});
             setupEventListeners(data);
         });
 }
@@ -444,10 +450,10 @@ function addLiturgienRow() {
     row.className = 'liturgien-row';
 
     row.innerHTML = `
-        <select class="liturgien-select">
+        <select class="liturgie-select">
             <option value="" disabled selected>Wähle eine Liturgie</option>
         </select>
-        <select class="liturgien-grad">
+        <select class="liturgiegrad-select">
             <option value="I">Grad I</option>
             <option value="II">Grad II</option>
             <option value="III">Grad III</option>
@@ -471,7 +477,7 @@ function addLiturgienRow() {
     fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
-            populateDropdowns({ liturgien: data.liturgien });
+            populateDropdowns({ talente: [], zauber: [], andere: [], sonderfertigkeiten: [], rituale: [], liturgien: data.liturgien});
             setupEventListeners(data);
         });
 }
@@ -649,10 +655,13 @@ else
 
 function getRealAPCost(data)
 {
-            
     const talentRows = document.querySelectorAll('.talent-row');
     const zauberRows = document.querySelectorAll('.zauber-row');
     const anderesRows = document.querySelectorAll('.anderes-row');
+    const sonderfertigkeitenRows = document.querySelectorAll('.sonderfertigkeit-row');
+    const RitualeRows = document.querySelectorAll('.rituale-row');
+    const LiturgienRows = document.querySelectorAll('.liturgien-row');
+
     let totalCost = 0;
 
     const state = {
@@ -714,7 +723,7 @@ function getRealAPCost(data)
                                         {
                                             apCost = Math.round(apCost*0.75);
                                         }
-                                    else if (vorteil === "Eidetisches Gedächtnis" && gruppe === "Sprachen/Schriften")
+                                    else if (vorteil === "Eidetisches Gedächtnis" && (gruppe === "Sprachen/Schriften"||gruppe === "Wissenstalent"))
                                         {
                                             apCost = Math.round(apCost*0.50);
                                         }
@@ -808,7 +817,207 @@ function getRealAPCost(data)
     document.getElementById('total-cost').value = totalCost;
     });
 
+    // Berechnung der AP-Kosten für Liurgien
+    LiturgienRows.forEach(row => {
+        const grad = row.querySelector('.liturgiegrad-select').value;
+        apCost = 0;
+        apCost = getAPCostForStep(1, grad);
+
+        state.profanVorteile.forEach(vorteil =>
+            {
+
+                if(vorteil === "Gutes Gedächtnis")
+                   {
+                        apCost = Math.round(apCost = apCost*0.75);
+                   }                       
+                if(vorteil === "Eidetisches Gedächtnis")
+                   {
+                        apCost = Math.round(apCost = apCost*0.5);
+                   }                      
+           }); 
+
+    row.querySelector('.ap-cost').value = apCost;
+    totalCost += apCost;
+    document.getElementById('total-cost').value = totalCost;
+    });
+
+    // Berechnung der AP-Kosten für Sonderfertigkeiten
+    sonderfertigkeitenRows.forEach(row => {
+            //console.log(row);
+            selectedRow = row.querySelector('.sonderfertigkeit-select');
+
+
+
+            apCost = 0;
+            selectedItem = data.sonderfertigkeiten.find(sonderfertigkeit => sonderfertigkeit.name === selectedRow.value);
+            apCost = parseInt(selectedItem.kosten,10);
+
+         state.magischVorteile.forEach(vorteil =>
+         {
+            if(vorteil === "Akademische Ausbildung (Magier)")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
+
+                        if(gruppe === "Magische Sonderfertigkeit")
+                            {
+                                apCost = Math.round(apCost*0.75);
+                            }
+                        else if(gruppe === "Rüstungsgewöhnung")
+                            {
+                                apCost = Math.round(apCost*1.5);
+                            }
+            
+                        });
+                }
+            if(vorteil === "Akademische Ausbildung (Krieger)")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
     
+                        if(gruppe === "Kampfsonderfertigkeit")
+                            {
+                                    apCost = Math.round(apCost*0.75);
+                            }
+                
+                        });
+                }
+            if(vorteil === "Affinität zu Elementaren")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
+    
+                        if(gruppe === "Elementarharmonisierte Aura")
+                            {
+                                    apCost = Math.round((apCost/7)*5);
+                            }  
+                        });
+                }
+             if(vorteil === "Beidhändig")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
+    
+                        if(gruppe === "Linkhand" || gruppe === "Beidhändiger Kampf")
+                            {
+                                apCost = Math.round(apCost = apCost*0.5);
+                            }
+                        else if(gruppe === "Schildkampf" || gruppe === "Parierwaffen" || gruppe === "Tod von Links"|| gruppe === "Doppelangriff")
+                            {
+                                apCost = Math.round(apCost = apCost*0.75);
+                            }
+                        });
+                }
+             if(vorteil === "Gutes Gedächtnis")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
+    
+                        if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                            {
+                                apCost = Math.round(apCost = apCost*0.75);
+                            }
+                        });
+                }                       
+             if(vorteil === "Eidetisches Gedächtnis")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
+    
+                        if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                            {
+                                apCost = Math.round(apCost = apCost*0.5);
+                            }
+                        });
+                } 
+                                
+        });
+        state.profanVorteile.forEach(vorteil =>
+            {
+               if(vorteil === "Akademische Ausbildung (Krieger)")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+       
+                           if(gruppe === "Kampfsonderfertigkeit")
+                               {
+                                       apCost = Math.round(apCost*0.75);
+                               }
+                   
+                           });
+                   }
+
+                if(vorteil === "Beidhändig")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+       
+                           if(gruppe === "Linkhand" || gruppe === "Beidhändiger Kampf")
+                               {
+                                   apCost = Math.round(apCost = apCost*0.5);
+                               }
+                           else if(gruppe === "Schildkampf" || gruppe === "Parierwaffen" || gruppe === "Tod von Links"|| gruppe === "Doppelangriff")
+                               {
+                                   apCost = Math.round(apCost = apCost*0.75);
+                               }
+                           });
+                   }
+                if(vorteil === "Gutes Gedächtnis")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+       
+                           if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                               {
+                                   apCost = Math.round(apCost = apCost*0.75);
+                               }
+                           });
+                   }                       
+                if(vorteil === "Eidetisches Gedächtnis")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+       
+                           if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise")
+                               {
+                                   apCost = Math.round(apCost = apCost*0.5);
+                               }
+                           });
+                   } 
+                    
+           });
+
+        row.querySelector('.ap-cost').value = apCost;
+        totalCost += apCost;
+    });
+
+    document.getElementById('total-cost').value = totalCost;  
+
+
+
+    // Berechnung der AP-Kosten für Rituale
+    RitualeRows.forEach(row => {
+        selectedRow = row.querySelector('.ritual-select');
+
+
+
+        apCost = 0;
+        selectedItem = data.rituale.find(ritual => ritual.name === selectedRow.value);
+        apCost = parseInt(selectedItem.kosten,10);
+
+        state.magischVorteile.forEach(vorteil =>
+            {
+               if(vorteil === "Akademische Ausbildung (Magier)")
+                    {
+                        apCost = Math.round(apCost*0.75);
+                    }                  
+            });
+
+    row.querySelector('.ap-cost').value = apCost;
+    totalCost += apCost;
+});
+
+document.getElementById('total-cost').value = totalCost;  
 
 }
 
@@ -953,6 +1162,24 @@ function getAPCostForStep(value, category) {
         if(apvalue==986){apvalue=1000}
 
             return apvalue;
+
+        case 'I':
+        return 50;
+
+        case 'II':
+        return 100;
+        
+        case 'III':
+        return 150;
+
+        case 'IV':
+        return 200;
+
+        case 'V':
+        return 250;
+
+        case 'VI':
+        return 300;
 
         default:
             return 0;
