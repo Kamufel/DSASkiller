@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277030633977286676/data.json?ex=66cbaef5&is=66ca5d75&hm=11ed061397b243904cfc666d98e37f55abdbde2f8bd068db31d650b125558d84&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
@@ -157,6 +157,9 @@ function populateDropdowns(data) {
     const talentSelects = document.querySelectorAll('.talent-select');
     const zauberSelects = document.querySelectorAll('.zauber-select');
     const anderesSelects = document.querySelectorAll('.anderes-select');
+    const sonderfertigkeitenSelects = document.querySelectorAll('.sonderfertigkeiten-select');
+    const ritualeSelects = document.querySelectorAll('.rituale-select');
+    const liturgienSelects = document.querySelectorAll('.liturgien-select');
 
     // Füllt die Talent-Dropdowns
     data.talente.forEach(talent => {
@@ -181,6 +184,30 @@ function populateDropdowns(data) {
         option.textContent = item.name;
         anderesSelects.forEach(select => select.appendChild(option.cloneNode(true)));
     });
+
+    // // Füllt die sonderfertigkeiten-Dropdowns
+    // data.sonderfertigkeiten.forEach(sonderfertigkeit => {
+    //     const option = document.createElement('option');
+    //     option.value = sonderfertigkeit.name;
+    //     option.textContent = sonderfertigkeit.name;
+    //     sonderfertigkeitenSelects.forEach(select => select.appendChild(option.cloneNode(true)));
+    // });
+
+    // // Füllt die rituale-Dropdowns
+    // data.rituale.forEach(rituale => {
+    //     const option = document.createElement('option');
+    //     option.value = rituale.name;
+    //     option.textContent = rituale.name;
+    //     ritualeSelects.forEach(select => select.appendChild(option.cloneNode(true)));
+    // });
+
+    // // Füllt die liturgien-Dropdowns
+    // data.liturgien.forEach(liturgien => {
+    //     const option = document.createElement('option');
+    //     option.value = liturgien.name;
+    //     option.textContent = liturgien.name;
+    //     liturgienSelects.forEach(select => select.appendChild(option.cloneNode(true)));
+    // });
 }
 
 // Füge Event Listener hinzu, um die Steigerungskategorie automatisch zu setzen
@@ -253,7 +280,7 @@ function addTalentRow() {
     container.appendChild(row);
 
     // Erneut alle Talente für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: data.talente, zauber: [], andere: []});
@@ -298,7 +325,7 @@ function addZauberRow() {
     container.appendChild(row);
 
     // Erneut alle Zauber für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: data.zauber, andere: []});
@@ -341,14 +368,113 @@ function addAnderesRow() {
     container.appendChild(row);
 
     // Erneut alle Daten für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: data.andere});
             setupEventListeners(data); // Füge Event Listener für neue Zeilen hinzu
         });
 }
+function addSonderfertigkeitRow() {
+    const container = document.getElementById('talent-container');
 
+    const row = document.createElement('div');
+    row.className = 'sonderfertigkeit-row';
+
+    row.innerHTML = `
+        <select class="sonderfertigkeit-select">
+            <option value="" disabled selected>Wähle eine Sonderfertigkeit</option>
+        </select>
+        <select class="verbilligung-select">
+            <option value="">Nicht verbilligt</option>
+            <option value="Generierung">Bei Generierung verbilligt</option>
+            <option value="Spezielle Erfahrung">Spezielle Erfahrung verbilligt</option>
+        </select>
+        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
+        <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
+    `;
+
+    container.appendChild(row);
+
+    // Reload all Sonderfertigkeiten for the new dropdown
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+        .then(response => response.json())
+        .then(data => {
+            populateDropdowns({ sonderfertigkeiten: data.sonderfertigkeiten });
+            setupEventListeners(data);
+        });
+}
+
+function addRitualeRow() {
+    const container = document.getElementById('talent-container');
+
+    const row = document.createElement('div');
+    row.className = 'rituale-row';
+
+    row.innerHTML = `
+        <select class="rituale-select">
+            <option value="" disabled selected>Wähle ein Ritual</option>
+        </select>
+        <select class="verbilligung-select">
+            <option value="">Nicht verbilligt</option>
+            <option value="Generierung">Bei Generierung verbilligt</option>
+            <option value="Spezielle Erfahrung">Spezielle Erfahrung verbilligt</option>
+        </select>
+        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
+        <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
+    `;
+
+    container.appendChild(row);
+
+    // Reload all Rituale for the new dropdown
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+        .then(response => response.json())
+        .then(data => {
+            populateDropdowns({ rituale: data.rituale });
+            setupEventListeners(data);
+        });
+}
+
+function addLiturgienRow() {
+    const container = document.getElementById('talent-container');
+
+    const row = document.createElement('div');
+    row.className = 'liturgien-row';
+
+    row.innerHTML = `
+        <select class="liturgien-select">
+            <option value="" disabled selected>Wähle eine Liturgie</option>
+        </select>
+        <select class="liturgien-grad">
+            <option value="I">Grad I</option>
+            <option value="II">Grad II</option>
+            <option value="III">Grad III</option>
+            <option value="IV">Grad IV</option>
+            <option value="V">Grad V</option>
+            <option value="VI">Grad VI</option>
+        </select>
+        <select class="verbilligung-select">
+            <option value="">Nicht verbilligt</option>
+            <option value="Generierung">Bei Generierung verbilligt</option>
+            <option value="Spezielle Erfahrung">Spezielle Erfahrung verbilligt</option>
+        </select>
+        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
+        <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
+    `;
+
+    container.appendChild(row);
+
+    // Reload all Liturgien for the new dropdown
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
+        .then(response => response.json())
+        .then(data => {
+            populateDropdowns({ liturgien: data.liturgien });
+            setupEventListeners(data);
+        });
+}
 function deleteRow(button) {
     const row = button.parentElement;
     row.remove();
@@ -357,7 +483,7 @@ function deleteRow(button) {
 
 function calculateAP() {
 
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277535516816048169/data.json?ex=66cd852a&is=66cc33aa&hm=e04701073af91bda78d55ce16a516d8703c24fa15368768bbe7967b3c825b759&')
+    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277910650244563005/data.json?ex=66cee289&is=66cd9109&hm=904b27903bccf238bc6b7decf1526e47c62b9579fed9491d962f197c5044fb7e&')
             .then(response => response.json())
             .then(data => {
                 getRealAPCost(data);

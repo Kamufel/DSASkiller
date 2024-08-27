@@ -23,27 +23,36 @@ h1 {
     margin-bottom: 20px;
 }
 
-.talent-row, .zauber-row, .anderes-row {
+.talent-row, .zauber-row, .anderes-row, .sonderfertigkeit-row, .rituale-row, .liturgien-row {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.talent-select, .zauber-select, .anderes-select, .steigerungskategorie-select, .current-value, .desired-value, .ap-cost, .note-field {
+.talent-select, .zauber-select, .anderes-select, .sonderfertigkeit-select, .rituale-select, .liturgien-select, 
+.steigerungskategorie-select, .liturgien-grad, .current-value, .desired-value, .ap-cost, .note-field, .verbilligung-select {
     padding: 10px;
     margin-right: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
     width: 10px;
-
 }
-
-.talent-select, .zauber-select, .anderes-select {
+.talent-select, .zauber-select, .anderes-select{
     flex: 2;
 }
-.steigerungskategorie-select {
-    width: 60px;
+.liturgien-select{
+    width: 220px;
 }
+.verbilligung-select{
+    width: 249px;
+}
+.steigerungskategorie-select, .liturgien-grad {
+    width: 95px;
+}
+.rituale-select, .sonderfertigkeit-select {
+    width: 324px;
+}
+
 .current-value, .desired-value, .ap-cost, .note-field {
     flex: 1;
 }
@@ -51,19 +60,15 @@ h1 {
 .note-field {
     flex: 2;
     resize: none;
-    height: flex; /* Höhe anpassen, um Platz für Notizen zu bieten */
     font-family: Arial, sans-serif;
-
 }
 
-/* Container für die Buttons */
 #button-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* Stil für die Buttons */
 button {
     padding: 10px;
     color: white;
@@ -78,7 +83,7 @@ button:last-child {
     margin-right: 0;
 }
 
-/* Stil für Talent-Button */
+/* Specific button styles */
 button.talent-button {
     background-color: #007BFF;
 }
@@ -87,7 +92,6 @@ button.talent-button:hover {
     background-color: #0056b3;
 }
 
-/* Stil für Zauber-Button */
 button.zauber-button {
     background-color: #28a745;
 }
@@ -96,7 +100,6 @@ button.zauber-button:hover {
     background-color: #218838;
 }
 
-/* Stil für Anderes-Button */
 button.anderes-button {
     background-color: #17a2b8;
 }
@@ -105,7 +108,30 @@ button.anderes-button:hover {
     background-color: #138496;
 }
 
-/* Stil für AP berechnen-Button */
+button.sonderfertigkeit-button {
+    background-color: #6c757d; /* Gray */
+}
+
+button.sonderfertigkeit-button:hover {
+    background-color: #5a6268;
+}
+
+button.rituale-button {
+    background-color: #343a40; /* Darker Gray */
+}
+
+button.rituale-button:hover {
+    background-color: #23272b;
+}
+
+button.liturgien-button {
+    background-color: #6610f2; /* Purple */
+}
+
+button.liturgien-button:hover {
+    background-color: #520dc2;
+}
+
 button.calculate-button {
     background-color: #ffc107;
     margin-top: 10px;
@@ -114,7 +140,8 @@ button.calculate-button {
 button.calculate-button:hover {
     background-color: #e0a800;
 }
-/* Stil für das X-Symbol */
+
+/* Delete button style */
 .delete-button {
     color: red;
     font-weight: bold;
@@ -130,6 +157,7 @@ button.calculate-button:hover {
 .delete-button:hover {
     color: darkred;
 }
+
 #total-cost-container {
     margin-top: 20px;
     text-align: right;
@@ -149,6 +177,7 @@ button.calculate-button:hover {
     color: #333;
 }
 
+/* Sidebar styles */
 .sidebar {
     height: 100%;
     width: 0;
@@ -204,6 +233,7 @@ button.calculate-button:hover {
 .sidebar-buttons button:hover {
     background-color: #0056b3;
 }
+
 .openbtn {
     font-size: 20px;
     cursor: pointer;
