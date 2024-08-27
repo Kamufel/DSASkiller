@@ -2256,5 +2256,3357 @@
             "gruppe": ["Körperkraft", "Eigenschaft"],
             "steigerungskategorie": "H"
         }
+    ],
+    "sonderfertigkeiten": [
+        {
+            "name": "Akklimatisierung",
+            "gruppe": ["Akklimatisierung"],
+            "kosten": "150"
+        },
+        {
+            "name": "Berufsgeheimnis",
+            "gruppe": ["Berufsgeheimnis"],
+            "kosten": "100"
+        },
+        {
+            "name": "Geländekunde",
+            "gruppe": ["Geländekunde"],
+            "kosten": "100"
+        },
+        {
+            "name": "Geländekunde (erste)",
+            "gruppe": ["Geländekunde"],
+            "kosten": "150"
+        },
+        {
+            "name": "Kulturkunde",
+            "gruppe": ["Kulturkunde"],
+            "kosten": "150"
+        },
+        {
+            "name": "Meister der Improvisation",
+            "gruppe": ["Meister der Improvisation"],
+            "kosten": "200"
+        },
+        { 
+            "name": "Nandusgefälliges Wissen",
+            "gruppe": ["Nandusgefälliges Wissen"],
+            "kosten": "200"
+        },
+        {
+            "name": "Ortskenntnis",
+            "gruppe": ["Ortskenntnis"],
+            "kosten": "100"
+        },
+        {
+            "name": "Ortskenntnis (erste)",
+            "gruppe": ["Ortskenntnis"],
+            "kosten": "150"
+        },
+        {
+            "name": "Rosstäuscher",
+            "gruppe": ["Rosstäuscher"],
+            "kosten": "100"
+        },
+        {
+            "name": "Standfest",
+            "gruppe": ["Standfest"],
+            "kosten": "200"
+        },
+        {
+            "name": "Spezialisierung (A)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "20"
+        },
+        {
+            "name": "Spezialisierung (B)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "40"
+        },        
+        {
+            "name": "Spezialisierung (C)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "60"
+        },        
+        {
+            "name": "Spezialisierung (D)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "80"
+        },        
+        {
+            "name": "Spezialisierung (E)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "100"
+        },        
+        {
+            "name": "Spezialisierung (F)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "160"
+        },
+        {
+            "name": "Zweite Spezialisierung (A)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "40"
+        },
+        {
+            "name": "Zweite Spezialisierung (B)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "80"
+        },        
+        {
+            "name": "Zweite Spezialisierung (C)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "120"
+        },        
+        {
+            "name": "Zweite Spezialisierung (D)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "160"
+        },        
+        {
+            "name": "Zweite Spezialisierung (E)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "200"
+        },        
+        {
+            "name": "Zweite Spezialisierung (F)",
+            "gruppe": ["Spezialisierung"],
+            "kosten": "320"
+        },
+        {
+            "name": "Aufmerksamkeit",
+            "gruppe": ["Aufmerksamkeit", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Ausfall",
+            "gruppe": ["Ausfall", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Ausweichen I",
+            "gruppe": ["Ausweichen", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Ausweichen II",
+            "gruppe": ["Ausweichen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Ausweichen III",
+            "gruppe": ["Ausweichen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Befreiungsschlag",
+            "gruppe": ["Befreiungsschlag", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Beidhändiger Kampf I",
+            "gruppe": ["Beidhändiger Kampf", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Beidhändiger Kampf II",
+            "gruppe": ["Beidhändiger Kampf", "Kampfsonderfertigkeit"],
+            "kosten": "400"
+        },
+        {
+            "name": "Berittener Schütze",
+            "gruppe": ["Berittener Schütze", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Betäubungsschlag",
+            "gruppe": ["Betäubungsschlag", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Binden",
+            "gruppe": ["Binden", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Blindkampf",
+            "gruppe": ["Blindkampf", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Defensiver Kampfstil",
+            "gruppe": ["Defensiver Kampfstil", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Doppelangriff",
+            "gruppe": ["Doppelangriff", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Eisenhagel",
+            "gruppe": ["Eisenhagel", "Kampfsonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Entwaffnen",
+            "gruppe": ["Entwaffnen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Festnageln",
+            "gruppe": ["Festnageln", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Finte",
+            "gruppe": ["Finte", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Formation",
+            "gruppe": ["Formation", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Gegenhalten",
+            "gruppe": ["Gegenhalten", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Geschützmeister",
+            "gruppe": ["Geschützmeister", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Gezielter Stich",
+            "gruppe": ["Gezielter Stich", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Halbschwert",
+            "gruppe": ["Halbschwert", "Kampfsonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Hammerschlag",
+            "gruppe": ["Hammerschlag", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Improvisierte Waffen",
+            "gruppe": ["Improvisierte Waffen", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Kampf im Wasser",
+            "gruppe": ["Kampf im Wasser", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Kampfgespür",
+            "gruppe": ["Kampfgespür", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Kampfreflexe",
+            "gruppe": ["Kampfreflexe", "Kampfsonderfertigkeit"],
+            "kosten": "30"
+        },
+        {
+            "name": "Klingensturm",
+            "gruppe": ["Klingensturm", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Klingentänzer",
+            "gruppe": ["Klingentänzer", "Kampfsonderfertigkeit"],
+            "kosten": "400"
+        },
+        {
+            "name": "Klingenwand",
+            "gruppe": ["Klingenwand", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Kriegsreiterei",
+            "gruppe": ["Kriegsreiterei", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Linkhand",
+            "gruppe": ["Linkhand", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Meisterliches Entwaffnen",
+            "gruppe": ["Meisterliches Entwaffnen", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Meisterparade",
+            "gruppe": ["Meisterparade", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Meisterschütze",
+            "gruppe": ["Meisterschütze", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Niederwerfen",
+            "gruppe": ["Niederwerfen", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Parierwaffen I",
+            "gruppe": ["Parierwaffen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Parierwaffen II",
+            "gruppe": ["Parierwaffen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Reiterkampf",
+            "gruppe": ["Reiterkampf", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Rüstungsgewöhnung I",
+            "gruppe": ["Rüstungsgewöhnung", "Kampfsonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Rüstungsgewöhnung II",
+            "gruppe": ["Rüstungsgewöhnung", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Rüstungsgewöhnung III",
+            "gruppe": ["Rüstungsgewöhnung", "Kampfsonderfertigkeit"],
+            "kosten": "450"
+        },
+        {
+            "name": "Scharfschütze",
+            "gruppe": ["Scharfschütze", "Kampfsonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Schildkampf I",
+            "gruppe": ["Schildkampf", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Schildkampf II",
+            "gruppe": ["Schildkampf", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Schildspalter",
+            "gruppe": ["Schildspalter", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Schnellladen",
+            "gruppe": ["Schnellladen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Schnellziehen",
+            "gruppe": ["Schnellziehen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Spießgespann",
+            "gruppe": ["Spießgespann", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Sturmangriff",
+            "gruppe": ["Sturmangriff", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tod von Links",
+            "gruppe": ["Tod von Links", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Todesstoß",
+            "gruppe": ["Todesstoß", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Turnierreiterei",
+            "gruppe": ["Turnierreiterei", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Umreißen",
+            "gruppe": ["Umreißen", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Unterwasserkampf",
+            "gruppe": ["Unterwasserkampf", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Waffe zerbrechen",
+            "gruppe": ["Waffe zerbrechen", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Waffenmeister",
+            "gruppe": ["Waffenmeister", "Kampfsonderfertigkeit"],
+            "kosten": "400"
+        },
+        {
+            "name": "Windmühle",
+            "gruppe": ["Windmühle", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Wuchtschlag",
+            "gruppe": ["Wuchtschlag", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Bornländischer Kampfstil",
+            "gruppe": ["Bornländischer Kampfstil", "Kampfsonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Gladiatorenstil",
+            "gruppe": ["Gladiatorenstil", "Kampfsonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Hammerfaust Kampfstil",
+            "gruppe": ["Hammerfaust Kampfstil", "Kampfsonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Hruruzat",
+            "gruppe": ["Hruruzat", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Mercenario Kampfstil",
+            "gruppe": ["Mercenario Kampfstil", "Kampfsonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Unauer Schule",
+            "gruppe": ["Unauer Schule", "Kampfsonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Astrale Meditation",
+            "gruppe": ["Astrale Meditation", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Aura verhüllen",
+            "gruppe": ["Aura verhüllen", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Aurapanzer",
+            "gruppe": ["Aurapanzer", "Magische Sonderfertigkeit"],
+            "kosten": "500"
+        },
+        {
+            "name": "Blutmagie",
+            "gruppe": ["Blutmagie", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Chimärenmeister",
+            "gruppe": ["Chimärenmeister", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Dämonenbindung I",
+            "gruppe": ["Dämonenbindung", "Magische Sonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Dämonenbindung II",
+            "gruppe": ["Dämonenbindung", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Druidenrache",
+            "gruppe": ["Druidenrache", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Eiserner Wille I",
+            "gruppe": ["Eiserner Wille", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Eiserner Wille II",
+            "gruppe": ["Eiserner Wille", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Elementarharmonisierte Aura",
+            "gruppe": ["Elementarharmonisierte Aura", "Magische Sonderfertigkeit"],
+            "kosten": "700"
+        },
+        {
+            "name": "Exorzist",
+            "gruppe": ["Exorzist", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Fernzauberei",
+            "gruppe": ["Fernzauberei", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Form der Formlosigkeit",
+            "gruppe": ["Form der Formlosigkeit", "Magische Sonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Geber der Gestalt",
+            "gruppe": ["Geber der Gestalt", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Gedankenschutz",
+            "gruppe": ["Gedankenschutz", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Gefäß der Sterne",
+            "gruppe": ["Gefäß der Sterne", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Golembauer",
+            "gruppe": ["Golembauer", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Höhere Dämonenbindung",
+            "gruppe": ["Höhere Dämonenbindung", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Hypervehemenz",
+            "gruppe": ["Hypervehemenz", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Invocatio Integra",
+            "gruppe": ["Invocatio Integra", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Konzentrationsstärke",
+            "gruppe": ["Konzentrationsstärke", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Kraftkontrolle",
+            "gruppe": ["Kraftkontrolle", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Kraftlinienmagie I",
+            "gruppe": ["Kraftlinienmagie", "Magische Sonderfertigkeit"],
+            "kosten": "50"
+        },
+        {
+            "name": "Kraftlinienmagie II",
+            "gruppe": ["Kraftlinienmagie", "Magische Sonderfertigkeit"],
+            "kosten": "400"
+        },
+        {
+            "name": "Kraftspeicher",
+            "gruppe": ["Kraftspeicher", "Magische Sonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Lockeres Zaubern",
+            "gruppe": ["Lockeres Zaubern", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Matrixgeber",
+            "gruppe": ["Matrixgeber", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Matrixkontrolle",
+            "gruppe": ["Matrixkontrolle", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Matrixregeneration I",
+            "gruppe": ["Matrixregeneration", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Matrixregeneration II",
+            "gruppe": ["Matrixregeneration", "Magische Sonderfertigkeit"],
+            "kosten": "500"
+        },
+        {
+            "name": "Matrixverständnis",
+            "gruppe": ["Matrixverständnis", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Meisterliche Regeneration ",
+            "gruppe": ["Meisterliche Regeneration ", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Meisterliche Zauberkontrolle I",
+            "gruppe": ["Meisterliche Zauberkontrolle", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Meisterliche Zauberkontrolle II",
+            "gruppe": ["Meisterliche Zauberkontrolle", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Merkmalskenntnis Dämonisch (einzelne Domäne)",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Elementar (einzelne Domäne)",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Geisterwesen",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Heilung",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Herbeirufung",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Illusion",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Schaden",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Telekinese",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Verständigung",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Merkmalskenntnis Antimagie",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Beschwörung",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Eigenschaften",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Einfluss",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Form",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Hellsicht",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Herrschaft",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Kraft",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Objekt",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Umwelt",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Merkmalskenntnis Dämonisch (gesamt)",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Merkmalskenntnis Elementar (gesamt)",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Merkmalskenntnis Limbus",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Merkmalskenntnis Metamagie",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Merkmalskenntnis Temporal",
+            "gruppe": ["Merkmalskenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Nekromant",
+            "gruppe": ["Nekromant", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Ottagaldr",
+            "gruppe": ["Ottagaldr", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Regeneration I",
+            "gruppe": ["Regeneration", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Regeneration II",
+            "gruppe": ["Regeneration", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Ritualkenntnis",
+            "gruppe": ["Ritualkenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "250"
+        },
+        {
+            "name": "Runenkunde",
+            "gruppe": ["Runenkunde", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Salasandra",
+            "gruppe": ["Salasandra", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Semipermanenz I",
+            "gruppe": ["Semipermanenz", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Semipermanenz II",
+            "gruppe": ["Semipermanenz", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Signaturkenntnis",
+            "gruppe": ["Signaturkenntnis", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Simultanzaubern",
+            "gruppe": ["Simultanzaubern", "Magische Sonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Stapeleffekt",
+            "gruppe": ["Stapeleffekt", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Tanz der Mada",
+            "gruppe": ["Tanz der Mada", "Magische Sonderfertigkeit"],
+            "kosten": "50"
+        },
+        {
+            "name": "Tierischer Begleiter",
+            "gruppe": ["Tierischer Begleiter", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Traumgänger",
+            "gruppe": ["Traumgänger", "Magische Sonderfertigkeit"],
+            "kosten": "150"
+        },
+        {
+            "name": "Verbotene Pforten",
+            "gruppe": ["Verbotene Pforten", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Vertrautenbindung",
+            "gruppe": ["Vertrautenbindung", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Vielfache Ladungen",
+            "gruppe": ["Vielfache Ladungen", "Magische Sonderfertigkeit"],
+            "kosten": "75"
+        },
+        {
+            "name": "Zauber bereithalten",
+            "gruppe": ["Zauber bereithalten", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Zauber unterbrechen",
+            "gruppe": ["Zauber unterbrechen", "Magische Sonderfertigkeit"],
+            "kosten": "300"
+        },
+        {
+            "name": "Zauber vereinigen",
+            "gruppe": ["Zauber vereinigen", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zauberkontrolle",
+            "gruppe": ["Zauberkontrolle", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zauberroutine",
+            "gruppe": ["Zauberroutine", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zauberzeichen",
+            "gruppe": ["Zauberzeichen", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        }
+        
+    ],
+    "rituale":[
+        {
+            "name": "ALLGEMEINE RITUALE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Apport",
+            "gruppe": ["Apport", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Bannschwert",
+            "gruppe": ["Bannschwert", "Magische Sonderfertigkeit"],
+            "kosten": "200"
+        },
+        {
+            "name": "Druidenrache",
+            "gruppe": ["Druidenrache", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "GILDENMAGISCHE STABZAUBER",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bindung des Stabes",
+            "gruppe": ["Bindung des Stabes", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Doppeltes Maß",
+            "gruppe": ["Doppeltes Maß", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Ewige Flamme",
+            "gruppe": ["Ewige Flamme", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Flammenschwert",
+            "gruppe": ["Flammenschwerts", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "300"
+        },
+        {
+            "name": "Hammer des Magus",
+            "gruppe": ["Hammer des Magus", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Kraftfokus",
+            "gruppe": ["Kraftfokus", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Merkmalsfokus",
+            "gruppe": ["Merkmalsfokus", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Modifikationsfokus",
+            "gruppe": ["Modifikationsfokus", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Schuppenhaut",
+            "gruppe": ["Schuppenhaut", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "300"
+        },
+        {
+            "name": "Seil des Adepten",
+            "gruppe": ["Seil des Adepten", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Zauberspeicher",
+            "gruppe": ["Zauberspeicher", "Magische Sonderfertigkeit", "Stabritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "RITUALE DER KRISTALLKUGEL",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bindung der Kugel",
+            "gruppe": ["Bindung der Kugel ", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Bildergalerie",
+            "gruppe": ["Bildergalerie", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Bilderspiel",
+            "gruppe": ["Bilderspiel", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Brennglas und Prisma",
+            "gruppe": ["Brennglas und Prisma", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Farben des Geistes",
+            "gruppe": ["Farben des Geistes", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Fernbild",
+            "gruppe": ["Fernbild", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "H'Szints Auge",
+            "gruppe": ["H'Szints Auge", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Kugel des Hellsehers",
+            "gruppe": ["Kugel des Hellsehers", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Kugel des Illusionisten",
+            "gruppe": ["Kugel des Illusionisten", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Orbitarium",
+            "gruppe": ["Orbitarium", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Schutz gegen Untote",
+            "gruppe": ["Schutz gegen Untote", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Wachendes Auge",
+            "gruppe": ["Wachendes Auge", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Warnendes Leuchten",
+            "gruppe": ["Warnendes Leuchten", "Magische Sonderfertigkeit", "Kugelritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "RITUALE DER ALCHIMISTENSCHALE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Allegorische Analyse",
+            "gruppe": ["Allegorische Analyse", "Magische Sonderfertigkeit", "Schalenritual"],
+            "kosten": "125"
+        },
+        {
+            "name": "Chymische Hochzeit",
+            "gruppe": ["Chymische Hochzeit", "Magische Sonderfertigkeit", "Schalenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Feuer und Eis",
+            "gruppe": ["Feuer und Ei", "Magische Sonderfertigkeit", "Schalenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Mandricons Bindung",
+            "gruppe": ["Mandricons Bindung", "Magische Sonderfertigkeit", "Schalenritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Transmutation der Elemente",
+            "gruppe": ["Transmutation der Elemente", "Magische Sonderfertigkeit", "Schalenritual"],
+            "kosten": "125"
+        },
+        {
+            "name": "Weihe der Schale",
+            "gruppe": ["Weihe der Schale", "Magische Sonderfertigkeit", "Schalenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "HEXENFLÜCHE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Ängste mehren",
+            "gruppe": ["Ängste mehren", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "75"
+        },
+        {
+            "name": "Beiss auf Granit!",
+            "gruppe": ["Beiss auf Granit!", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "150"
+        },
+        {
+            "name": "Beute!",
+            "gruppe": ["Beute!", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "75"
+        },
+        {
+            "name": "Hagelschlag",
+            "gruppe": ["Hagelschlag", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "150"
+        },
+        {
+            "name": "Hexenschuss",
+            "gruppe": ["Hexenschuss", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "75"
+        },
+        {
+            "name": "Kornfäule",
+            "gruppe": ["Kornfäule", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "125"
+        },
+        {
+            "name": "Krötenkuss",
+            "gruppe": ["Krötenkuss", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "100"
+        },
+        {
+            "name": "Mit Blindheit schlagen",
+            "gruppe": ["Mit Blindheit schlagen", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "100"
+        },
+        {
+            "name": "Pech an den Hals wünschen",
+            "gruppe": ["Pech an den Hals wünschen", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "100"
+        },
+        {
+            "name": "Pestilenz",
+            "gruppe": ["Pestilenz", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "100"
+        },
+        {
+            "name": "Schlaf rauben",
+            "gruppe": ["Schlaf rauben", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "100"
+        },
+        {
+            "name": "Todesfluch",
+            "gruppe": ["Todesfluch", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "100"
+        },
+        {
+            "name": "Unfruchtbarkeit",
+            "gruppe": ["Unfruchtbarkeit", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "50"
+        },
+        {
+            "name": "Viehverstümmelung",
+            "gruppe": ["Viehverstümmelung", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "75"
+        },
+        {
+            "name": "Warzen sprießen",
+            "gruppe": ["Warzen sprießen", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "50"
+        },
+        {
+            "name": "Zunge lähmen",
+            "gruppe": ["Zunge lähmen", "Magische Sonderfertigkeit", "Hexenfluch"],
+            "kosten": "50"
+        },
+        {
+            "name": "RING DES LEBENS",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Geodischer Wasserbann",
+            "gruppe": ["Geodischer Wasserbann", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Herr der Flammen",
+            "gruppe": ["Herr der Flammen", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Kräfte der Natur",
+            "gruppe": ["Kräfte der Natur", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Launen des Windes",
+            "gruppe": ["Launen des Windes", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "250"
+        },
+        {
+            "name": "Macht des Lebens",
+            "gruppe": ["Macht des Lebens", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Macht über den Regen",
+            "gruppe": ["Macht über den Regen", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Magnetismus",
+            "gruppe": ["Magnetismus", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Seelenfeuer",
+            "gruppe": ["Seelenfeuer", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Weg durch Sumus Leib",
+            "gruppe": ["Weg durch Sumus Leib", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Weihe der Schlange",
+            "gruppe": ["Weihe der Schlange", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Wirbelnder Luftschild",
+            "gruppe": ["Wirbelnder Luftschild", "Magische Sonderfertigkeit", "Ringritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "GEODEN RITUALE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Die Gestalt aus Rauch",
+            "gruppe": ["Die Gestalt aus Rauch", "Magische Sonderfertigkeit", "Geodenritual"],
+            "kosten": "250"
+        },
+        {
+            "name": "HERRSCHAFTSRITUALE DER DRUIDEN",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Amulett der Herrschaft",
+            "gruppe": ["Amulett der Herrschaft", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Kristall der Herrschaft",
+            "gruppe": ["Kristall der Herrschaft", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Miniatur der Herrschaft",
+            "gruppe": ["Miniatur der Herrschaft", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Wachs der Herrschaft",
+            "gruppe": ["Wachs der Herrschaft", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Wurzel des Blutes",
+            "gruppe": ["Wurzel des Blutes", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "DOLCHRITUALE DER DRUIDEN",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bann des Dolches",
+            "gruppe": ["Bann des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Ernte des Dolches",
+            "gruppe": ["Ernte des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "25"
+        },
+        {
+            "name": "Gespür des Dolches",
+            "gruppe": ["Gespür des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "25"
+        },
+        {
+            "name": "Lebenskraft des Dolches",
+            "gruppe": ["Lebenskraft des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Leib des Dolches",
+            "gruppe": ["Leib des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "25"
+        },
+        {
+            "name": "Licht des Dolches",
+            "gruppe": ["Licht des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Opferdolch",
+            "gruppe": ["Opferdolch", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Schneide des Dolches",
+            "gruppe": ["Schneide des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Schutz des Dolches",
+            "gruppe": ["Schutz des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Weg des Dolches",
+            "gruppe": ["Weg des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "25"
+        },
+        {
+            "name": "Weihe des Dolches",
+            "gruppe": ["Weihe des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Weisung des Dolches",
+            "gruppe": ["Weisung des Dolches", "Magische Sonderfertigkeit", "Druidenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "ELFENLIEDER",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Erinnerungsmelodie",
+            "gruppe": ["Erinnerungsmelodie", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "150"
+        },
+        {
+            "name": "Friedenslied",
+            "gruppe": ["Friedenslied", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "250"
+        },
+        {
+            "name": "Freundschaftslied",
+            "gruppe": ["Freundschaftslied", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "50"
+        },
+        {
+            "name": "Lied der Lieder",
+            "gruppe": ["Lied der Lieder", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "150"
+        },
+        {
+            "name": "Lied der Reinheit",
+            "gruppe": ["Lied der Reinheit", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "150"
+        },
+        {
+            "name": "Lied des Trostes ",
+            "gruppe": ["Lied des Trostes ", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "150"
+        },
+        {
+            "name": "Melodie der Kunstfertigkeit",
+            "gruppe": ["Melodie der Kunstfertigkeit", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "250"
+        },
+        {
+            "name": "Sorgenlied ",
+            "gruppe": ["Sorgenlied ", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "75"
+        },
+        {
+            "name": "Windgeflüster",
+            "gruppe": ["Windgeflüster", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zaubermelodie",
+            "gruppe": ["Zaubermelodie", "Magische Sonderfertigkeit", "Elfenlied"],
+            "kosten": "150"
+        },
+        {
+            "name": "KRISTALLRITUALE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Kristallbindung",
+            "gruppe": ["Kristallbindung", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Kristallformung",
+            "gruppe": ["Kristallformung", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "250"
+        },
+        {
+            "name": "Kristallkraft bündeln",
+            "gruppe": ["Kristallkraft bündeln", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Madakristall",
+            "gruppe": ["Madakristall", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "300"
+        },
+        {
+            "name": "Matrixkristall",
+            "gruppe": ["Matrixkristall", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Thesiskristall",
+            "gruppe": ["Thesiskristall", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "SCHUPPENBEUTELRITUALE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bindung des Beutels",
+            "gruppe": ["Bindung des Beutels", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Ewige Wegzehrung",
+            "gruppe": ["Ewige Wegzehrung", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Suchende Finger",
+            "gruppe": ["Suchende Finger", "Magische Sonderfertigkeit", "Kristallomantenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "RITUALE DER ZAUBERTÄNZER",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Firuns Jagd",
+            "gruppe": ["Firuns Jagd", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "200"
+        },
+        {
+            "name": "Madayana",
+            "gruppe": ["Madayana", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "250"
+        },
+        {
+            "name": "Rahjas Begehren",
+            "gruppe": ["Rahjas Begehren", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "150"
+        },
+        {
+            "name": "Selinata",
+            "gruppe": ["Selinata", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "150"
+        },
+        {
+            "name": "Tanz der Bilder",
+            "gruppe": ["Tanz der Bilder", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tanz der Erlösung",
+            "gruppe": ["Tanz der Erlösung", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tanz der Ermutigung",
+            "gruppe": ["Tanz der Ermutigung", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "200"
+        },
+        {
+            "name": "Tanz der Freude",
+            "gruppe": ["Tanz der Freude", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "250"
+        },
+        {
+            "name": "Tanz der Gemeinschaft",
+            "gruppe": ["Tanz der Gemeinschaft", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tanz der Liebe",
+            "gruppe": ["Tanz der Liebe", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tanz der Unantastbarkeit",
+            "gruppe": ["Tanz der Unantastbarkeit", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "200"
+        },
+        {
+            "name": "Tanz der Wahrheit",
+            "gruppe": ["Tanz der Wahrheit", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tanz der Weisheit",
+            "gruppe": ["Tanz der Weisheit", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "150"
+        },
+        {
+            "name": "Tanz der Ungehorsams",
+            "gruppe": ["Tanz der Ungehorsams", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "150"
+        },
+        {
+            "name": "Tanz ohne Ende",
+            "gruppe": ["Tanz ohne Ende", "Magische Sonderfertigkeit", "Zaubertanz"],
+            "kosten": "200"
+        },
+        {
+            "name": "RITUALE DER ZIBILJA",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bienenfleiß",
+            "gruppe": ["Bienenfleiß", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Bienenkönigin",
+            "gruppe": ["Bienenkönigin", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "300"
+        },
+        {
+            "name": "Bienenschwarm",
+            "gruppe": ["Bienenschwarm", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Bienentanz",
+            "gruppe": ["Bienentanz", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "125"
+        },
+        {
+            "name": "Mackestopp",
+            "gruppe": ["Mackestopp", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Ruf des Bienenstocks",
+            "gruppe": ["Ruf des Bienenstocks", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "300"
+        },
+        {
+            "name": "Schwarmseele",
+            "gruppe": ["Schwarmseele", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Siegel der Ewigen Ruhe",
+            "gruppe": ["Siegel der Ewigen Ruhe", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Traumseherin",
+            "gruppe": ["Traumseherin", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Traumwissen",
+            "gruppe": ["Traumwissen", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Unsichtbare Chronik",
+            "gruppe": ["Unsichtbare Chronik", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Wachshaut",
+            "gruppe": ["Wachshaut", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "125"
+        },
+        {
+            "name": "Weisheit der Schrift",
+            "gruppe": ["Weisheit der Schrift", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Winterlager",
+            "gruppe": ["Winterlager", "Magische Sonderfertigkeit", "Zibiljaritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "RITUALE DER SCHAMANEN",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Arngrims Höhle",
+            "gruppe": ["Arngrims Höhle", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Aufmerksamer Wächter",
+            "gruppe": ["Aufmerksamer Wächter", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Blick in Liskas Auge",
+            "gruppe": ["Blick in Liskas Auge", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Blick ins Geisterreich Grad I",
+            "gruppe": ["Blick ins Geisterreich", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Blutsbund",
+            "gruppe": ["Blutsbund", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Brazoragh Ghorkai",
+            "gruppe": ["Brazoragh Ghorkai", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Ergochai Tairachi",
+            "gruppe": ["Ergochai Tairachi", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Exorzismus Grad II",
+            "gruppe": ["Exorzismus", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Farben des Krieges",
+            "gruppe": ["Farben des Krieges", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Fluch der Verwirrung",
+            "gruppe": ["Fluch der Verwirrung", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Freie Seelenfahrt",
+            "gruppe": ["Freie Seelenfahrt", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Gaben der Erde",
+            "gruppe": ["Gaben der Erde", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Geisterbote",
+            "gruppe": ["Geisterbote", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Geisterkerker",
+            "gruppe": ["Geisterkerker", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Geistheilung",
+            "gruppe": ["Geistheilung", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Geleit des Nipakau",
+            "gruppe": ["Geleit des Nipakau", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Gesang der Wölfe",
+            "gruppe": ["Gesang der Wölfe", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Gharyak Maruki",
+            "gruppe": ["Gharyak Maruki", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Großer Geisterbann",
+            "gruppe": ["Großer Geisterbann", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Hairuf",
+            "gruppe": ["Hairuf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Hauch des [Elements]",
+            "gruppe": ["Hauch des [Elements]", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Heimführung der Herde",
+            "gruppe": ["Heimführung der Herde", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Herz des Tieres",
+            "gruppe": ["Herz des Tieres", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Hilferuf",
+            "gruppe": ["Hilferuf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Jagdfieber",
+            "gruppe": ["Jagdfieber", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Khurkachai Tairachi",
+            "gruppe": ["Khurkachai Tairachi", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Kraft der Tayas",
+            "gruppe": ["Kraft der Tayas", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Kraft des Tieres",
+            "gruppe": ["Kraft des Tieres", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "M'char Utrak Rikaii",
+            "gruppe": ["M'char Utrak Rikaii", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Macht der Elemente",
+            "gruppe": ["Macht der Elemente", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Macht des Blutes",
+            "gruppe": ["Macht des Blutes", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Mailam Rekdais Segen",
+            "gruppe": ["Mailam Rekdais Segen", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Mammutruf",
+            "gruppe": ["Mammutruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Ogerruf",
+            "gruppe": ["Ogerruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Pfad der Blutrache",
+            "gruppe": ["Pfad der Blutrache", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Rat der Ahnen",
+            "gruppe": ["Rat der Ahnen", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Regentanz",
+            "gruppe": ["Regentanz", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Reinigen des Wassers",
+            "gruppe": ["Reinigen des Wassers", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Reißgrams Fährte",
+            "gruppe": ["Reißgrams Fährte", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Reitender Geist",
+            "gruppe": ["Reitender Geist", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Rikais Verderben",
+            "gruppe": ["Rikais Verderben", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Rinderruf",
+            "gruppe": ["Rinderruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Ruf des Schamanen",
+            "gruppe": ["Ruf des Schamanen", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Schlangenfluch",
+            "gruppe": ["Schlangenfluch", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Schlangengeist",
+            "gruppe": ["Schlangengeist", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Schlingerruf",
+            "gruppe": ["Schlingerruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Schomas Kraf",
+            "gruppe": ["Schomas Kraf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Schutz der Jurte",
+            "gruppe": ["Schutz der Jurte", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Schützende Rotte",
+            "gruppe": ["Schützende Rotte", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Seeschlangenruf",
+            "gruppe": ["Seeschlangenruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "250"
+        },
+        {
+            "name": "Stimme des Nipakau",
+            "gruppe": ["Stimme des Nipakau", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tabuzone",
+            "gruppe": ["Tabuzone", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Tauschplatz",
+            "gruppe": ["Tauschplatz", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Tiere aus Farben",
+            "gruppe": ["Tiere aus Farben", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Tränke meine Herde",
+            "gruppe": ["Tränke meine Herde", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Weckruf",
+            "gruppe": ["Weckruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Weg des Windes",
+            "gruppe": ["Weg des Windes", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Wegzeichen",
+            "gruppe": ["Wegzeichen", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Weidegründe finden",
+            "gruppe": ["Weidegründe finden", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Wild finden",
+            "gruppe": ["Wild finden", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Wildschweinruf",
+            "gruppe": ["Wildschweinruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Wolfsfluch",
+            "gruppe": ["Wolfsfluch", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Wolfsruf",
+            "gruppe": ["Wolfsruf", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zeichen setzen",
+            "gruppe": ["Zeichen setzen", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zorn des Berglöwen",
+            "gruppe": ["Zorn des Berglöwen", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "RITUALE DER KNOCHENKEULE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Bann der Keule",
+            "gruppe": ["Bann der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Geist der Keule",
+            "gruppe": ["Geist der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Gespür der Keule",
+            "gruppe": ["Gespür der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Härte der Keule",
+            "gruppe": ["Härte der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "50"
+        },
+        {
+            "name": "Hilfe der Keule",
+            "gruppe": ["Hilfe der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Kraft der Keule",
+            "gruppe": ["Kraft der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "75"
+        },
+        {
+            "name": "Nähe zur Natur",
+            "gruppe": ["Nähe zur Natur", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Opferkeule",
+            "gruppe": ["Opferkeule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Weihe der Keule",
+            "gruppe": ["Zauber der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zauber der Keule",
+            "gruppe": ["Bann der Keule", "Magische Sonderfertigkeit", "Schamanenritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "RITUALE DER DURRO-DÛN",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Hauch des Odûn",
+            "gruppe": ["Hauch des Odûn", "Magische Sonderfertigkeit", "Gjalskerritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Haut des Odûn",
+            "gruppe": ["Haut des Odûn", "Magische Sonderfertigkeit", "Gjalskerritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Blut des Odûn",
+            "gruppe": ["Blut des Odûn", "Magische Sonderfertigkeit", "Gjalskerritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Ruf des Odûn",
+            "gruppe": ["Ruf des Odûn", "Magische Sonderfertigkeit", "Gjalskerritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Seele des Odûn",
+            "gruppe": ["Seele des Odûn", "Magische Sonderfertigkeit", "Gjalskerritual"],
+            "kosten": "300"
+        },
+        {
+            "name": "RITUALE DER DERWISCHE",
+            "gruppe": [""],
+            "kosten": "0"
+        },
+        {
+            "name": "Rastullahs Güte",
+            "gruppe": ["Rastullahs Güte", "Magische Sonderfertigkeit", "Derwischritual"],
+            "kosten": "150"
+        },
+        {
+            "name": "Der Ruf des Krieges",
+            "gruppe": ["Der Ruf des Krieges", "Magische Sonderfertigkeit", "Derwischritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Der Schutz Rastullahs",
+            "gruppe": ["Der Schutz Rastullahs", "Magische Sonderfertigkeit", "Derwischritual"],
+            "kosten": "200"
+        },
+        {
+            "name": "Sturm der Wüste",
+            "gruppe": ["Sturm der Wüste", "Magische Sonderfertigkeit", "Derwischritual"],
+            "kosten": "100"
+        },
+        {
+            "name": "Zorn des Gottgefälligen",
+            "gruppe": ["Zorn des Gottgefälligen", "Magische Sonderfertigkeit", "Derwischritual"],
+            "kosten": "250"
+        }
+    ],
+    "liturgien":[
+        {
+            "name": "Eidsegen",
+            "gruppe": ["Eidsegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Feuersegen",
+            "gruppe": ["Feuersegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Geburtssegen",
+            "gruppe": ["Geburtssegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Glückssegen",
+            "gruppe": ["Glückssegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Grabsegen",
+            "gruppe": ["Grabsegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Harmoniesegen",
+            "gruppe": ["Harmoniesegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Heilungssegen",
+            "gruppe": ["Heilungssegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Märtyrersegen",
+            "gruppe": ["Märtyrersegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Schutzsegen",
+            "gruppe": ["Schutzsegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Speisesegen",
+            "gruppe": ["Speisesegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Tranksegen",
+            "gruppe": ["Tranksegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Weisheitssegen",
+            "gruppe": ["Weisheitssegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Aller Welt Freund",
+            "gruppe": ["Aller Welt Freund", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Allmacht der Lohe",
+            "gruppe": ["Allmacht der Lohe", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Alte Schuppen",
+            "gruppe": ["Alte Schuppen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Anathema",
+            "gruppe": ["Anathema", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Angroschs Opfergabe",
+            "gruppe": ["Angroschs Opfergabe", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Anrufung der Erdkraft",
+            "gruppe": ["Anrufung der Erdkraft", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Anrufung der Winde",
+            "gruppe": ["Anrufung der Winde", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Anrufung Nuiannas",
+            "gruppe": ["Anrufung Nuiannas", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Arcanum Interdictum ",
+            "gruppe": ["Arcanum Interdictum ", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Argelions bannende Hand ",
+            "gruppe": ["Argelions bannende Hand ", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Argelions Mantel",
+            "gruppe": ["Argelions Mantel", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Argelions Spiegel",
+            "gruppe": ["Argelions Spiegel", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Ascandears Hingabe",
+            "gruppe": ["Ascandears Hingabe", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Auge des Händlers",
+            "gruppe": ["Auge des Händlers", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Auge des Mondes",
+            "gruppe": ["Auge des Mondes", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Auge Xeledons, Xeledons helles Licht",
+            "gruppe": ["Auge Xeledons, Xeledons helles Licht", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Aura der Form",
+            "gruppe": ["Aura der Form", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Aura des Regenbogens",
+            "gruppe": ["Aura des Regenbogens", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Auraprüfung",
+            "gruppe": ["Auraprüfung", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Azilas Quellgesang",
+            "gruppe": ["Azilas Quellgesang", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Bannfluch des Heiligen Khalid",
+            "gruppe": ["Bannfluch des Heiligen Khalid", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Begehen der Heiligen Wasser",
+            "gruppe": ["Begehen der Heiligen Wasser", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Belemans Hochzeit",
+            "gruppe": ["Belemans Hochzeit", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Bindung der Schlange",
+            "gruppe": ["Bindung der Schlange", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Birkenzweig",
+            "gruppe": ["Birkenzweig", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Bishdariels Auge",
+            "gruppe": ["Bishdariels Auge", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Bishdariels Warnung",
+            "gruppe": ["Bishdariels Warnung", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Blendstrahl aus Alveran",
+            "gruppe": ["Blendstrahl aus Alveran", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Blick der Weberin",
+            "gruppe": ["Blick der Weberin", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Blick für das Handwerk",
+            "gruppe": ["Blick für das Handwerk", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Blick in die Flammen",
+            "gruppe": ["Blick in die Flammen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Bootssegen",
+            "gruppe": ["Bootssegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Borons süße Gnade",
+            "gruppe": ["Borons süße Gnade", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Buchprüfung",
+            "gruppe": ["Buchprüfung", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Canyzeths Weisheit",
+            "gruppe": ["Canyzeths Weisheit", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Conagas Ruf",
+            "gruppe": ["Conagas Ruf", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Daradors Bann der Schatten",
+            "gruppe": ["Daradors Bann der Schatten", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Das Schwarze Fell durch das Rote Blut",
+            "gruppe": ["Das Schwarze Fell durch das Rote Blut", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Der über das Schlachtfeld schreitet",
+            "gruppe": ["Der über das Schlachtfeld schreitet", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Des Einen bezaubernder Sphärenklang",
+            "gruppe": ["Des Einen bezaubernder Sphärenklang", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Die goldene Hand",
+            "gruppe": ["Die goldene Hand", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Dorlens Verbrüderung",
+            "gruppe": ["Dorlens Verbrüderung", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Dreifacher Saatsegen",
+            "gruppe": ["Dreifacher Saatsegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Efferdsegen",
+            "gruppe": ["Efferdsegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Eherne Kraft - lodernder Zorn",
+            "gruppe": ["Eherne Kraft - lodernder Zorn", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Ehrenhafter Zweikampf",
+            "gruppe": ["Ehrenhafter Zweikampf", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Eidechsenhaut",
+            "gruppe": ["Eidechsenhaut", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Ein Bild für die Ewigkeit",
+            "gruppe": ["Ein Bild für die Ewigkeit", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Ein Freund in Zeiten der Not",
+            "gruppe": ["Ein Freund in Zeiten der Not", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Elementwandlung",
+            "gruppe": ["Elementwandlung", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Entzug von Nandus' Gaben",
+            "gruppe": ["Entzug von Nandus' Gaben", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Erneuerung des Geborstenen",
+            "gruppe": ["Erneuerung des Geborstenen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Erzieherische Maßnahme der heiligen Yalsicena",
+            "gruppe": ["Erzieherische Maßnahme der heiligen Yalsicena", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Etilias Gnade",
+            "gruppe": ["Etilias Gnade", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Ewige Jugend",
+            "gruppe": ["Ewige Jugend", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Ewiger Wächter",
+            "gruppe": ["Ewiger Wächter", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Ewiges Wissen",
+            "gruppe": ["Ewiges Wissen", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Exkommunikation",
+            "gruppe": ["Exkommunikation", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Exorzismus",
+            "gruppe": ["Exorzismus ", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Firuns Einsicht",
+            "gruppe": ["Firuns Einsicht", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Firuns Zorn",
+            "gruppe": ["Firuns Zorn", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Flagge des Regenbogens",
+            "gruppe": ["Flagge des Regenbogens", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Fluch wider die Ungläubigen",
+            "gruppe": ["Fluch wider die Ungläubigen", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Freundliche Aufnahme",
+            "gruppe": ["Freundliche Aufnahme", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Frieden der Melodie",
+            "gruppe": ["Frieden der Melodie", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Fünfte Lobpreisung des Frühlings",
+            "gruppe": ["Fünfte Lobpreisung des Frühlings", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Fürbitten des Heiligen Therbûn",
+            "gruppe": ["Fürbitten des Heiligen Therbûn", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Garafans Gleißende Schwingen",
+            "gruppe": ["Garafans Gleißende Schwingen", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Gebet des kristallklaren Blicks",
+            "gruppe": ["Gebet des kristallklaren Blicks", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Gebieter der Lava",
+            "gruppe": ["Gebieter der Lava", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Geläutert sei Erz und Goldgestein",
+            "gruppe": ["Geläutert sei Erz und Goldgestein", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Gemeinschaft der treuen Gefährten",
+            "gruppe": ["Gemeinschaft der treuen Gefährten", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Gesang der Delphine ",
+            "gruppe": ["Gesang der Delphine ", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Gesegneter Fang",
+            "gruppe": ["Gesegneter Fang", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Geteiltes Leid",
+            "gruppe": ["Geteiltes Leid", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Gift der Erkenntnis",
+            "gruppe": ["Gift der Erkenntnis ", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Gleichklang des Geistes",
+            "gruppe": ["Gleichklang des Geistes", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Göttliche Strafe",
+            "gruppe": ["Göttliche Strafe", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Göttliche Verständigung",
+            "gruppe": ["Göttliche Verständigung", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Göttliches Zeichen",
+            "gruppe": ["Göttliches Zeichen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Goldene Rüstung",
+            "gruppe": ["Goldene Rüstung", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Goldener Blick",
+            "gruppe": ["Goldener Blick", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Golgaris Zwielicht",
+            "gruppe": ["Golgaris Zwielicht", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Gott der Götter",
+            "gruppe": ["Gott der Götter", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Graues Siegel",
+            "gruppe": ["Graues Siegel", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Große Weihe des Heimsteins",
+            "gruppe": ["Große Weihe des Heimsteins", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Großer Eidsegen",
+            "gruppe": ["Großer Eidsegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Großer Speisesegen",
+            "gruppe": ["Großer Speisesegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Großer Weihesegen der Waffe",
+            "gruppe": ["Großer Weihesegen der Waffe", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Gruß des Versunkenen",
+            "gruppe": ["Gruß des Versunkenen", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Handwerkssegen",
+            "gruppe": ["Handwerkssegen", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Hashnabiths Flehen",
+            "gruppe": ["Hashnabiths Flehen", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Hauch Borons",
+            "gruppe": ["Hauch Borons", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Hausfrieden",
+            "gruppe": ["Hausfrieden", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Heilige Schmiedeglut",
+            "gruppe": ["Heilige Schmiedeglut", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Heiliger Befehl",
+            "gruppe": ["Heiliger Befehl", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Heiliges Liebesspiel",
+            "gruppe": ["Heiliges Liebesspiel", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Herbeirufung der Diener des Herrn",
+            "gruppe": ["Herbeirufung der Diener des Herrn", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Herbeirufung der Heerscharen des Rattenkindes",
+            "gruppe": ["Herbeirufung der Heerscharen des Rattenkindes", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Herr über Feuer und Glut",
+            "gruppe": ["Herr über Feuer und Glut", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Hilfe in der Not",
+            "gruppe": ["Hilfe in der Not", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Hoftag der Sprachen",
+            "gruppe": ["Hoftag der Sprachen", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Indoktrination",
+            "gruppe": ["Indoktrination", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Ingalfs Alchimie",
+            "gruppe": ["Ingalfs Alchimie", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Ingerimms Zorn verschone uns",
+            "gruppe": ["Ingerimms Zorn verschone uns", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Initiation",
+            "gruppe": ["Initiation", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Innere Ruhe",
+            "gruppe": ["Innere Ruhe", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Jagdglück",
+            "gruppe": ["Jagdglück", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Kälbchensegen",
+            "gruppe": ["Kälbchensegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Khablas Jugend",
+            "gruppe": ["Khablas Jugend", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Khablas makelloser Leib",
+            "gruppe": ["Khablas makelloser Leib", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Kirschblütenregen",
+            "gruppe": ["Kirschblütenregen", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Kleine Liturgie des Heiligen Nemekath",
+            "gruppe": ["Kleine Liturgie des Heiligen Nemekath", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Kleine Segnung des Heimsteins",
+            "gruppe": ["Kleine Segnung des Heimsteins", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Kleiner Giftbann",
+            "gruppe": ["Kleiner Giftbann", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Konsekration",
+            "gruppe": ["Konsekration", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Kräftigung der Schwachen und Versehrten",
+            "gruppe": ["Kräftigung der Schwachen und Versehrten", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Largorax' Hammer rufen",
+            "gruppe": ["Largorax' Hammer rufen", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Levthans Fesseln",
+            "gruppe": ["Levthans Fesseln", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Licht des Herrn",
+            "gruppe": ["Licht des Herrn", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Licht des verborgenen Pfades",
+            "gruppe": ["Licht des verborgenen Pfades", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Lidaris Herz",
+            "gruppe": ["Lidaris Herz", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Lohn der Unverzagten",
+            "gruppe": ["Lohn der Unverzagten", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Mannschaftssegen",
+            "gruppe": ["Mannschaftssegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Marbos Geleit",
+            "gruppe": ["Marbos Geleit", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Mikailspfeil",
+            "gruppe": ["Mikailspfeil", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Mondsilberzunge",
+            "gruppe": ["Mondsilberzunge", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Namenlose Kälte",
+            "gruppe": ["Namenlose Kälte", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Namenlose Raserei",
+            "gruppe": ["Namenlose Raserei", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Namensloser Zweifel, Namenlose Erleuchtung",
+            "gruppe": ["Namensloser Zweifel, Namenlose Erleuchtung", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Namenloses Vergessen",
+            "gruppe": ["Namenloses Vergessen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Namekaths Geisterblick",
+            "gruppe": ["Namekaths Geisterblick", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Namekaths Zwiesprache",
+            "gruppe": ["Namekaths Zwiesprache", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Neun Streiche in Einem",
+            "gruppe": ["Neun Streiche in Einem", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Nimmermüde Wanderschaft",
+            "gruppe": ["Nimmermüde Wanderschaft", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Objektsegen",
+            "gruppe": ["Objektsegen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Objektweihe",
+            "gruppe": ["Objektweihe", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Ordination",
+            "gruppe": ["Ordination", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Parinors Vermächtnis",
+            "gruppe": ["Parinors Vermächtnis", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Pech und Schwefel",
+            "gruppe": ["Pech und Schwefel", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Peraines Pflanzengespür",
+            "gruppe": ["Peraines Pflanzengespür", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Phexens Augenzwinkern",
+            "gruppe": ["Phexens Augenzwinkern", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Phexens Elsternflug",
+            "gruppe": ["Phexens Elsternflug", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Phexens Meisterschlüssel",
+            "gruppe": ["Phexens Meisterschlüssel", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Phexens Nebelleib",
+            "gruppe": ["Phexens Nebelleib", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Phexens Schatten",
+            "gruppe": ["Phexens Schatten", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Phexens Sternenwurf",
+            "gruppe": ["Phexens Sternenwurf", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Phexens Verteidigung",
+            "gruppe": ["Phexens Verteidigung", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Phexens wunderbare Verständigung",
+            "gruppe": ["Phexens wunderbare Verständigung", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Praios' Magiebann",
+            "gruppe": ["Praios' Magiebann", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Praios' Mahnung",
+            "gruppe": ["Praios' Mahnung", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Prophezeiung",
+            "gruppe": ["Prophezeiung", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Purgation",
+            "gruppe": ["Purgation", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Quellsegen",
+            "gruppe": ["Quellsegen", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Rahjalinas Farbenspiel",
+            "gruppe": ["Rahjalinas Farbenspiel", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Rahjalinas Kuss",
+            "gruppe": ["Rahjalinas Kuss", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Rahjas Begehren",
+            "gruppe": ["Rahjas Begehren", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Rahjas Fest der Freude",
+            "gruppe": ["Rahjas Fest der Freude", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Rahjas Freiheit ",
+            "gruppe": ["Rahjas Freiheit ", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Rahjas geheiligter Wein",
+            "gruppe": ["Rahjas geheiligter Wein", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Rahjas Rauschsegen",
+            "gruppe": ["Rahjas Rauschsegen", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Rahjas Schoß",
+            "gruppe": ["IV", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Rahjas Sinnlichkeit",
+            "gruppe": ["Rahjas Sinnlichkeit", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Reiches Land",
+            "gruppe": ["Reiches Land", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Reichung des Amethyst",
+            "gruppe": ["Reichung des Amethyst", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Reisesegen",
+            "gruppe": ["Reisesegen", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Revolution der Gedanken",
+            "gruppe": ["Revolution der Gedanken", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Ritus der Schlachthilfe",
+            "gruppe": ["Ritus der Schlachthilfe", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Rondras wundersame Rüstung",
+            "gruppe": ["Rondras wundersame Rüstung", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Ruf der Ferne",
+            "gruppe": ["Ruf der Ferne", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Ruf der Gefährten",
+            "gruppe": ["Ruf der Gefährten", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Ruf in Borons Arme",
+            "gruppe": ["Ruf in Borons Arme", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Ruf zum Bund wider die Mächte der Finsternis",
+            "gruppe": ["Ruf zum Bund wider die Mächte der Finsternis", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Ruf zur Ruhe",
+            "gruppe": ["Ruf zur Ruhen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Runjensweisung",
+            "gruppe": ["Runjensweisung", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Schattenlarve",
+            "gruppe": ["Schattenlarve", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Schlaf des Gesegneten",
+            "gruppe": ["Schlaf des Gesegneten", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Schlangenstab",
+            "gruppe": ["Schlangenstab", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Schleichende Fäulnis",
+            "gruppe": ["Schleichende Fäulnis", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Schneesturm",
+            "gruppe": ["Schneesturm", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Schnell wie eine Eidechse",
+            "gruppe": ["Schnell wie eine Eidechse", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Schrifttum ferner Lande",
+            "gruppe": ["Schrifttum ferner Lande", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Schutz des Geleges",
+            "gruppe": ["Schutz des Geleges", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Schwindende Zauberkraft",
+            "gruppe": ["Schwindende Zauberkraft", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Sechs Leben des Mungos",
+            "gruppe": ["Sechs Leben des Mungos", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Seelenbannung",
+            "gruppe": ["Seelenbannung", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Seelengefährte",
+            "gruppe": ["Seelengefährte", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Seelenprüfung",
+            "gruppe": ["Seelenprüfung", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Seelenschatten",
+            "gruppe": ["Seelenschatten", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Segen der heiligen Ardare",
+            "gruppe": ["Segen der heiligen Ardare", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Segen der heiligen Noiona",
+            "gruppe": ["Segen der heiligen Noiona", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Segen der heiligen Theria",
+            "gruppe": ["Segen der heiligen Theria", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Segen der heiligen Velvenya",
+            "gruppe": ["Segen der heiligen Velvenya", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Segen des heiligen Hlûthar",
+            "gruppe": ["Segen des heiligen Hlûthar", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Segen des Plättlings",
+            "gruppe": ["Segen des Plättlings", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Segenreiches Wasser",
+            "gruppe": ["Segenreiches Wasser", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Segnung der Schlacht",
+            "gruppe": ["Segnung der Schlacht", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Segnung der stählernen Stirn",
+            "gruppe": ["Segnung der stählernen Stirn", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Segnung des Heims",
+            "gruppe": ["Segnung des Heims", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Sichere Wanderung im Schnee",
+            "gruppe": ["Sichere Wanderung im Schnee", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Sicherer Weg durch Fels",
+            "gruppe": ["Sicherer Weg durch Fels", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Sicht auf Madas Welt",
+            "gruppe": ["Sicht auf Madas Welt", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Siegel Borons",
+            "gruppe": ["Siegel Borons", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Sippenfluch",
+            "gruppe": ["Sippenfluch", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Speisung der Bedürftigen",
+            "gruppe": ["Speisung der Bedürftigen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Speisung der hungernden Seelen",
+            "gruppe": ["Speisung der hungernden Seelen", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Sprechende Symbole",
+            "gruppe": ["Sprechende Symbole", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Sterne funkeln Immerfort",
+            "gruppe": ["Sterne funkeln immerfort", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Sternenglanz",
+            "gruppe": ["Sternenglanz", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Sternenspur",
+            "gruppe": ["Sternenspur", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Sternenstaub",
+            "gruppe": ["Sternenstaub", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Sulvas Gnade",
+            "gruppe": ["Sulvas Gnade", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Swafnirs Fluke",
+            "gruppe": ["Swafnirs Fluke", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Swafnirs Ruhelied",
+            "gruppe": ["Swafnirs Ruhelied", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Teilung des Wassers",
+            "gruppe": ["Teilung des Wassers", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Thalionmels Schlachtgesang",
+            "gruppe": ["Thalionmels Schlachtgesang", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Therbûns Erkenntnis",
+            "gruppe": ["Therbûns Erkenntnis", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Tierempathie",
+            "gruppe": ["Tierempathie", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Tiergestalt",
+            "gruppe": ["Tiergestalt", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Travias Gebet der sicheren Zuflucht",
+            "gruppe": ["Travias Gebet der sicheren Zuflucht", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Travinians Segen der Schwelle",
+            "gruppe": ["Travinians Segen der Schwelle", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Trophäe erhalten",
+            "gruppe": ["Trophäe erhalten", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Tsas ewige Jugend",
+            "gruppe": ["Tsas ewige Jugend", "Liturgie"],
+            "grad": "VI"
+        },
+        {
+            "name": "Tsas heiliges Lebensgeschenk",
+            "gruppe": ["Tsas heiliges Lebensgeschenk", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Tsas Lebensschutz",
+            "gruppe": ["Tsas Lebensschutz", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Tsas segenreicher Neuanfang",
+            "gruppe": ["Tsas segenreicher Neuanfang", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Tsas wundersame Erneuerung",
+            "gruppe": ["Tsas wundersame Erneuerung", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Tsas wundersame Fruchtbarkeit",
+            "gruppe": ["Tsas wundersame Fruchtbarkeit", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Ucuris Geleit",
+            "gruppe": ["Ucuris Geleit", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Über die Wolken",
+            "gruppe": ["Über die Wolken", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Unterpfand des Heiligen Rhys",
+            "gruppe": ["Unterpfand des Heiligen Rhys", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Unverstellter Blick",
+            "gruppe": ["Unverstellter Blick", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Urischars ordnender Blick",
+            "gruppe": ["Urischars ordnender Blick", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Vaês Tränen",
+            "gruppe": ["Vaês Tränen", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Verborgen wie der Neumond",
+            "gruppe": ["Verborgen wie der Neumond", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Vertrauter der Flamme",
+            "gruppe": ["Vertrauter der Flamme", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Vertrauter des Felsens",
+            "gruppe": ["Vertrauter des Felsens", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Vertreibung des Dunkelsinns",
+            "gruppe": ["Vertreibung des Dunkelsinns", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Visionssuche",
+            "gruppe": ["Visionssuche", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Wachsamkeit der Gänse",
+            "gruppe": ["Wachsamkeit der Gänse", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Waffenfluch",
+            "gruppe": ["Waffenfluch", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Waliburias Wehr",
+            "gruppe": ["Waliburias Wehr", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Wandeln in Hesindes Hain",
+            "gruppe": ["Wandeln in Hesindes Hain", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Weg des Fuchses",
+            "gruppe": ["Weg des Fuchses", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Wegzehrung der Heiligen Selma",
+            "gruppe": ["Wegzehrung der Heiligen Selma"],
+            "grad": "I"
+        },
+        {
+            "name": "Weihe der ewigen Flamme",
+            "gruppe": ["Weihe der ewigen Flamme", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Weihe der letzten Ruhestatt",
+            "gruppe": ["Weihe der letzten Ruhestatt", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Weisung des Himmels",
+            "gruppe": ["Weisung des Himmels", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Wille zur Wahrheit",
+            "gruppe": ["Wille zur Wahrheit", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Winterschlaf",
+            "gruppe": ["Winterschlaf", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Wunderbarer Geschlechterwandel",
+            "gruppe": ["Wunderbarer Geschlechterwandel", "Liturgie"],
+            "grad": "III"
+        },
+        {
+            "name": "Wundersame Blütenpracht",
+            "gruppe": ["Wundersame Blütenpracht", "Liturgie"],
+            "grad": "I"
+        },
+        {
+            "name": "Wundersames Teilen des Martyriums",
+            "gruppe": ["Wundersames Teilen des Martyriums", "Liturgie"],
+            "grad": "IV"
+        },
+        {
+            "name": "Wundsegen",
+            "gruppe": ["Wundsegen", "Liturgie"],
+            "grad": "II"
+        },
+        {
+            "name": "Zerschmetternder Bannstrahl",
+            "gruppe": ["Zerschmetternder Bannstrahl", "Liturgie"],
+            "grad": "V"
+        },
+        {
+            "name": "Zuflucht finden",
+            "gruppe": ["Zuflucht finden", "Liturgie"],
+            "grad": "II"
+        }
     ]
 }
