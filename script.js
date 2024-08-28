@@ -1,5 +1,7 @@
+const pfad='https://cdn.discordapp.com/attachments/226761368206835712/1278281562940641371/data.json?ex=66d03bf9&is=66ceea79&hm=cb5a88efa0ce4703017049da469eb948f69bd68cc43f3a747fdbe97a9d7e4f42&';
+
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns(data);
@@ -218,22 +220,39 @@ function setupEventListeners(data) {
             const row = event.target.closest('.talent-row, .zauber-row, .anderes-row, .liturgien-row');
             const categorySelect = row.querySelector('.steigerungskategorie-select');
             const gradSelect = row.querySelector('.liturgiegrad-select');
-            const lehrmethode = row.querySelector('.lehrmeister-select').value
-            
+            const lehrmethode = row.querySelector('.lehrmeister-select')?.value || '';
+
             let selectedItem = data.talente.find(talent => talent.name === selectedName) ||
                 data.zauber.find(zauber => zauber.name === selectedName) ||
-                data.andere.find(item => item.name === selectedName)|| data.liturgien.find(liturgie => liturgie.name === selectedName); 
+                data.andere.find(item => item.name === selectedName) ||
+                data.liturgien.find(liturgie => liturgie.name === selectedName);
 
-            if (selectedItem  && selectedItem.hasOwnProperty("steigerungskategorie")) 
-                {
+            if (selectedItem && selectedItem.hasOwnProperty("steigerungskategorie")) {
                 categorySelect.value = getRealFactor(lehrmethode, selectedItem);
-                }
-            else if(selectedItem  && selectedItem.hasOwnProperty("grad"))
-                {
-                    gradSelect.value = selectedItem.grad;
-                }
+            } else if (selectedItem && selectedItem.hasOwnProperty("grad")) {
+                gradSelect.value = selectedItem.grad;
+            }
         });
     });
+
+        // Add event listener for .steigerungskategorie-select dropdown
+        document.querySelectorAll('.lehrmeister-select').forEach(select => {
+            select.addEventListener('change', (event) => {
+                const row = event.target.closest('.talent-row, .zauber-row, .anderes-row, .liturgien-row');
+                const categorySelect = row.querySelector('.steigerungskategorie-select');
+                const selectedName = row.querySelector('.talent-select, .zauber-select, .anderes-select, .liturgie-select').value;
+                const lehrmethode = event.target.value;
+    
+                let selectedItem = data.talente.find(talent => talent.name === selectedName) ||
+                    data.zauber.find(zauber => zauber.name === selectedName) ||
+                    data.andere.find(item => item.name === selectedName) ||
+                    data.liturgien.find(liturgie => liturgie.name === selectedName);
+    
+                if (selectedItem && selectedItem.hasOwnProperty("steigerungskategorie")) {
+                    categorySelect.value = getRealFactor(lehrmethode, selectedItem);
+                }
+            });
+        });
 }
 function setupImportExportEventListeners() {
     document.getElementById('export-btn').addEventListener('click', exportComboboxState);
@@ -297,7 +316,7 @@ function addTalentRow() {
     container.appendChild(row);
 
     // Erneut alle Talente für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: data.talente, zauber: [], andere: [], sonderfertigkeiten: [], rituale: [], liturgien: []});
@@ -351,7 +370,7 @@ function addZauberRow() {
     container.appendChild(row);
 
     // Erneut alle Zauber für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: data.zauber, andere: [], sonderfertigkeiten: [], rituale: [], liturgien: []});
@@ -404,7 +423,7 @@ function addAnderesRow() {
     container.appendChild(row);
 
     // Erneut alle Daten für das neue Dropdown laden
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: data.andere, sonderfertigkeiten: [], rituale: [], liturgien: []});
@@ -422,6 +441,7 @@ function addSonderfertigkeitRow() {
             <option value="" disabled selected>Wähle eine Sonderfertigkeit</option>
         </select>
         <select class="lehrmeister-select">
+            <option value="S">S</option>
             <option selected="selected value="H2H">H2H</option>
             <option value="LM">LM</option>
             <option value="SE">SE</option>
@@ -462,7 +482,7 @@ function addSonderfertigkeitRow() {
     container.appendChild(row);
 
     // Reload all Sonderfertigkeiten for the new dropdown
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns({talente: [], zauber: [], andere: [], sonderfertigkeiten: data.sonderfertigkeiten , rituale: [], liturgien: []});
@@ -481,6 +501,7 @@ function addRitualeRow() {
             <option value="" disabled selected>Wähle ein Ritual</option>
         </select>
          <select class="lehrmeister-select">
+            <option value="S">S</option>
           <option selected="selected value="H2H">H2H</option>
           <option value="LM">LM</option>
         <option value="SE">SE</option>
@@ -520,7 +541,7 @@ function addRitualeRow() {
     container.appendChild(row);
 
     // Reload all Rituale for the new dropdown
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns({talente: [], zauber: [], andere: [], sonderfertigkeiten: [], rituale: data.rituale, liturgien: []});
@@ -586,7 +607,7 @@ function addLiturgienRow() {
     container.appendChild(row);
 
     // Reload all Liturgien for the new dropdown
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
         .then(response => response.json())
         .then(data => {
             populateDropdowns({ talente: [], zauber: [], andere: [], sonderfertigkeiten: [], rituale: [], liturgien: data.liturgien});
@@ -601,7 +622,7 @@ function deleteRow(button) {
 
 function calculateAP() {
 
-    fetch('https://cdn.discordapp.com/attachments/226761368206835712/1277988321729187891/data.json?ex=66cf2adf&is=66cdd95f&hm=5ef9dde3bd91b9d4eee686d0c61fbd1fa21b14854d58dcade77c359dbea14bf5&')
+    fetch(pfad)
             .then(response => response.json())
             .then(data => {
                 getRealAPCost(data);
@@ -707,7 +728,6 @@ if (item.hasOwnProperty("gruppe"))
                     {
                     if((gruppe==="Ringen" || gruppe==="Akrobatik" || gruppe==="Gaukeleien" || gruppe==="Körperbeherrschung" || gruppe==="Schleichen" || gruppe==="Sich Verstecken" || gruppe==="Tanzen" || gruppe==="Fesseln/Entfesseln") && vorteil === "Schlangenmensch")
                         {
-                            console.log("yip")
                             globalCounter-=1;
                             console.log(`Wir sind Schlangenmensch! Das Steigern von ${gruppe} ist um ${globalCounter} Spalten verschoben`);
                         }
@@ -722,11 +742,22 @@ if (item.hasOwnProperty("gruppe"))
                         }
                         
                 }); 
-        });
+        
+                if(lehrmethode === "S" && (gruppe==="Gabe"||gruppe==="Liturgiekenntnis"||gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Magieresistenz"||gruppe==="Eigenschaft"))
+                    {
+                        globalCounter-=1;
+                        console.log(`An dieser Stelle muss einmal ausgeglichen Werden, da ${gruppe} nicht durch Selbststudium modifiziert werden soll`);
+                    }
+                if(lehrmethode === "LM" && (gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft"||gruppe==="Magieresistenz"))
+                    {
+                        globalCounter+=1;
+                        console.log(`An dieser Stelle muss einmal ausgeglichen Werden, da ${gruppe} nicht durch Lehrmeister modifiziert werden soll`);
+                    }
+            });
         
     } 
-else
-{
+    else
+    {
     item.merkmale.forEach(merkmale =>
         { 
             state.magischBegabungen.forEach(begabung =>
@@ -769,7 +800,7 @@ else
                         }
                 });
 
-}
+    }
 
 
     if(lehrmethode === "S")
@@ -860,7 +891,7 @@ function getRealAPCost(data)
         row.querySelector('.ap-cost').value = apCost;
 
     });
-    setzeZeitUndGeldkosten();
+    setzeZeitUndGeldkosten(data);
     totalCost += apCost;
     document.getElementById('total-cost').value = totalCost +" AP";
 
@@ -900,7 +931,7 @@ function getRealAPCost(data)
         });
         row.querySelector('.ap-cost').value = apCost;
     });
-    setzeZeitUndGeldkosten();
+    setzeZeitUndGeldkosten(data);
     totalCost += apCost;
     document.getElementById('total-cost').value = totalCost +" AP";
 
@@ -924,7 +955,6 @@ function getRealAPCost(data)
 
                     state.profanVorteile.forEach(vorteil =>
                         {
-                            console.log(selectedItem);
                             selectedItem.gruppe.forEach(gruppe =>
                                 { 
                                     if(vorteil === "Gutes Gedächtnis" && (gruppe === "Ritualkenntnis allgemein"|| gruppe === "Ritualkenntnis Alchimist"|| gruppe === "Ritualkenntnis Scharlatan"|| gruppe === "Liturgiekenntnis"))
@@ -940,7 +970,7 @@ function getRealAPCost(data)
 
         row.querySelector('.ap-cost').value = apCost;
     });
-    setzeZeitUndGeldkosten();
+    setzeZeitUndGeldkosten(data);
     totalCost += apCost;
     document.getElementById('total-cost').value = totalCost +" AP";
     });
@@ -1132,7 +1162,7 @@ function getRealAPCost(data)
                     }
 
         row.querySelector('.ap-cost').value = apCost;
-        setzeZeitUndGeldkosten();
+        setzeZeitUndGeldkosten(data);
         totalCost += apCost;
     });
 
@@ -1195,7 +1225,7 @@ function getRealAPCost(data)
                     apCost = Math.round(apCost = apCost*0.5);
                 }
     row.querySelector('.ap-cost').value = apCost;
-    setzeZeitUndGeldkosten();
+    setzeZeitUndGeldkosten(data);
     totalCost += apCost;
 });
 
@@ -1203,9 +1233,8 @@ document.getElementById('total-cost').value = totalCost +" AP";
 
 }
 
-function setzeZeitUndGeldkosten()
-{
-    console.log("aufgerufen!")
+function setzeZeitUndGeldkosten(data)
+{   
     const talentRows = document.querySelectorAll('.talent-row');
     const zauberRows = document.querySelectorAll('.zauber-row');
     const anderesRows = document.querySelectorAll('.anderes-row');
@@ -1214,6 +1243,7 @@ function setzeZeitUndGeldkosten()
     totalCost=0;
     totalTimeCost=0;
     talentRows.forEach(row => {
+        selectedItem = data.talente.find(talent => talent.name === row.querySelector('.talent-select').value);
         if(row.querySelector('.lehrmeister-select').value === "SE"||row.querySelector('.lehrmeister-select').value === "V")
             {
                 row.querySelector('.zeit-field').value = 0;
@@ -1234,7 +1264,7 @@ function setzeZeitUndGeldkosten()
             {
             desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
             row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
-            row.querySelector('.geld-field').value = ((row.querySelector('.zeit-field').value)*desiredLM*1.5)
+            row.querySelector('.geld-field').value = Math.round(((row.querySelector('.zeit-field').value)*desiredLM*1.5))
             }
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);       
@@ -1260,13 +1290,15 @@ function setzeZeitUndGeldkosten()
             {
             desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
             row.querySelector('.zeit-field').value = Math.round((row.querySelector('.ap-cost').value)*0.5);
-            row.querySelector('.geld-field').value = ((row.querySelector('.zeit-field').value)*desiredLM*1.5)
+            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*desiredLM*1.5)
             }
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
     
     });
     anderesRows.forEach(row => {
+        selectedItem = data.andere.find(andere => andere.name === row.querySelector('.anderes-select').value);
+
         if(row.querySelector('.lehrmeister-select').value === "SE"||row.querySelector('.lehrmeister-select').value === "V")
             {
                 row.querySelector('.zeit-field').value = 0;
@@ -1274,20 +1306,48 @@ function setzeZeitUndGeldkosten()
             }
         else if (row.querySelector('.lehrmeister-select').value === "S")
             {
-                row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
-                row.querySelector('.geld-field').value = 0;
-            }
-        else if (row.querySelector('.lehrmeister-select').value === "H2H")
-            {
-            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
-            row.querySelector('.geld-field').value = (row.querySelector('.zeit-field').value)*((row.querySelector('.desired-value').value))
+                selectedItem.gruppe.forEach(gruppe =>{
+                    if(gruppe==="Magieresistenz"||gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft")
+                        {
+                            row.querySelector('.zeit-field').value = 0;
+                            row.querySelector('.geld-field').value = 0;
+                        }
+                    else
+                        {
+                            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
+                            row.querySelector('.geld-field').value = 0;
+                        }
+                });
 
             }
+        else if (row.querySelector('.lehrmeister-select').value === "H2H")
+            {       selectedItem.gruppe.forEach(gruppe =>{
+                    if(gruppe==="Magieresistenz"||gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft")
+                        {
+                            row.querySelector('.zeit-field').value = 0;
+                            row.querySelector('.geld-field').value = 0;
+                        }
+                    else
+                        {
+                            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
+                            row.querySelector('.geld-field').value = (row.querySelector('.zeit-field').value)*((row.querySelector('.desired-value').value))
+                        }
+                });
+            }
         else if (row.querySelector('.lehrmeister-select').value === "LM")
-            {
-            desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
-            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
-            row.querySelector('.geld-field').value = ((row.querySelector('.zeit-field').value)*desiredLM*1.5)
+            {       selectedItem.gruppe.forEach(gruppe =>{
+                    if(gruppe==="Magieresistenz"||gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft")
+                        {
+                            row.querySelector('.zeit-field').value = 0;
+                            row.querySelector('.geld-field').value = 0;
+                        }
+                    else
+                        {
+                            desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
+                            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
+                            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*desiredLM*1.5)
+                        }                
+                    });
             } 
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
@@ -1313,8 +1373,8 @@ function setzeZeitUndGeldkosten()
             }
         else if (row.querySelector('.lehrmeister-select').value === "LM")
             {
-            row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.1);
-            row.querySelector('.geld-field').value = ((row.querySelector('.zeit-field').value)*12*1.5);
+            row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.2);
+            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*12*1.5);
             } 
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
@@ -1338,8 +1398,8 @@ function setzeZeitUndGeldkosten()
             }
         else if (row.querySelector('.lehrmeister-select').value === "LM")
             {
-            row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.1);
-            row.querySelector('.geld-field').value = ((row.querySelector('.zeit-field').value)*12*1.5);
+            row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.2);
+            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*12*1.5);
             } 
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
@@ -1347,7 +1407,6 @@ function setzeZeitUndGeldkosten()
     });
     document.getElementById('total-goldcost').value = formatNumber(totalCost);
     document.getElementById('total-timecost').value = totalTimeCost+" Zeiteinheiten";
-    console.log(formatNumber(totalCost));
 }
 
 

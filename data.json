@@ -2217,6 +2217,11 @@
             "steigerungskategorie": "H"
         },
         {
+            "name": "Magieresistenz",
+            "gruppe": ["Magieresistenz"],
+            "steigerungskategorie": "H"
+        },
+        {
             "name": "Mut",
             "gruppe": ["Mut", "Eigenschaft"],
             "steigerungskategorie": "H"

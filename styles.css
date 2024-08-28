@@ -59,6 +59,7 @@ h1 {
 .placeholder-field{
     width: 132px;
     font-size: 6px;
+    resize: none;
 }
 .note-field{
     flex: 1;
@@ -72,6 +73,7 @@ h1 {
 .geld-field,.zeit-field {
     width: 50px;
     font-family: Arial, sans-serif;
+    resize: none;
 }
 .steigerungskategorie-select, .liturgiegrad-select,.ap-cost,.geld-field,.zeit-field {
     background-color: #eeeeee;
