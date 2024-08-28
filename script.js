@@ -281,10 +281,12 @@ function addTalentRow() {
             <option value="" disabled selected>Wähle ein Talent</option>
         </select>
             <select class="lehrmeister-select">
-            <option value="S">S</option>
-            <option selected="selected value="H2H">H2H</option>
+            <option value="AKT">AKT</option>
+            <option selected=selected value="SE">SE</option>
             <option value="LM">LM</option>
-            <option value="SE">SE</option>
+            <option value="H2H">H2H</option>
+            <option value="AKAD">AKAD</option>
+            <option value="S">S</option>
         </select>
         <select class="steigerungskategorie-select">
             <option value="A+">A+</option>
@@ -302,11 +304,11 @@ function addTalentRow() {
 
         <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <input type="number" class="ap-cost" placeholder="AP" readonly>
 
-        <textarea class="zeit-field" placeholder="" rows="1"></textarea>
+        <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
-        <textarea class="geld-field" placeholder="" rows="1"></textarea>
+        <textarea class="geld-field" placeholder="Geld" rows="1"></textarea>
 
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
 
@@ -335,11 +337,14 @@ function addZauberRow() {
             <option value="" disabled selected>Wähle einen Zauber</option>
         </select>
 
-        <select class="lehrmeister-select">
-            <option value="S">S</option>
-            <option selected="selected value="H2H">H2H</option>
-            <option value="LM">LM</option>
+        </select>
+            <select class="lehrmeister-select">
+            <option value="AKT">AKT</option>
             <option value="SE">SE</option>
+            <option selected=selected value="LM">LM</option>
+            <option value="H2H">H2H</option>
+            <option value="AKAD">AKAD</option>
+            <option value="S">S</option>
         </select>
         <select class="steigerungskategorie-select">
             <option value="A+">A+</option>
@@ -357,11 +362,11 @@ function addZauberRow() {
 
         <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <input type="number" class="ap-cost" placeholder="AP" readonly>
 
-        <textarea class="zeit-field" placeholder="" rows="1"></textarea>
+        <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
-        <textarea class="geld-field" placeholder="" rows="1"></textarea>
+        <textarea class="geld-field" placeholder="Geld" rows="1"></textarea>
 
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
 
@@ -388,11 +393,12 @@ function addAnderesRow() {
         <select class="anderes-select">
             <option value="" disabled selected>Wähle eine andere Eigenschaft</option>
         </select>
-        <select class="lehrmeister-select">
-            <option value="S">S</option>
-            <option selected="selected value="H2H">H2H</option>
-            <option value="LM">LM</option>
+            <select class="lehrmeister-select">
             <option value="SE">SE</option>
+            <option value="LM">LM</option>
+            <option selected=selected value="H2H">H2H</option>
+            <option value="AKAD">AKAD</option>
+            <option value="S">S</option>
         </select>
         <select class="steigerungskategorie-select">
             <option value="A+">A+</option>
@@ -410,11 +416,11 @@ function addAnderesRow() {
 
         <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <input type="number" class="ap-cost" placeholder="AP" readonly>
 
-        <textarea class="zeit-field" placeholder="" rows="1"></textarea>
+        <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
-        <textarea class="geld-field" placeholder="" rows="1"></textarea>
+        <textarea class="geld-field" placeholder="Geld" rows="1"></textarea>
 
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
 
@@ -441,17 +447,19 @@ function addSonderfertigkeitRow() {
             <option value="" disabled selected>Wähle eine Sonderfertigkeit</option>
         </select>
         <select class="lehrmeister-select">
-            <option value="S">S</option>
-            <option selected="selected value="H2H">H2H</option>
-            <option value="LM">LM</option>
             <option value="SE">SE</option>
+            <option value="LM">LM</option>
+            <option selected=selected value="H2H">H2H</option>
+            <option value="AKAD">AKAD</option>
             <option value="V">V</option>
+            <option value="S">S</option>
         </select>
         <textarea class="placeholder-field" placeholder="Hier könnte ihre Werbung stehen" rows="1"></textarea>
-        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
-                
-        <textarea class="zeit-field" placeholder="" rows="1"></textarea>
-        <textarea class="geld-field" placeholder="" rows="1"></textarea>
+        <input type="number" class="ap-cost" placeholder="AP" readonly>
+
+        <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
+
+        <textarea class="geld-field" placeholder="Geld" rows="1"></textarea>
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
         <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
     `;
@@ -501,16 +509,19 @@ function addRitualeRow() {
             <option value="" disabled selected>Wähle ein Ritual</option>
         </select>
          <select class="lehrmeister-select">
+            <option value="SE">SE</option>
+            <option value="LM">LM</option>
+            <option selected=selected value="H2H">H2H</option>
+            <option value="AKAD">AKAD</option>
+            <option value="V">V</option>
             <option value="S">S</option>
-          <option selected="selected value="H2H">H2H</option>
-          <option value="LM">LM</option>
-        <option value="SE">SE</option>
-          <option value="V">V</option>
          </select>
         <textarea class="placeholder-field" placeholder="Hier könnte ihre Werbung stehen" rows="1"></textarea>
-        <input type="number" class="ap-cost" placeholder="Kosten" readonly>              
-        <textarea class="zeit-field" placeholder="" rows="1"></textarea>
-        <textarea class="geld-field" placeholder="" rows="1"></textarea>
+        <input type="number" class="ap-cost" placeholder="AP" readonly>
+
+        <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
+
+        <textarea class="geld-field" placeholder="Geld" rows="1"></textarea>
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
         <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
     `;
@@ -573,7 +584,7 @@ function addLiturgienRow() {
             <option value="VI">Grad VI</option>
         </select>
         <textarea class="placeholder-field" placeholder="Hier könnte ihre Werbung stehen" rows="1"></textarea>
-        <input type="number" class="ap-cost" placeholder="Kosten" readonly>
+        <input type="number" class="ap-cost" placeholder="AP" readonly>
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
         <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
     `;
@@ -748,7 +759,7 @@ if (item.hasOwnProperty("gruppe"))
                         globalCounter-=1;
                         console.log(`An dieser Stelle muss einmal ausgeglichen Werden, da ${gruppe} nicht durch Selbststudium modifiziert werden soll`);
                     }
-                if(lehrmethode === "LM" && (gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft"||gruppe==="Magieresistenz"))
+                if((lehrmethode === "LM"|| lehrmethode === "AKAD")&& (gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft"||gruppe==="Magieresistenz"))
                     {
                         globalCounter+=1;
                         console.log(`An dieser Stelle muss einmal ausgeglichen Werden, da ${gruppe} nicht durch Lehrmeister modifiziert werden soll`);
@@ -805,7 +816,7 @@ if (item.hasOwnProperty("gruppe"))
 
     if(lehrmethode === "S")
     {globalCounter+=1;}
-    else if(lehrmethode === "LM"||lehrmethode === "SE")
+    else if(lehrmethode === "LM"||lehrmethode === "SE"||lehrmethode === "AKAD")
     {globalCounter-=1;}
     return faktoren[faktoren.indexOf(item.steigerungskategorie)+globalCounter];
 }
@@ -858,12 +869,58 @@ function getRealAPCost(data)
         const currentValue = parseInt(row.querySelector('.current-value').value, 10) || 0;
         const desiredValue = parseInt(row.querySelector('.desired-value').value, 10) || 0;
         const steigerungskategorie = row.querySelector('.steigerungskategorie-select').value;
+        const lehrmethode = row.querySelector('.lehrmeister-select').value; 
 
 
 
         document.querySelectorAll('.talent-select').forEach(select => {
             apCost = 0;
-
+            if(lehrmethode==="AKT")
+            {
+                selectedItem = data.talente.find(talent => talent.name === select.value);
+                const steigerungskategorieFest = selectedItem.steigerungskategorie;
+                console.log(steigerungskategorieFest);
+                switch (steigerungskategorieFest) {
+                    case 'A':
+                    totalCost=5;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'B':
+                    totalCost=10;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'C':
+                    totalCost=15;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'D':
+                    totalCost=20;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'E':
+                    totalCost=25;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'F':
+                    totalCost=40;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'G':
+                    totalCost=50;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    case 'H':
+                    totalCost=100;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                    default:
+                    totalCost=0;
+                    row.querySelector('.ap-cost').value = totalCost;
+                    break;
+                }
+            }
+        else{
+                
             for (let i = currentValue + 1; i <= desiredValue; i++) {
                 apCost += getAPCostForStep(i, steigerungskategorie);
             }
@@ -889,8 +946,9 @@ function getRealAPCost(data)
                             });                      
         });
         row.querySelector('.ap-cost').value = apCost;
-
+    }
     });
+
     setzeZeitUndGeldkosten(data);
     totalCost += apCost;
     document.getElementById('total-cost').value = totalCost +" AP";
@@ -902,12 +960,60 @@ function getRealAPCost(data)
         const currentValue = parseInt(row.querySelector('.current-value').value, 10) || 0;
         const desiredValue = parseInt(row.querySelector('.desired-value').value, 10) || 0;
         const steigerungskategorie = row.querySelector('.steigerungskategorie-select').value;
-
+        const lehrmethode = row.querySelector('.lehrmeister-select').value; 
         
 
         document.querySelectorAll('.zauber-select').forEach(select => {
             apCost = 0;
-
+            if(lehrmethode==="AKT")
+                {
+                    selectedItem = data.zauber.find(zauber => zauber.name === select.value);
+                    const steigerungskategorieFest = selectedItem.steigerungskategorie;
+                    console.log(steigerungskategorieFest);
+                    switch (steigerungskategorieFest) {
+                        case 'A+':
+                        totalCost=5;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'A':
+                        totalCost=5;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'B':
+                        totalCost=10;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'C':
+                        totalCost=15;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'D':
+                        totalCost=20;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'E':
+                        totalCost=25;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'F':
+                        totalCost=40;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'G':
+                        totalCost=50;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        case 'H':
+                        totalCost=100;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                        default:
+                        totalCost=0;
+                        row.querySelector('.ap-cost').value = totalCost;
+                        break;
+                    }
+                }
+        else{
         for (let i = currentValue + 1; i <= desiredValue; i++) {
             apCost += getAPCostForStep(i, steigerungskategorie);
         }
@@ -930,7 +1036,7 @@ function getRealAPCost(data)
                             });                      
         });
         row.querySelector('.ap-cost').value = apCost;
-    });
+    }});
     setzeZeitUndGeldkosten(data);
     totalCost += apCost;
     document.getElementById('total-cost').value = totalCost +" AP";
@@ -1249,6 +1355,11 @@ function setzeZeitUndGeldkosten(data)
                 row.querySelector('.zeit-field').value = 0;
                 row.querySelector('.geld-field').value = 0;
             }
+        if(row.querySelector('.lehrmeister-select').value === "AKT")
+            {
+                row.querySelector('.zeit-field').value = 0;
+                row.querySelector('.geld-field').value = 0;
+            }
         else if (row.querySelector('.lehrmeister-select').value === "S")
             {
                 row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
@@ -1266,11 +1377,22 @@ function setzeZeitUndGeldkosten(data)
             row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
             row.querySelector('.geld-field').value = Math.round(((row.querySelector('.zeit-field').value)*desiredLM*1.5))
             }
+        else if (row.querySelector('.lehrmeister-select').value === "AKAD")
+            {
+            desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
+            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
+            row.querySelector('.geld-field').value = Math.round(((row.querySelector('.zeit-field').value)*desiredLM*3))
+            }
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);       
     });
     zauberRows.forEach(row => {
         if(row.querySelector('.lehrmeister-select').value === "SE"|| row.querySelector('.lehrmeister-select').value === "V")
+            {
+                row.querySelector('.zeit-field').value = 0;
+                row.querySelector('.geld-field').value = 0;
+            }
+        if(row.querySelector('.lehrmeister-select').value === "AKT")
             {
                 row.querySelector('.zeit-field').value = 0;
                 row.querySelector('.geld-field').value = 0;
@@ -1292,6 +1414,12 @@ function setzeZeitUndGeldkosten(data)
             row.querySelector('.zeit-field').value = Math.round((row.querySelector('.ap-cost').value)*0.5);
             row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*desiredLM*1.5)
             }
+        else if (row.querySelector('.lehrmeister-select').value === "AKAD")
+            {
+            desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
+            row.querySelector('.zeit-field').value = Math.round((row.querySelector('.ap-cost').value)*0.5);
+            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*desiredLM*3)
+            }            
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
     
@@ -1348,6 +1476,21 @@ function setzeZeitUndGeldkosten(data)
                             row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*desiredLM*1.5)
                         }                
                     });
+            }
+        else if (row.querySelector('.lehrmeister-select').value === "AKAD")
+            {       selectedItem.gruppe.forEach(gruppe =>{
+                    if(gruppe==="Magieresistenz"||gruppe==="Ausdauer"||gruppe==="Astralenergie"||gruppe==="Lebensenergie"||gruppe==="Eigenschaft")
+                        {
+                            row.querySelector('.zeit-field').value = 0;
+                            row.querySelector('.geld-field').value = 0;
+                        }
+                    else
+                        {
+                            desiredLM = parseInt(row.querySelector('.desired-value').value, 10)+3;
+                            row.querySelector('.zeit-field').value = row.querySelector('.ap-cost').value;
+                            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*desiredLM*3)
+                        }                
+                    });
             } 
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
@@ -1368,14 +1511,19 @@ function setzeZeitUndGeldkosten(data)
         else if (row.querySelector('.lehrmeister-select').value === "H2H")
             {
             row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.5);
-            row.querySelector('.geld-field').value = (row.querySelector('.zeit-field').value)*12;
+            row.querySelector('.geld-field').value = (row.querySelector('.ap-cost').value*10);
 
             }
         else if (row.querySelector('.lehrmeister-select').value === "LM")
             {
             row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.2);
-            row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*12*1.5);
-            } 
+            row.querySelector('.geld-field').value = Math.round((row.querySelector('.ap-cost').value)*10*1.5);
+            }
+        else if (row.querySelector('.lehrmeister-select').value === "AKAD")
+            {
+                row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.2);
+                row.querySelector('.geld-field').value = Math.round((row.querySelector('.ap-cost').value)*10*3);
+            }  
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
     
@@ -1401,6 +1549,11 @@ function setzeZeitUndGeldkosten(data)
             row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.2);
             row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*12*1.5);
             } 
+            else if (row.querySelector('.lehrmeister-select').value === "AKAD")
+                {
+                row.querySelector('.zeit-field').value = Math.round(row.querySelector('.ap-cost').value*0.2);
+                row.querySelector('.geld-field').value = Math.round((row.querySelector('.zeit-field').value)*12*3);
+                }
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
             totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
     

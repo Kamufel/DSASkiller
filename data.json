@@ -653,8 +653,14 @@
         {
             "name": "Sprachen/Schriften",
             "gruppe": ["Sprachen/Schriften"],
+            "steigerungskategorie": "A"
+        },
+        {
+            "name": "Sprachen/Schriften (fremd)",
+            "gruppe": ["Sprachen/Schriften"],
             "steigerungskategorie": "B"
         }
+
     ],
     "zauber": [
         {
