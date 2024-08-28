@@ -253,6 +253,33 @@ function setupEventListeners(data) {
                 }
             });
         });
+        
+        const sidebarComboboxes = document.querySelectorAll('.sidebar-combobox');
+
+        sidebarComboboxes.forEach(combobox => {
+            combobox.addEventListener('change', () => {
+                // Recalculate the factor for all relevant rows
+                document.querySelectorAll('.talent-row, .zauber-row, .anderes-row, .liturgien-row').forEach(row => {
+                    const selectElement = row.querySelector('.talent-select, .zauber-select, .anderes-select, .liturgie-select');
+                    const categorySelect = row.querySelector('.steigerungskategorie-select');
+                    const gradSelect = row.querySelector('.liturgiegrad-select');
+                    const lehrmethode = row.querySelector('.lehrmeister-select').value;
+    
+                    let selectedItem = data.talente.find(talent => talent.name === selectElement.value) ||
+                        data.zauber.find(zauber => zauber.name === selectElement.value) ||
+                        data.andere.find(item => item.name === selectElement.value) ||
+                        data.liturgien.find(liturgie => liturgie.name === selectElement.value);
+    
+                    if (selectedItem && selectedItem.hasOwnProperty("steigerungskategorie")) {
+                        categorySelect.value = getRealFactor(lehrmethode, selectedItem);
+                    } else if (selectedItem && selectedItem.hasOwnProperty("grad")) {
+                        gradSelect.value = selectedItem.grad;
+                    }
+                });
+            });
+        });
+    
+        
 }
 function setupImportExportEventListeners() {
     document.getElementById('export-btn').addEventListener('click', exportComboboxState);
@@ -304,7 +331,7 @@ function addTalentRow() {
 
         <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="AP" readonly>
+        <input type="text" class="ap-cost" placeholder="AP" readonly>
 
         <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
@@ -362,7 +389,7 @@ function addZauberRow() {
 
         <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="AP" readonly>
+        <input type="text" class="ap-cost" placeholder="AP" readonly>
 
         <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
@@ -416,7 +443,7 @@ function addAnderesRow() {
 
         <input type="number" class="desired-value" placeholder="Ziel" min="0" max="21">
 
-        <input type="number" class="ap-cost" placeholder="AP" readonly>
+        <input type="text" class="ap-cost" placeholder="AP" readonly>
 
         <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
@@ -455,7 +482,7 @@ function addSonderfertigkeitRow() {
             <option value="S">S</option>
         </select>
         <textarea class="placeholder-field" placeholder="Hier könnte ihre Werbung stehen" rows="1"></textarea>
-        <input type="number" class="ap-cost" placeholder="AP" readonly>
+        <input type="text" class="ap-cost" placeholder="AP" readonly>
 
         <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
@@ -517,7 +544,7 @@ function addRitualeRow() {
             <option value="S">S</option>
          </select>
         <textarea class="placeholder-field" placeholder="Hier könnte ihre Werbung stehen" rows="1"></textarea>
-        <input type="number" class="ap-cost" placeholder="AP" readonly>
+        <input type="text" class="ap-cost" placeholder="AP" readonly>
 
         <textarea class="zeit-field" placeholder="ZE" rows="1"></textarea>
 
@@ -584,7 +611,7 @@ function addLiturgienRow() {
             <option value="VI">Grad VI</option>
         </select>
         <textarea class="placeholder-field" placeholder="Hier könnte ihre Werbung stehen" rows="1"></textarea>
-        <input type="number" class="ap-cost" placeholder="AP" readonly>
+        <input type="text" class="ap-cost" placeholder="AP" readonly>
         <textarea class="note-field" placeholder="Notizen..." rows="1"></textarea>
         <button class="delete-button" onclick="deleteRow(this)">&#x2716;</button>
     `;
@@ -1337,8 +1364,63 @@ function getRealAPCost(data)
 
 document.getElementById('total-cost').value = totalCost +" AP";  
 
-}
 
+fügeKennungenhinzu(data);
+}
+function fügeKennungenhinzu(data){
+const talentRows = document.querySelectorAll('.talent-row');
+const zauberRows = document.querySelectorAll('.zauber-row');
+const anderesRows = document.querySelectorAll('.anderes-row');
+const sonderfertigkeitenRows = document.querySelectorAll('.sonderfertigkeit-row');
+const RitualeRows = document.querySelectorAll('.rituale-row');
+const LiturgienRows = document.querySelectorAll('.liturgien-row');
+
+talentRows.forEach(row => {
+    formatierteAPKosten = row.querySelector('.ap-cost').value+ " AP";
+    formatierteGeldKosten = row.querySelector('.geld-field').value+ " H";
+    formatierteZEKosten = row.querySelector('.zeit-field').value+ " ZE";
+    row.querySelector('.ap-cost').value=formatierteAPKosten;
+    row.querySelector('.zeit-field').value=formatierteZEKosten;
+    row.querySelector('.geld-field').value=formatierteGeldKosten;
+});
+zauberRows.forEach(row => {
+    formatierteAPKosten = row.querySelector('.ap-cost').value+ " AP";
+    formatierteGeldKosten = row.querySelector('.geld-field').value+ " H";
+    formatierteZEKosten = row.querySelector('.zeit-field').value+ " ZE";
+    row.querySelector('.ap-cost').value=formatierteAPKosten;
+    row.querySelector('.zeit-field').value=formatierteZEKosten;
+    row.querySelector('.geld-field').value=formatierteGeldKosten;
+});
+anderesRows.forEach(row => {
+    formatierteAPKosten = row.querySelector('.ap-cost').value+ " AP";
+    formatierteGeldKosten = row.querySelector('.geld-field').value+ " H";
+    formatierteZEKosten = row.querySelector('.zeit-field').value+ " ZE";
+    row.querySelector('.ap-cost').value=formatierteAPKosten;
+    row.querySelector('.zeit-field').value=formatierteZEKosten;
+    row.querySelector('.geld-field').value=formatierteGeldKosten;
+});
+sonderfertigkeitenRows.forEach(row => {
+    formatierteAPKosten = row.querySelector('.ap-cost').value+ " AP";
+    formatierteGeldKosten = row.querySelector('.geld-field').value+ " H";
+    formatierteZEKosten = row.querySelector('.zeit-field').value+ " ZE";
+    row.querySelector('.ap-cost').value=formatierteAPKosten;
+    row.querySelector('.zeit-field').value=formatierteZEKosten;
+    row.querySelector('.geld-field').value=formatierteGeldKosten;
+});
+RitualeRows.forEach(row => {
+    formatierteAPKosten = row.querySelector('.ap-cost').value+ " AP";
+    formatierteGeldKosten = row.querySelector('.geld-field').value+ " H";
+    formatierteZEKosten = row.querySelector('.zeit-field').value+ " ZE";
+    row.querySelector('.ap-cost').value=formatierteAPKosten;
+    row.querySelector('.zeit-field').value=formatierteZEKosten;
+    row.querySelector('.geld-field').value=formatierteGeldKosten;
+});
+LiturgienRows.forEach(row => {
+    formatierteAPKosten = row.querySelector('.ap-cost').value+ " AP";
+    row.querySelector('.ap-cost').value=formatierteAPKosten;
+
+});
+}
 function setzeZeitUndGeldkosten(data)
 {   
     const talentRows = document.querySelectorAll('.talent-row');
@@ -1384,7 +1466,7 @@ function setzeZeitUndGeldkosten(data)
             row.querySelector('.geld-field').value = Math.round(((row.querySelector('.zeit-field').value)*desiredLM*3))
             }
             totalCost+=parseInt(row.querySelector('.geld-field').value,10);
-            totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);       
+            totalTimeCost+=parseInt(row.querySelector('.zeit-field').value,10);
     });
     zauberRows.forEach(row => {
         if(row.querySelector('.lehrmeister-select').value === "SE"|| row.querySelector('.lehrmeister-select').value === "V")
