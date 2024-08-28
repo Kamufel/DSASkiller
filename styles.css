@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -29,40 +29,53 @@ h1 {
     margin-bottom: 10px;
 }
 
-.talent-select, .zauber-select, .anderes-select, .sonderfertigkeit-select, .ritual-select, .liturgie-select, 
-.steigerungskategorie-select, .liturgiegrad-select, .current-value, .desired-value, .ap-cost, .note-field, .verbilligung-select {
+.talent-select, .zauber-select, .anderes-select, .sonderfertigkeit-select, .ritual-select, .liturgie-select,.placeholder-field, 
+.steigerungskategorie-select, .liturgiegrad-select, .current-value, .desired-value, .ap-cost, .note-field, .verbilligung-select, .lehrmeister-select,.geld-field,.zeit-field {
     padding: 10px;
     margin-right: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
     width: 10px;
 }
-.talent-select, .zauber-select, .anderes-select{
-    flex: 2;
+.talent-select, .zauber-select, .anderes-select,.liturgie-select{
+    width: 193px;
 }
-.liturgie-select{
-    width: 220px;
-}
+
 .verbilligung-select{
     width: 249px;
 }
-.steigerungskategorie-select, .liturgiegrad-select {
-    width: 95px;
+.steigerungskategorie-select, .liturgiegrad-select,.lehrmeister-select{
+    width: 92px;
+}
+.current-value,.desired-value{
+    width: 50px;
 }
 .ritual-select, .sonderfertigkeit-select {
-    width: 324px;
+    width: 295px;
 }
-
-.current-value, .desired-value, .ap-cost, .note-field {
+.ap-cost{
+    width: 50px;
+}
+.placeholder-field{
+    width: 132px;
+    font-size: 6px;
+}
+.note-field{
     flex: 1;
 }
 
-.note-field {
-    flex: 2;
+.note-field{
+    width: 249px;
     resize: none;
     font-family: Arial, sans-serif;
 }
-
+.geld-field,.zeit-field {
+    width: 50px;
+    font-family: Arial, sans-serif;
+}
+.steigerungskategorie-select, .liturgiegrad-select,.ap-cost,.geld-field,.zeit-field {
+    background-color: #eeeeee;
+}
 #button-container {
     display: flex;
     justify-content: space-between;
@@ -71,8 +84,9 @@ h1 {
 
 button {
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
     flex: 1;
@@ -85,60 +99,62 @@ button:last-child {
 
 /* Specific button styles */
 button.talent-button {
-    background-color: #007BFF;
+    background-color: #1b9e77;
 }
 
 button.talent-button:hover {
-    background-color: #0056b3;
+    background-color: #12694f;
 }
 
 button.zauber-button {
-    background-color: #28a745;
+    background-color: #d95f02;
 }
 
 button.zauber-button:hover {
-    background-color: #218838;
+    background-color: #994301;
 }
 
 button.anderes-button {
-    background-color: #17a2b8;
+    background-color: #7570b3;
 }
 
 button.anderes-button:hover {
-    background-color: #138496;
+    background-color: #4b4872;
 }
 
 button.sonderfertigkeit-button {
-    background-color: #6c757d; /* Gray */
+    background-color: #e7298a; /* Gray */
 }
 
 button.sonderfertigkeit-button:hover {
-    background-color: #5a6268;
+    background-color: #b11f6b;
 }
 
 button.rituale-button {
-    background-color: #343a40; /* Darker Gray */
+    background-color: #66a61e; /* Darker Gray */
 }
 
 button.rituale-button:hover {
-    background-color: #23272b;
+    background-color: #477215;
 }
 
 button.liturgien-button {
-    background-color: #6610f2; /* Purple */
+    background-color: #e6ab02; /* Purple */
 }
 
 button.liturgien-button:hover {
-    background-color: #520dc2;
+    background-color: #a17701;
 }
 
 button.calculate-button {
-    background-color: #ffc107;
+    background-color: #d43636;
+    width: 160px;
+    height: 50px;
     margin-top: 10px;
 }
 
 button.calculate-button:hover {
-    background-color: #e0a800;
+    background-color: #b92f2f;
 }
 
 /* Delete button style */
@@ -158,13 +174,13 @@ button.calculate-button:hover {
     color: darkred;
 }
 
-#total-cost-container {
+#total-cost-container, #total-goldcost-container, #total-timecost-container {
     margin-top: 20px;
     text-align: right;
 }
 
-#total-cost {
-    width: 100px;
+#total-cost,#total-goldcost,#total-timecost {
+    width: 150px;
     text-align: right;
     padding: 10px;
     border-radius: 4px;
@@ -183,7 +199,7 @@ button.calculate-button:hover {
     width: 0;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #111;
     overflow-y: auto;
     overflow-x: hidden;
@@ -198,7 +214,7 @@ button.calculate-button:hover {
 .sidebar h2 {
     color: white;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     border-bottom: 1px solid #575757;
     margin-top: 0;
@@ -237,12 +253,12 @@ button.calculate-button:hover {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: #11111173;
     color: white;
     padding: 10px 15px;
     border: none;
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
     z-index: 1;
 }
