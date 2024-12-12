@@ -1,227 +1,409 @@
+{
+    "regionen": 
+    [
+        {
+            "Regenwald": 
+            [
+                {
+                    "Tiere":
+                    [
+                        {
+                            "Name": "Alligator",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Fledermaus",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Moosäffchen",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Otan-Otan",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Sumpfratte",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Selemferkel",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Selemferkel",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Baumspinne",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Blattkopfotter",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Blutfisch",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Flussläufe"
+                        },
+                        {
+                            "Name": "Gaukelweihe",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Löwenaffe",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Moskito",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Mysobviper",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Panzerechse",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Purzelaffe",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Riesenkaiman",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Wolfsratte",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Würgeschlange",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Fischechse",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Fleckenpanther",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Greifkatze",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Gürtelechse",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Harpyie",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Höhlenspinne",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Klammermoloch",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Palmviper",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Pei-Pei-Assel",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Ratte",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Riesenamöbe",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Springchamäleon",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Vampirfledermaus",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Vogelspinne",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Zwergelefant",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Basilisken-Panzerkröte",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Borbarad-Moskito",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Brabaker Waldelefant",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Dschungeltiger",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Feuerskorpion",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Grünschrecke",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Lioma",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Nachtwind",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Olruksbraut",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Riesenaffe",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        }
+                    ],
+                    "Pflanzen":
+                    [
+                        {
+                            "Name": "Arganstrauch",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Boronie",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Boronsschlinge",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Carlog",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Seeufer"
+                        },
+                        {
+                            "Name": "Carlog",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Flussauen"
+                        },
+                        {
+                            "Name": "Cheria-Kaktus",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Disdychonda",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Eitriger Krötenschemel",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Eitriger Krötenschemel",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Flussauen"
+                        },
+                        {
+                            "Name": "Finage",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Höllenkraut",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Ilmenblatt",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Kajubo",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Kukuka",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Purpurner Lotos",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Teiche"
+                        },
+                        {
+                            "Name": "Purpurner Lotos",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Seeufer"
+                        },
+                        {
+                            "Name": "Weißer Lotos",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Seeufer"
+                        },
+                        {
+                            "Name": "Weißer Lotos",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Teiche"
+                        },
+                        {
+                            "Name": "Weißgelber Lotos",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Seeufer"
+                        },
+                        {
+                            "Name": "Weißgelber Lotos",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Teiche"
+                        },
+                        {
+                            "Name": "Merach-Strauch",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Mirhamer Seidenliane",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Orazal",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Quinja",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Rahjalieb",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Rote Pfeilblüte",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Rote Pfeilblüte",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Schleichender Tod",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Flussufer"
+                        },
+                        {
+                            "Name": "Shurinstrauch",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Vragieswurzel",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Waldwebe",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Wirselkraut",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Würgedattel",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Zunderschwamm",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        }
 
-
-    {
-        "Regenwald": 
-        [
-            {
-                "Tiere":
-                [
-                    {
-                        "Name": "Alligator",
-                        "Häufigkeit": "häufig",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Fledermaus",
-                        "Häufigkeit": "häufig",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Moosäffchen",
-                        "Häufigkeit": "häufig",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Otan-Otan",
-                        "Häufigkeit": "häufig",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Sumpfratte",
-                        "Häufigkeit": "häufig",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Selemferkel",
-                        "Häufigkeit": "häufig",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Baumspinne",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Blattkopfotter",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Blutfisch",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": "Flussläufe"
-                    },
-                    {
-                        "Name": "Gaukelweihe",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Löwenaffe",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Moskito",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Mysobviper",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Panzerechse",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Purzelaffe",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Riesenkaiman",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Wolfsratte",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Würgeschlange",
-                        "Häufigkeit": "gelegentlich",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Fischechse",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Fleckenpanther",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Greifkatze",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Gürtelechse",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Harpyie",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Höhlenspinne",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Klammermoloch",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Palmviper",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Pei-Pei-Assel",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Ratte",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Riesenamöbe",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Springchamäleon",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Vampirfledermaus",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Vogelspinne",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Zwergelefant",
-                        "Häufigkeit": "selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Basilisken-Panzerkröte",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Borbarad-Moskito",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Brabaker Waldelefant",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Dschungeltiger",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Feuerskorpion",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Grünschrecke",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Lioma",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Nachtwind",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Olruksbraut",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    },
-                    {
-                        "Name": "Riesenaffe",
-                        "Häufigkeit": "sehr selten",
-                        "Gebiet": ""
-                    }
-                ]
-            }
-        ]
-    }
+                    ]
+                }
+            ]
+        }
+    ]
+}
