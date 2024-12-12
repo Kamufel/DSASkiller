@@ -1,0 +1,54 @@
+{
+    "Pflanzen":
+    [
+        {
+            "Name":"Arganstrauch",
+            "Typ":"Heilpflanze",
+            "Gebiet":"Wälder um Regengebirge, Mysobgebiet, Waldinseln",
+            "Verbreitung":"Regenwald (gelegentlich), Sumpf (selten), feuchte Waldgebiete (sehr selten)",
+            "Bestimmung":"4",
+            "Ernte":"ganzjährig",
+            "Grundmenge":"eine Wurzel",
+            "Wirkung":"Die Wurzel gibt 1W6+10 LeP über 7 Stunden Ruhe zurück. Unternimmt man in diesem Zeitraum große Anstrengungen (z.B. Kämpfe oder Gewaltmärsche), bekommt der Patient nur W6 LeP. Beim Wundfieberwurf (siehe GA 208) werden 4 Punkte abgezogen. Wird im Lauf der 7 Stunden eine weitere Wurzel eingenommen, wirkt diese ebenfalls heilkräftig, lähmt aber alle Glieder (für einen Tag GE, FF, KK je –5).",
+            "Haltbarkeit":"2W6+18 Stunden",
+            "Preis":"7 S",
+            "Alchimistische Verwendung":
+            [
+                {
+                    "Name":"Argansud",
+                    "Typ":"Heilmittel",
+                    "Zubereitung":"Knolle zerstampfen und knapp mit heißem, aber nicht kochendem Wasser bedecken. Etwa 10 Stunden ziehen lassen.",
+                    "Verarbeitung":"5",
+                    "Wirkung":"Der Absud aus einer Wurzel ergibt etwa einen Flux Sud. Eingenommen gibt er im Verlauf von 4 Stunden 3W6+3 LeP zurück. Bei Anstrengung in diesem Zeitraum erhält der Patient keine LeP.",
+                    "Haltbarkeit":"W6+10 Tage",
+                    "Preis":"17 D"
+                }
+            ]
+        },
+        {
+            "Name":"",
+            "Typ":"",
+            "Gebiet":"",
+            "Verbreitung":"",
+            "Bestimmung":"",
+            "Ernte":"",
+            "Grundmenge":"",
+            "Wirkung":"",
+            "Haltbarkeit":"",
+            "Preis":"",
+            "Alchimistische Verwendung":
+            [
+                {
+                    "Name":"",
+                    "Typ":"",
+                    "Zubereitung":"",
+                    "Verarbeitung":"",
+                    "Wirkung":"",
+                    "Haltbarkeit":"",
+                    "Preis":""
+                }
+            ]
+        }
+    ]
+
+}

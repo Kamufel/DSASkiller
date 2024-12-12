@@ -1,0 +1,19 @@
+{
+    "Tiere":
+    [
+        {
+            "Name":"Alligator",
+            "Verbreitung":"Südaventurien (Flussläufe)",
+            "Auftreten":"zunächst einzeln, dann 1W3+1 weitere Tiere binnen 2W6 KR",
+            "Jagd":"",
+            "Beute":"60 bis 70 Rationen Fleisch, Haut (Leder, teuer; zu Iryanleder verarbeitet Luxusartikel), Zähne (Trophäe)"
+        },
+        {
+            "Name":"",
+            "Verbreitung":"",
+            "Auftreten":"",
+            "Jagd":"",
+            "Beute":""
+        }
+    ]
+}
