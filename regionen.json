@@ -1,25 +1,36 @@
-{
-    "regionen": 
-    [
-        {
-            "Regenwald": 
-            [
-                {
-                    "Tiere":
-                    [
-                        {
-                            "Name": "Alligator",
-                            "Häufigkeit": "häufig",
-                            "Gebiet":""
-                        },
-                        {
-                            "Name":"",
-                            "Häufigkeit":"",
-                            "Gebiet":""
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+
+[
+    {
+        "Regenwald": 
+        [
+            {
+                "Tiere":
+                [
+                    {
+                        "Name": "Alligator",
+                        "Häufigkeit": "häufig",
+                        "Gebiet":""
+                    },
+                    {
+                        "Name":"",
+                        "Häufigkeit":"",
+                        "Gebiet":""
+                    }
+                ],
+                "Pflanzen":
+                [
+                    {
+                        "Name":"Arganstrauch",
+                        "Häufigkeit":"gelegentlich",
+                        "Gebiet":""
+                    },
+                    {
+                        "Name":"",
+                        "Häufigkeit":"",
+                        "Gebiet":""
+                    }
+               ]
+           }
+        ]    
+    }
+]
