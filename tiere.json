@@ -6,13 +6,351 @@
             "Verbreitung":"Südaventurien (Flussläufe)",
             "Auftreten":"zunächst einzeln, dann 1W3+1 weitere Tiere binnen 2W6 KR",
             "Jagd":"",
+            "Angriff":"",
             "Beute":"60 bis 70 Rationen Fleisch, Haut (Leder, teuer; zu Iryanleder verarbeitet Luxusartikel), Zähne (Trophäe)"
+        },
+        {
+            "Name":"Fledermaus",
+            "Verbreitung":"ganz Aventurien (Höhlen)",
+            "Auftreten":"1W20+20 bis 4W20+20 Tiere und mehr",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Haut wertlos"
+        },
+        {
+            "Name":"Moosäffchen",
+            "Verbreitung":"Südaventurien, Mhanadistan, Balash, Waldinseln (Wald)",
+            "Auftreten":"einzeln oder in Scharen von 2W6 Tieren",
+            "Jagd":"15",
+            "Angriff":"",
+            "Beute":"0,5 bis 2 Rationen Fleisch, Fell (besser)"
+        },
+        {
+            "Name":"Otan-Otan",
+            "Verbreitung":"Maraskan, Südaventurien (Regenwald)",
+            "Auftreten":"1W3+2 Tiere",
+            "Jagd":"2",
+            "Angriff":"ja",
+            "Beute":":bis 40 Rationen Fleisch (zäh), Fell (wertlos)"
+        },
+        {
+            "Name":"Sumpfratte",
+            "Verbreitung":"ganz Aventurien (Sumpf, Flussläufe)",
+            "Auftreten":"W20+20, manchmal bis zu 3W20+30",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Selemferkel",
+            "Verbreitung":"",
+            "Auftreten":"",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"40 Rationen Fleisch, Fett, Leder"
+        },
+        {
+            "Name":"Baumspinne",
+            "Verbreitung":"ganz Aventurien (Höhlen, Ruinen, Wald) bzw. Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Gift (2 D)"
+        },
+        {
+            "Name":"Blattkopfotter",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Gift (3 D), Haut (Leder, teuer)"
+        },
+        {
+            "Name":"Blutfisch",
+            "Verbreitung":" Südaventurien (Flüsse, Bäche)",
+            "Auftreten":"1W20+20 Tiere und mehr",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"1/4 Ration Fleisch"
+        },
+        {
+            "Name":"Gaukelweihe",
+            "Verbreitung":"Liebliches Feld, Amhallassih, Mhanadistan, Balash, Südaventurien (Wald)",
+            "Auftreten":"einzeln oder (seltener) paarweise",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"½ Ration Fleisch (ungenießbar), Gefieder (einfach)"
+        },
+        {
+            "Name":"Löwenaffe",
+            "Verbreitung":"Südaventurien, Mhanadistan, Balash, Waldinseln (Wald)",
+            "Auftreten":"einzeln oder in Scharen von 2W6 Tieren",
+            "Jagd":"15",
+            "Angriff":"",
+            "Beute":"0,5 bis 2 Rationen Fleisch, Fell (besser)"
+        },
+        {
+            "Name":"Moskito",
+            "Verbreitung":"In allen aventurischen Sümpfen",
+            "Auftreten":"3W20 Insekten, im Hochsommer 3W20 Insekten +W20 hinzukommende Insekten je KR)",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Mysobviper",
+            "Verbreitung":" Südaventurien (Flussläufe)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"2,5 Ration Fleisch, Gift (25 S), Haut (Leder, teuer)"
+        },
+        {
+            "Name":"Panzerechse",
+            "Verbreitung":"Südaventurien (Wald, Sumpf, Flussläufe)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"40 bis 50 Rationen Fleisch (zäh, genießbar für Achaz), Haut unbrauchbar"
+        },
+        {
+            "Name":"Purzelaffe",
+            "Verbreitung":"Südaventurien, Mhanadistan, Balash, Waldinseln (Wald)",
+            "Auftreten":"einzeln oder in Scharen von 2W6 Tieren",
+            "Jagd":"15",
+            "Angriff":"",
+            "Beute":"0,5 bis 2 Rationen Fleisch, Fell (besser)"
+        },
+        {
+            "Name":"Riesenkaiman",
+            "Verbreitung":"Südaventurien (Sumpf, Flussläufe)",
+            "Auftreten":"zunächst einzeln, dann 1W6 weitereTiere binnen 1W20+2 KR",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"100 bis 150 Rationen Fleisch, Haut (Leder teuer; zu Iryanleder verarbeitet Luxusartikel), Zähne (Trophäe)"
+        },
+        {
+            "Name":"Wolfsratte",
+            "Verbreitung":"Nord- und Mittelaventurien, Tobrien, Aranien, Almada, Liebliches Feld",
+            "Auftreten":"2W6+6 bis zu 2W20+20 Tiere",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Würgeschlange",
+            "Verbreitung":"Südaventurien (Wald, Gebirge)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"100 bis 200 Rationen Fleisch, Haut (Leder, teuer)"
+        },
+        {
+            "Name":"Fischechse",
+            "Verbreitung":" Südaventurien, Albernia, Liebliches Feld (Gebirge, Küste)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"7 Rationen Fleisch (ungenießbar, für Achaz genießbar), Haut der Schwingen (sehr zähes Leder, teuer)"
+        },
+        {
+            "Name":"Fleckenpanther",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln, in Ausnahmefällen bis zu 4 Tiere",
+            "Jagd":"15",
+            "Angriff":"",
+            "Beute":"40 Rationen Fleisch, Fell (Luxusartikel)"
+        },
+        {
+            "Name":"Greifkatze",
+            "Verbreitung":"Südaventurien um Hôt-Alem (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Gürtelechse",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"15 bis 20 Rationen Fleisch, Haut (Leder, teuer)"
+        },
+        {
+            "Name":"Harpyie",
+            "Verbreitung":"ganz Aventurien außer Hoher Norden (Gebirge)",
+            "Auftreten":"bis zu 2W20+10 Tiere",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Höhlenspinne",
+            "Verbreitung":"ganz Aventurien (Höhlen, Ruinen, Wald) bzw. Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Gift (2 D)"
+        },
+        {
+            "Name":"Klammermoloch",
+            "Verbreitung":"Südaventurien (Flussauen, Seeufer)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Palmviper",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"½ Ration Fleisch, Gift (12 S), Haut (Leder, teuer)"
+        },
+        {
+            "Name":"Pei-Pei-Assel",
+            "Verbreitung":"Südaventurien, Waldinseln (Wald)",
+            "Auftreten":"einzeln (in freier Natur) / in kleinen Gruppen (‘domestiziert’)",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"15 Rationen Fleisch (ungenießbar), Rest wertlos"
+        },
+        {
+            "Name":"Ratte",
+            "Verbreitung":"ganz Aventurien",
+            "Auftreten":"20 oder mehr",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"1/5 Rationen Fleisch (zäh), Fell (billig), bisweilen Fangprämien bis zu 3 H je Ratte"
+        },
+        {
+            "Name":"Riesenamöbe",
+            "Verbreitung":"ganz Aventurien (Ruinen, Höhlen, Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Mageninhalt"
+        },
+        {
+            "Name":"Springchamäleon",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":": 15 Rationen Fleisch (ungenießbar, für Achaz genießbar), Haut (Leder, besser)"
+        },
+        {
+            "Name":"Vampirfledermaus",
+            "Verbreitung":"ganz Aventurien (Höhlen)",
+            "Auftreten":": 1W20+10 bis 2W20+20 Tiere und mehr",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Haut wertlos"
+        },
+        {
+            "Name":"Vogelspinne",
+            "Verbreitung":"Aranien, Mhanadistan, Khômgebiet, Almada, Liebliches Feld, Südaventurien, Maraskan (Waldrand, Steppe)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Gift (1 S)"
+        },
+        {
+            "Name":"Zwergelefant",
+            "Verbreitung":"Regengebirge (Wald)",
+            "Auftreten":"einzeln oder in Gruppen von 2W6 Tieren",
+            "Jagd":"4",
+            "Angriff":"ja",
+            "Beute":"500 Rationen Fleisch, Haut (Fell oder Leder, teuer), Stoßzähne (3 D je Stein / pro Zahn bis zu 30 Stein)"
+        },
+        {
+            "Name":"Basilisken-Panzerkröte",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Alter/5 Rationen Fleisch"
+        },
+        {
+            "Name":"Borbarad-Moskito",
+            "Verbreitung":"ganz Aventurien, vor allem Tobrien, Oron und Maraskan (Sumpf, Sumpfrandgebiete)",
+            "Auftreten":"meist 1W20+20 Tiere, gelegentlich mehr (2W20+30 Tiere), in Fallen 2W6+6 Tiere",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":""
+        },
+        {
+            "Name":"Brabaker Waldelefant",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln oder in Gruppen von 2W6 Tieren",
+            "Jagd":"7",
+            "Angriff":"ja",
+            "Beute":"1.500 bis 2.000 Rationen Fleisch, Haut (Leder, teuer), Stoßzähne (5 D je Stein / pro Zahn bis zu 15 Stein)"
+        },
+        {
+            "Name":"Dschungeltiger",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"einzeln",
+            "Jagd":"10",
+            "Angriff":"ja",
+            "Beute":" 100 Rationen Fleisch (zäh), Fell (Luxusartikel), Zähne (Trophäe)"
+        },
+        {
+            "Name":"Feuerskorpion",
+            "Verbreitung":"Khômgebiet, Südaventurien, Mhanadistan (Wald, Wüstenrand)",
+            "Auftreten":"einzeln",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"Gift (25S)"
+        },
+        {
+            "Name":"Grünschrecke",
+            "Verbreitung":"Südaventurien (Wald)",
+            "Auftreten":"W20+30 Spinnen",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"wertlos"
+        },
+        {
+            "Name":"Lioma",
+            "Verbreitung":"Südaventurien (Regenwälder)",
+            "Auftreten":"einzeln",
+            "Jagd":"12",
+            "Angriff":"ja",
+            "Beute":"90 Rationen Fleisch, Fell (Luxusartikel)"
+        },
+        {
+            "Name":"Nachtwind",
+            "Verbreitung":"ganz Aventurien (Wald)",
+            "Auftreten":"einzeln / in Scharen von etwa einem Dutzend Tiere",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"1,5 Rationen Fleisch, Gefieder (besser)"
+        },
+        {
+            "Name":"Olruksbraut",
+            "Verbreitung":"einzeln",
+            "Auftreten":"",
+            "Jagd":"",
+            "Angriff":"",
+            "Beute":"30–40 Rationen Innereien (ungenießbar), Rest wertlos"
+        },
+        {
+            "Name":"Riesenaffe",
+            "Verbreitung":"Bornland, Orkland, Wälder rund um die Salamandersteine, Maraskan, Südaventurien (Wald)",
+            "Auftreten":"einzeln oder im Familienverband (bis zwei Dutzend Affen)",
+            "Jagd":"5",
+            "Angriff":"ja",
+            "Beute":"190 Rationen Fleisch (zäh), Fell (besser)"
         },
         {
             "Name":"",
             "Verbreitung":"",
             "Auftreten":"",
             "Jagd":"",
+            "Angriff":"",
             "Beute":""
         }
     ]
