@@ -1,0 +1,25 @@
+{
+    "regionen": 
+    [
+        {
+            "Regenwald": 
+            [
+                {
+                    "Tiere":
+                    [
+                        {
+                            "Name": "Alligator",
+                            "Häufigkeit": "häufig",
+                            "Gebiet":""
+                        },
+                        {
+                            "Name":"",
+                            "Häufigkeit":"",
+                            "Gebiet":""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
