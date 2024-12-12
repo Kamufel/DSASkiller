@@ -2820,6 +2820,16 @@
             "kosten": "250"
         },
         {
+            "name": "Große Meditation",
+            "gruppe": ["Große Meditation", "Magische Sonderfertigkeit"],
+            "kosten": "100"
+        },
+        {
+            "name": "Große Meditation (Angewandt)",
+            "gruppe": ["Große Meditation (Angewandt)"],
+            "kosten": "400"
+        },
+        {
             "name": "Hypervehemenz",
             "gruppe": ["Hypervehemenz", "Magische Sonderfertigkeit"],
             "kosten": "300"
@@ -2846,7 +2856,7 @@
         },
         {
             "name": "Kraftlinienmagie II",
-            "gruppe": ["Kraftlinienmagie", "Magische Sonderfertigkeit"],
+            "gruppe": ["Kraftlinienmagie II","Kraftlinienmagie", "Magische Sonderfertigkeit"],
             "kosten": "400"
         },
         {
@@ -2876,7 +2886,7 @@
         },
         {
             "name": "Matrixregeneration II",
-            "gruppe": ["Matrixregeneration", "Magische Sonderfertigkeit"],
+            "gruppe": ["Matrixregeneration II","Matrixregeneration", "Magische Sonderfertigkeit"],
             "kosten": "500"
         },
         {

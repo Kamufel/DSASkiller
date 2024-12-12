@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Skiller Zoo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>DSA Skiller Zoo</h1>
+    <div>
+        <label for="locationType">Location Type:</label>
+        <select id="locationType">
+            <option value="ewigesEis">Ewiges Eis</option>
+            <option value="nordlicheTundra">Nördliche Tundra</option>
+        </select>
+    </div>
+    <div>
+        <label for="subLocation">Sub-location:</label>
+        <select id="subLocation">
+            <option value="überall">Überall</option>
+            <option value="küste">Küste</option>
+        </select>
+    </div>
+    <div>
+        <button id="actionButton">Submit</button>
+    </div>
+    </div>
+    <script>
+        document.getElementById('actionButton').addEventListener('click', function() {
+            fetchAnimals();
+        });
+        async function fetchAnimals() {
+    try {
+        let response = await fetch('get_animal_from_tundra.php');
+        let tiere = await response.json();
+        tiereAusgeben(tiere);
+    } catch (error) {
+        console.error('Error fetching tiere:', error);
+    }
+}
+function tiereAusgeben(tiere)
+{
+    const subLocation = document.getElementById('subLocation').value;
+    if(subLocation !== "überall")
+    {
+        const filteredtiere = tiere.filter(tier => tier.gebiet.trim() === subLocation);
+        console.log("nicht überall");
+        console.log(subLocation);
+        console.log(tiere);
+    }
+    else if(subLocation === "überall")
+    {
+        const filteredtiere = tiere.filter(tier => tier.gebiet.trim() === "");
+    console.log("überall");
+    console.log(subLocation);
+    console.log(filteredtiere);
+    }
+    else{console.log("was ganz anderes, kp was passiert ist");
+    console.log(subLocation);
+    }
+}
+    </script>
+</body>
+</html>

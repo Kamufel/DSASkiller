@@ -264,3 +264,43 @@ button.calculate-button:hover {
     top: 0;
     z-index: 1;
 }
+/* Container for the status indicator */
+#status-indicator {
+    display: flex;
+    align-items: center; /* Vertically align text and lamp */
+    justify-content: flex-end; /* Align towards the top-right corner */
+    padding: 5px 10px; /* Adjust spacing */
+    gap: 10px; /* Space between elements */
+}
+
+/* The lamp (light icon) */
+.light-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 10px red;
+}
+
+/* Online status */
+.light-icon.online {
+    background-color: green;
+    box-shadow: 0 0 10px green;
+}
+
+/* Offline status */
+.light-icon.offline {
+    background-color: red;
+    box-shadow: 0 0 10px red;
+}
+/* Text label for the status indicator */
+#status-text {
+    margin-right: 10px; /* Space between text and lamp */
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: right;
+    display: inline-block;
+    white-space: nowrap;
+}

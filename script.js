@@ -1,4 +1,4 @@
-const pfad='https://cdn.discordapp.com/attachments/226761368206835712/1278281562940641371/data.json?ex=66d03bf9&is=66ceea79&hm=cb5a88efa0ce4703017049da469eb948f69bd68cc43f3a747fdbe97a9d7e4f42&';
+const pfad='data.json';
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch(pfad)
@@ -12,6 +12,39 @@ document.addEventListener('DOMContentLoaded', () => {
     setupImportExportEventListeners();
 });
 
+// Function to update the status indicator
+function checkApiStatus() {
+    fetch("https://cors-anywhere.herokuapp.com/http://77.11.135.124:30000/api/status", { method: 'GET' })
+        .then(response => {
+            const lightIcon = document.querySelector('.light-icon');
+            const statusText = document.getElementById('status-text');
+            if (response.ok) {
+                // Update text and lamp for online status
+                lightIcon.classList.remove('offline');
+                lightIcon.classList.add('online');
+                statusText.textContent = "Foundry Server Online";
+            } else {
+                // Update text and lamp for unreachable status
+                lightIcon.classList.remove('online');
+                lightIcon.classList.add('offline');
+                statusText.textContent = "Foundry Server Offline";
+            }
+        })
+        .catch(() => {
+            // Update text and lamp for errors
+            const lightIcon = document.querySelector('.light-icon');
+            const statusText = document.getElementById('status-text');
+            lightIcon.classList.remove('online');
+            lightIcon.classList.add('offline');
+            statusText.textContent = "Foundry Server Offline";
+        });
+}
+
+// Initial status check and periodic updates
+document.addEventListener('DOMContentLoaded', checkApiStatus);
+
+
+// Example function to fetch data
 function populateSidebarComboboxes() {
     // Arrays mit Optionen
     const comboboxOptions = {
@@ -24,7 +57,7 @@ function populateSidebarComboboxes() {
             "Körperliches Talent", "Naturtalent", "Sprachen und Schriften", "Wissenstalent"
         ],
         magischVorteile: [
-            "","Affinität zu Elementaren", "Akademische Ausbildung (Magier)", "Eigeboren", "Astraler Block", "Elfische Weltsicht (W.I.P)", "Sippenlos"
+            "","Affinität zu Elementaren", "Akademische Ausbildung (Magier)", "Eigeboren", "Astraler Block", "Elfische Weltsicht (W.I.P)", "Sippenlos",, "Eidetisches Gedächtnis (Druide)", "Gutes Gedächtnis (Druide)"
         ],
         magischBegabungen: [
             "", "Antimagie", "Beschwörung", "Dämonisch", "Dämonisch (Agrimoth)", "Dämonisch (Amazeroth)", "Dämonisch (Belhalhar)",
@@ -666,8 +699,6 @@ function calculateAP() {
                 getRealAPCost(data);
             })
             .catch(error => console.error('Error loading JSON data:', error)); 
-
-
 }
 
 let isSidebarOpen = false;
@@ -892,95 +923,118 @@ function getRealAPCost(data)
     });
 
     // Berechnung der AP-Kosten für Talente
-    talentRows.forEach(row => {
+talentRows.forEach(row => {
         const currentValue = parseInt(row.querySelector('.current-value').value, 10) || 0;
         const desiredValue = parseInt(row.querySelector('.desired-value').value, 10) || 0;
         const steigerungskategorie = row.querySelector('.steigerungskategorie-select').value;
         const lehrmethode = row.querySelector('.lehrmeister-select').value; 
+        
+        
 
-
-
-        document.querySelectorAll('.talent-select').forEach(select => {
             apCost = 0;
             if(lehrmethode==="AKT")
-            {
-                selectedItem = data.talente.find(talent => talent.name === select.value);
-                const steigerungskategorieFest = selectedItem.steigerungskategorie;
-                console.log(steigerungskategorieFest);
-                switch (steigerungskategorieFest) {
-                    case 'A':
-                    totalCost=5;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'B':
-                    totalCost=10;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'C':
-                    totalCost=15;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'D':
-                    totalCost=20;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'E':
-                    totalCost=25;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'F':
-                    totalCost=40;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'G':
-                    totalCost=50;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    case 'H':
-                    totalCost=100;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
-                    default:
-                    totalCost=0;
-                    row.querySelector('.ap-cost').value = totalCost;
-                    break;
+                {
+                    selectedItem = data.talente.find(talent => talent.name === row.querySelector('.talent-select').value);
+                    const steigerungskategorieFest = selectedItem.steigerungskategorie;
+                    console.log(steigerungskategorieFest);
+                    switch (steigerungskategorieFest) {
+                        case 'A+':
+                        apCost=5;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'A':
+                        apCost=5;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'B':
+                        apCost=10;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'C':
+                        apCost=15;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'D':
+                        apCost=20;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'E':
+                        apCost=25;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'F':
+                        apCost=40;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'G':
+                        apCost=50;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        case 'H':
+                        apCost=100;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                        default:
+                        apCost=0;
+                        row.querySelector('.ap-cost').value = apCost;
+                        break;
+                    }
+                            row.querySelector('.ap-cost').value = apCost;
+        totalCost += apCost;
+        console.log("Die totalen Kosten: "+totalCost);
                 }
-            }
         else{
-                
-            for (let i = currentValue + 1; i <= desiredValue; i++) {
-                apCost += getAPCostForStep(i, steigerungskategorie);
-            }
+        for (let i = currentValue + 1; i <= desiredValue; i++) {
+            apCost += getAPCostForStep(i, steigerungskategorie);
+        }
 
-            selectedItem = data.talente.find(talent => talent.name === select.value);
-
-
+            selectedItem = data.talente.find(talent => talent.name === row.querySelector('.talent-select').value);
 
                     state.profanVorteile.forEach(vorteil =>
                         {
-
                             selectedItem.gruppe.forEach(gruppe =>
-                                { 
+                                {
                                     if(vorteil === "Gutes Gedächtnis" && gruppe === "Sprachen/Schriften")
                                         {
+                                            console.log(selectedItem);
                                             apCost = Math.round(apCost*0.75);
                                         }
-                                    else if (vorteil === "Eidetisches Gedächtnis" && (gruppe === "Sprachen/Schriften"||gruppe === "Wissenstalent"))
+                                    else if(vorteil === "Eidetisches Gedächtnis" && (gruppe === "Sprachen/Schriften"||gruppe === "Wissenstalent"))
                                         {
+                                            console.log(selectedItem);
                                             apCost = Math.round(apCost*0.50);
                                         }
                                     
                             });                      
         });
-        row.querySelector('.ap-cost').value = apCost;
-    }
-    });
+        state.magischVorteile.forEach(vorteil =>
+            {
 
-    setzeZeitUndGeldkosten(data);
-    totalCost += apCost;
+                selectedItem.gruppe.forEach(gruppe =>
+                    { 
+                        if(vorteil === "Gutes Gedächtnis (Druide)" && gruppe === "Sprachen/Schriften")
+                            {
+                                console.log(gruppe);
+                                apCost = Math.round(apCost*0.75);
+                            }
+                        
+                        else if (vorteil === "Eidetisches Gedächtnis (Druide)" && (gruppe === "Sprachen/Schriften"||gruppe === "Wissenstalent"))
+                            {
+                                console.log(gruppe);
+                                apCost = Math.round(apCost*0.50);
+                            }
+                        
+                });                      
+});
+        row.querySelector('.ap-cost').value = apCost;
+        totalCost += apCost;
+        console.log("Die totalen Kosten: "+totalCost);
+    }});
+
+    
     document.getElementById('total-cost').value = totalCost +" AP";
 
-    });
+
 
     // Berechnung der AP-Kosten für Zauber
     zauberRows.forEach(row => {
@@ -990,62 +1044,65 @@ function getRealAPCost(data)
         const lehrmethode = row.querySelector('.lehrmeister-select').value; 
         
 
-        document.querySelectorAll('.zauber-select').forEach(select => {
+
             apCost = 0;
             if(lehrmethode==="AKT")
                 {
-                    selectedItem = data.zauber.find(zauber => zauber.name === select.value);
+                    selectedItem = data.zauber.find(zauber => zauber.name === row.querySelector('.zauber-select').value);
                     const steigerungskategorieFest = selectedItem.steigerungskategorie;
                     console.log(steigerungskategorieFest);
                     switch (steigerungskategorieFest) {
                         case 'A+':
-                        totalCost=5;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=5;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'A':
-                        totalCost=5;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=5;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'B':
-                        totalCost=10;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=10;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'C':
-                        totalCost=15;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=15;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'D':
-                        totalCost=20;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=20;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'E':
-                        totalCost=25;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=25;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'F':
-                        totalCost=40;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=40;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'G':
-                        totalCost=50;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=50;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         case 'H':
-                        totalCost=100;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=100;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                         default:
-                        totalCost=0;
-                        row.querySelector('.ap-cost').value = totalCost;
+                        apCost=0;
+                        row.querySelector('.ap-cost').value = apCost;
                         break;
                     }
+                            row.querySelector('.ap-cost').value = apCost;
+        totalCost += apCost;
+        console.log("Die totalen Kosten: "+totalCost);
                 }
         else{
         for (let i = currentValue + 1; i <= desiredValue; i++) {
             apCost += getAPCostForStep(i, steigerungskategorie);
         }
 
-            selectedItem = data.zauber.find(zauber => zauber.name === select.value);
+            selectedItem = data.zauber.find(zauber => zauber.name === row.querySelector('.zauber-select').value);
 
                     state.profanVorteile.forEach(vorteil =>
                         {
@@ -1062,13 +1119,32 @@ function getRealAPCost(data)
                                     
                             });                      
         });
+        state.magischVorteile.forEach(vorteil =>
+            {
+
+                selectedItem.merkmale.forEach(merkmal =>
+                    { 
+                        if(vorteil === "Gutes Gedächtnis (Druide)" && merkmal === "Zauber")
+                            {
+                                apCost = Math.round(apCost*0.66);
+                            }
+                        
+                        else if (vorteil === "Eidetisches Gedächtnis (Druide)" && merkmal === "Zauber")
+                            {
+                                apCost = Math.round(apCost*0.33);
+                            }
+                        
+                });                      
+});
         row.querySelector('.ap-cost').value = apCost;
+        totalCost += apCost;
+        console.log("Die totalen Kosten: "+totalCost);
     }});
-    setzeZeitUndGeldkosten(data);
-    totalCost += apCost;
+
+
     document.getElementById('total-cost').value = totalCost +" AP";
 
-    });
+
 
     // Berechnung der AP-Kosten für anderes
     anderesRows.forEach(row => {
@@ -1078,13 +1154,13 @@ function getRealAPCost(data)
 
 
 
-        document.querySelectorAll('.anderes-select').forEach(select => {
+
             apCost = 0;
 
             for (let i = currentValue + 1; i <= desiredValue; i++) {
                 apCost += getAPCostForStep(i, steigerungskategorie);
             }
-            selectedItem = data.andere.find(andere => andere.name === select.value);
+            selectedItem = data.andere.find(andere => andere.name === row.querySelector('.anderes-select').value);
 
                     state.profanVorteile.forEach(vorteil =>
                         {
@@ -1100,13 +1176,28 @@ function getRealAPCost(data)
                                         }      
                             });                      
         });
+        state.magischVorteile.forEach(vorteil =>
+            {
+                selectedItem.gruppe.forEach(gruppe =>
+                    { 
+                        if(vorteil === "Gutes Gedächtnis (Druide)" && (gruppe === "Ritualkenntnis allgemein"|| gruppe === "Ritualkenntnis Alchimist"|| gruppe === "Ritualkenntnis Scharlatan"|| gruppe === "Liturgiekenntnis"))
+                            {
+                                apCost = Math.round(apCost*0.75);
+                            }
+                        else if(vorteil === "Eidetisches Gedächtnis (Druide)" && (gruppe === "Ritualkenntnis allgemein"|| gruppe === "Ritualkenntnis Alchimist"|| gruppe === "Ritualkenntnis Scharlatan"|| gruppe === "Liturgiekenntnis"))
+                            {
+                                apCost = Math.round(apCost*0.50);
+                            }      
+                });                      
+});
 
         row.querySelector('.ap-cost').value = apCost;
+        totalCost += apCost;
+        console.log("Die totalen Kosten: "+totalCost);
     });
-    setzeZeitUndGeldkosten(data);
-    totalCost += apCost;
+
+
     document.getElementById('total-cost').value = totalCost +" AP";
-    });
 
     // Berechnung der AP-Kosten für Liurgien
     LiturgienRows.forEach(row => {
@@ -1125,7 +1216,18 @@ function getRealAPCost(data)
                     {
                         apCost = Math.round(apCost = apCost*0.5);
                     }
-           }); 
+           });
+         state.magischVorteile.forEach(vorteil =>
+            {
+                if(vorteil === "Gutes Gedächtnis (Druide)")
+                    {
+                        apCost = Math.round(apCost = apCost*0.75);
+                    }                       
+                if(vorteil === "Eidetisches Gedächtnis (Druide)")
+                    {
+                        apCost = Math.round(apCost = apCost*0.5);
+                    }
+           });
          if(lehrmethode === "SE"||lehrmethode === "V")
              {
                  apCost = Math.round(apCost = apCost*0.5);
@@ -1133,6 +1235,7 @@ function getRealAPCost(data)
 
     row.querySelector('.ap-cost').value = apCost;
     totalCost += apCost;
+    console.log("Die totalen Kosten: "+totalCost);
     document.getElementById('total-cost').value = totalCost +" AP";
     });
 
@@ -1145,6 +1248,11 @@ function getRealAPCost(data)
             apCost = 0;
             selectedItem = data.sonderfertigkeiten.find(sonderfertigkeit => sonderfertigkeit.name === selectedRow.value);
             apCost = parseInt(selectedItem.kosten,10);
+            kraftlinienmagie  = false;
+            matrixgeber = false;
+            semipermanenz = false;
+
+
 
          state.magischVorteile.forEach(vorteil =>
          {
@@ -1164,18 +1272,6 @@ function getRealAPCost(data)
             
                         });
                 }
-            if(vorteil === "Akademische Ausbildung (Krieger)")
-                {
-                    selectedItem.gruppe.forEach(gruppe =>
-                        {
-    
-                        if(gruppe === "Kampfsonderfertigkeit")
-                            {
-                                    apCost = Math.round(apCost*0.75);
-                            }
-                
-                        });
-                }
             if(vorteil === "Affinität zu Elementaren")
                 {
                     selectedItem.gruppe.forEach(gruppe =>
@@ -1185,21 +1281,6 @@ function getRealAPCost(data)
                             {
                                     apCost = Math.round((apCost/7)*5);
                             }  
-                        });
-                }
-             if(vorteil === "Beidhändig")
-                {
-                    selectedItem.gruppe.forEach(gruppe =>
-                        {
-    
-                        if(gruppe === "Linkhand" || gruppe === "Beidhändiger Kampf")
-                            {
-                                apCost = Math.round(apCost = apCost*0.5);
-                            }
-                        else if(gruppe === "Schildkampf" || gruppe === "Parierwaffen" || gruppe === "Tod von Links"|| gruppe === "Doppelangriff")
-                            {
-                                apCost = Math.round(apCost = apCost*0.75);
-                            }
                         });
                 }
              if(vorteil === "Astraler Block")
@@ -1223,7 +1304,29 @@ function getRealAPCost(data)
                                 apCost = Math.round(apCost = apCost*0.5);
                             }
                         });
-                }                                
+                }
+                if(vorteil === "Gutes Gedächtnis (Druide)")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+       
+                            if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"||gruppe === "Wissenstalentspezialisierung"||gruppe === "Zauberspezialisierung"||gruppe === "Zweite Wissenstalentspezialisierung"||gruppe === "Zweite Zauberspezialisierung")
+                                {
+                                   apCost = Math.round(apCost = apCost*0.75);
+                               }
+                           });
+                   }                       
+                if(vorteil === "Eidetisches Gedächtnis (Druide)")
+                   {
+                       selectedItem.gruppe.forEach(gruppe =>
+                           {
+       
+                            if(gruppe === "Geländekunde" || gruppe === "Kulturkunde"|| gruppe === "Nandusgefälliges Wissen"|| gruppe === "Ortskenntnis"|| gruppe === "Kulturkunde"|| gruppe === "Exorzist" || gruppe === "Invocatio Integra"|| gruppe === "Kraftlinienmagie"|| gruppe === "Matrixkontrolle"|| gruppe === "Ritualkenntnis"|| gruppe === "Runenkunde"|| gruppe === "Signaturkenntnis"|| gruppe === "Zauberzeichen"||gruppe === "Wissenstalentspezialisierung"||gruppe === "Zauberspezialisierung"||gruppe === "Zweite Wissenstalentspezialisierung"||gruppe === "Zweite Zauberspezialisierung")
+                               {
+                                   apCost = Math.round(apCost = apCost*0.5);
+                               }
+                           });
+                   }                                                
         });
         state.profanVorteile.forEach(vorteil =>
             {
@@ -1289,14 +1392,106 @@ function getRealAPCost(data)
                    } 
                     
            });
+           state.magischMerkmale.forEach(merkmal =>
+            {
+                if(merkmal === "Metamagie")
+                {
+                    selectedItem.gruppe.forEach(gruppe =>
+                        {
+                            if(gruppe === "Hypervehemenz"||gruppe === "Stapeleffekt"||gruppe === "Zauber bereithalten"||gruppe === "Zauber vereinigen"||gruppe === "Zauber unterbrechen"||gruppe === "Matrixverständnis")
+                            {
+                                apCost = Math.round(apCost*0.50);
+                            }
+                    
+                        });
+
+                }
+                if(merkmal === "Beschwörung")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                                if(gruppe === "Invocatio Integra")
+                                {
+                                    apCost = Math.round(apCost*0.50);
+                                }
+                        
+                            });
+    
+                    }
+                if(merkmal === "Kraft")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                                if(gruppe === "Kraftkontrolle"||gruppe === "Matrixregeneration II")
+                                {
+                                    apCost = Math.round(apCost*0.50);
+                                }
+                        
+                            });
+    
+                    }
+                if(merkmal === "Objekt")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                                if(gruppe === "Kraftspeicher")
+                                {
+                                    apCost = Math.round(apCost*0.50);
+                                }
+                        
+                            });
+    
+                    }
+                if(merkmal === "Metamagie"||merkmal === "Temporal")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                                if(gruppe === "Semipermanenz" && !semipermanenz)
+                                {
+                                    apCost = Math.round(apCost*0.50);
+                                    semipermanenz = true;
+                                }
+                        
+                            });
+    
+                    }  
+                if(merkmal === "Metamagie"||merkmal === "Objekt")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                                if(gruppe === "Matrixgeber"&& !matrixgeber)
+                                {
+                                    apCost = Math.round(apCost*0.50);
+                                    matrixgeber=true;
+                                }
+                        
+                            });
+    
+                    }     
+                if(merkmal === "Metamagie"||merkmal === "Kraft"||merkmal === "Hellsicht")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                                if(gruppe === "Kraftlinienmagie II" && !kraftlinienmagie)
+                                {
+                                    apCost = Math.round(apCost*0.50);
+                                    kraftlinienmagie = true;
+                                }
+                        
+                            });
+    
+                    }                             
+            }
+        );
                 if(lehrmethode === "SE"||lehrmethode === "V")
                     {
                         apCost = Math.round(apCost = apCost*0.5);
                     }
 
         row.querySelector('.ap-cost').value = apCost;
-        setzeZeitUndGeldkosten(data);
+
         totalCost += apCost;
+        console.log("Die totalen Kosten: "+totalCost);
     });
 
     document.getElementById('total-cost').value = totalCost +" AP";  
@@ -1318,11 +1513,41 @@ function getRealAPCost(data)
                if(vorteil === "Akademische Ausbildung (Magier)")
                     {
                         apCost = Math.round(apCost*0.75);
-                    }                  
+                    }        
+               if(vorteil === "Gutes Gedächtnis (Druide)")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                            if(gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise"|| gruppe === "Objektritual"|| gruppe === "Stabritual"|| gruppe === "Kugelritual"|| gruppe === "Schalenritual"|| gruppe === "Ringritual"|| gruppe === "Druidenritual"|| gruppe === "Kristallomantenritual"|| gruppe === "Zibiljaritual")
+                                {
+                                    apCost = Math.round(apCost = apCost*0.75);
+                                }
+                            });
+                    }
+               if(vorteil === "Eidetisches Gedächtnis (Druide)")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                            if(gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise"|| gruppe === "Objektritual"|| gruppe === "Stabritual"|| gruppe === "Kugelritual"|| gruppe === "Schalenritual"|| gruppe === "Ringritual"|| gruppe === "Druidenritual"|| gruppe === "Kristallomantenritual"|| gruppe === "Zibiljaritual")
+                                {
+                                    apCost = Math.round(apCost = apCost*0.5);
+                                }
+                            });
+                    }          
             });
         state.profanVorteile.forEach(vorteil =>
             {
                if(vorteil === "Gutes Gedächtnis")
+                    {
+                        selectedItem.gruppe.forEach(gruppe =>
+                            {
+                            if(gruppe === "Zauberzeichen"|| gruppe === "Bann- und Schutzkreise"|| gruppe === "Objektritual"|| gruppe === "Stabritual"|| gruppe === "Kugelritual"|| gruppe === "Schalenritual"|| gruppe === "Ringritual"|| gruppe === "Druidenritual"|| gruppe === "Kristallomantenritual"|| gruppe === "Zibiljaritual")
+                                {
+                                    apCost = Math.round(apCost = apCost*0.75);
+                                }
+                            });
+                    }
+               if(vorteil === "Eidetisches Gedächtnis")
                     {
                         selectedItem.gruppe.forEach(gruppe =>
                             {
@@ -1358,13 +1583,14 @@ function getRealAPCost(data)
                     apCost = Math.round(apCost = apCost*0.5);
                 }
     row.querySelector('.ap-cost').value = apCost;
-    setzeZeitUndGeldkosten(data);
+
     totalCost += apCost;
+    console.log("Die totalen Kosten: "+totalCost);
 });
 
 document.getElementById('total-cost').value = totalCost +" AP";  
 
-
+setzeZeitUndGeldkosten(data);
 fügeKennungenhinzu(data);
 }
 function fügeKennungenhinzu(data){

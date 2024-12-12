@@ -1,0 +1,34 @@
+# Enforce HTTPS and redirect to the Index.html page
+RewriteEngine On
+
+# Redirect non-HTTPS requests to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirect the root domain (/) to /Index.html
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /Index.html [L,R=301]
+
+# Prevent access to dotfiles like .htaccess, .env, etc.
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Enable Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+</IfModule>
+
+# Set cache-control headers for static assets
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico|woff|woff2|ttf|svg)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# Custom error pages
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Set default index file
+DirectoryIndex Index.html
+
