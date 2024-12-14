@@ -306,6 +306,16 @@
                             "Gebiet": ""
                         },
                         {
+                            "Name": "Färberlotos",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Teiche"
+                        },
+                        {
+                            "Name": "Färberlotos",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Seeufer"
+                        },
+                        {
                             "Name": "Purpurner Lotos",
                             "Häufigkeit": "selten",
                             "Gebiet": "Teiche"
