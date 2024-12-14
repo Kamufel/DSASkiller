@@ -12,7 +12,9 @@
             "Wirkung":"Die Wurzel gibt 1W6+10 LeP über 7 Stunden Ruhe zurück. Unternimmt man in diesem Zeitraum große Anstrengungen (z.B. Kämpfe oder Gewaltmärsche), bekommt der Patient nur W6 LeP. Beim Wundfieberwurf (siehe GA 208) werden 4 Punkte abgezogen. Wird im Lauf der 7 Stunden eine weitere Wurzel eingenommen, wirkt diese ebenfalls heilkräftig, lähmt aber alle Glieder (für einen Tag GE, FF, KK je –5).",
             "Haltbarkeit":"2W6+18 Stunden",
             "Preis":"7 S",
-            "Alchimistische Verwendung":
+            "Alchimistische Verwendung": "Substitut und Bestandteil der Heiltränke in Südaventurien",
+            "Besonderheiten":"",
+            "Rezepte":
             [
                 {
                     "Name":"Argansud",
@@ -36,7 +38,9 @@
             "Wirkung":"",
             "Haltbarkeit":"",
             "Preis":"",
-            "Alchimistische Verwendung":
+            "Alchimistische Verwendung":"",
+            "Besonderheiten":"",
+            "Rezepte":
             [
                 {
                     "Name":"",
@@ -50,5 +54,4 @@
             ]
         }
     ]
-
 }

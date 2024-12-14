@@ -10,12 +10,12 @@
                         {
                             "Name": "Alligator",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Flussläufe"
                         },
                         {
                             "Name": "Fledermaus",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Höhlen"
                         },
                         {
                             "Name": "Moosäffchen",
@@ -30,7 +30,12 @@
                         {
                             "Name": "Sumpfratte",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Sumpf"
+                        },
+                        {
+                            "Name": "Sumpfratte",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": "Flussläufe"
                         },
                         {
                             "Name": "Selemferkel",
