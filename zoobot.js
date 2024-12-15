@@ -93,20 +93,22 @@
                 const selectedGebiet = gebietDropdown.value;
                 const selectedRegionData = regionenData.regionen.find(regionObj => Object.keys(regionObj)[0] === selectedRegion)[selectedRegion];
                 let daten;
+                nameDropdown.disabled = false;
+                nameDropdown.innerHTML = '<option value="" disabled selected>-- Namen auswählen --</option>';
                 if (selectedAktivitaet === "Jagd") {
                     daten = selectedRegionData[0];
-
+                
                     daten.Tiere?.forEach(item => 
                         {
 
-                            if(item.Gebiet === selectedGebiet)
+                            if(item.Gebiet === selectedGebiet || item.Gebiet === "")
                                 {
-                                    console.log(item);
+                                    const option = document.createElement('option');
+                                    option.value = item.Name;
+                                    option.textContent = item.Name;
+                                    nameDropdown.appendChild(option);
                                 }
-                        const option = document.createElement('option');
-                        option.value = item.Name;
-                        option.textContent = item.Name;
-                        nameDropdown.appendChild(option);
+                        
                         }
                     );
                 } else if (selectedAktivitaet === "Kräutersuche") {
@@ -121,8 +123,7 @@
                 }
 
 
-                nameDropdown.disabled = false;
-                nameDropdown.innerHTML = '<option value="" disabled selected>-- Namen auswählen --</option>';
+
 
 
                 detailsDiv.innerHTML = `
