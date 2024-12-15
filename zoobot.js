@@ -89,33 +89,41 @@
 
             aktivitaetDropdown.addEventListener('change', async () => {
                 const selectedAktivitaet = aktivitaetDropdown.value;
+                const selectedRegion = regionenDropdown.value;
+                const selectedGebiet = gebietDropdown.value;
+                const selectedRegionData = regionenData.regionen.find(regionObj => Object.keys(regionObj)[0] === selectedRegion)[selectedRegion];
                 let daten;
-
                 if (selectedAktivitaet === "Jagd") {
-                    daten = tiereData;
-                    console.log(tiereData);
+                    daten = selectedRegionData[0];
+
+                    daten.Tiere?.forEach(item => 
+                        {
+
+                            if(item.Gebiet === selectedGebiet)
+                                {
+                                    console.log(item);
+                                }
+                        const option = document.createElement('option');
+                        option.value = item.Name;
+                        option.textContent = item.Name;
+                        nameDropdown.appendChild(option);
+                        }
+                    );
                 } else if (selectedAktivitaet === "Kräutersuche") {
-                    daten = pflanzenData;
-                    console.log(pflanzenData);
+                    daten = selectedRegionData[1];
+
+                    daten.Pflanzen?.forEach(item => {
+                        const option = document.createElement('option');
+                        option.value = item.Name;
+                        option.textContent = item.Name;
+                        nameDropdown.appendChild(option);
+                    });
                 }
 
 
                 nameDropdown.disabled = false;
                 nameDropdown.innerHTML = '<option value="" disabled selected>-- Namen auswählen --</option>';
 
-                daten.Tiere?.forEach(item => {
-                    const option = document.createElement('option');
-                    option.value = item.Name;
-                    option.textContent = item.Name;
-                    nameDropdown.appendChild(option);
-                });
-
-                daten.Pflanzen?.forEach(item => {
-                    const option = document.createElement('option');
-                    option.value = item.Name;
-                    option.textContent = item.Name;
-                    nameDropdown.appendChild(option);
-                });
 
                 detailsDiv.innerHTML = `
                     <h2>Region: ${regionenDropdown.value}</h2>
@@ -127,7 +135,9 @@
             nameDropdown.addEventListener('change', () => {
                 const selectedName = nameDropdown.value;
                 detailsDiv.innerHTML += `<h5>Ausgewählter Name: ${selectedName}</h5>`;
+
             });
         }
+
 
         init();
