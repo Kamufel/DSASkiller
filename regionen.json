@@ -4,8 +4,7 @@
         {
             "Regenwald": 
             [
-                {
-                    "Tiere":
+                {"Tiere":
                     [
                         {
                             "Name": "Alligator",
@@ -232,8 +231,9 @@
                             "Häufigkeit": "sehr selten",
                             "Gebiet": ""
                         }
-                    ],
-                    "Pflanzen":
+                    ]
+                },
+                  {"Pflanzen":
                     [
                         {
                             "Name": "Arganstrauch",
@@ -416,6 +416,74 @@
                             "Gebiet": ""
                         }
 
+                    ]
+                },
+                {"Infos":[
+                    {
+                        "Gebiete": "Regenwald (Waldgebiete der östlichen Echsensümpfe, Arra tistan, beiderseits des Regengebirges, Hochland von H’Rabaal, Syl lanische Halbinsel, Großteil der Waldinseln), Nebelwald (Altimont, Berge der Waldinseln), regengrüner Wald (Südelemitische Halbinsel: Südwestseite der Syllanischen Halbinsel und größerer Waldinseln), Strandwald (Hexeninsel, Strand der meisten Waldinseln)",
+                        "Klima": "heiß, sehr schwül; Mittagsgewitter; Regenzeiten im Tsa/Phex und Rondra/Efferd, dann starke Niederschläge; Wind im Westen: Bele man (Westen, mäßig, sehr häufig); Wind im Süden: Siral (Nordosten, sanft, sehr häufig); extreme Wolkenbildung" 
+                    }
+                ]}
+            ]
+        },
+        {
+            "Südliche Sümpfe":
+            [
+                {
+                    "Tiere":
+                    [
+                        {
+                            "Name": "Fledermaus",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Höhlen"
+                        },
+                        {
+                            "Name": "Sumpfratte",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": "Sumpf"
+                        },
+                        {
+                            "Name": "Sumpfratte",
+                            "Häufigkeit": "häufig",
+                            "Gebiet": "Flussläufe"
+                        },
+                        
+                        {
+                            "Name": "Moskito",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Mysobviper",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Panzerechse",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Riesenkaiman",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Fischechse",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Palmviper",
+                            "Häufigkeit": "selten",
+                            "Gebiet": ""
+                        },
+                        {
+                            "Name": "Borbarad-Moskito",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": ""
+                        }
+                        
                     ]
                 }
             ]
