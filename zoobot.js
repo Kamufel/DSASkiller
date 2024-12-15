@@ -15,6 +15,10 @@
         async function init() {
             const regionenData = await loadJson('regionen.json');
             if (!regionenData) return;
+            const pflanzenData = await loadJson('pflanzen.json');
+            if (!pflanzenData) return;
+            const tiereData = await loadJson('tiere.json');
+            if (!tiereData) return;
 
             const regionenDropdown = document.getElementById('regionenDropdown');
             const gebietDropdown = document.getElementById('gebietDropdown');
@@ -85,18 +89,16 @@
 
             aktivitaetDropdown.addEventListener('change', async () => {
                 const selectedAktivitaet = aktivitaetDropdown.value;
-                let datenUrl;
+                let daten;
 
                 if (selectedAktivitaet === "Jagd") {
-                    datenUrl = 'tiere.json';
+                    daten = tiereData;
+                    console.log(tiereData);
                 } else if (selectedAktivitaet === "Kräutersuche") {
-                    datenUrl = 'pflanzen.json';
+                    daten = pflanzenData;
+                    console.log(pflanzenData);
                 }
 
-                if (!datenUrl) return;
-
-                const daten = await loadJson(datenUrl);
-                if (!daten) return;
 
                 nameDropdown.disabled = false;
                 nameDropdown.innerHTML = '<option value="" disabled selected>-- Namen auswählen --</option>';
