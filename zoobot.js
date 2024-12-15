@@ -115,10 +115,14 @@
                     daten = selectedRegionData[1];
 
                     daten.Pflanzen?.forEach(item => {
-                        const option = document.createElement('option');
-                        option.value = item.Name;
-                        option.textContent = item.Name;
-                        nameDropdown.appendChild(option);
+                        if(item.Gebiet === selectedGebiet || item.Gebiet === "")
+                            {
+                                const option = document.createElement('option');
+                                option.value = item.Name;
+                                option.textContent = item.Name;
+                                nameDropdown.appendChild(option);
+                            }
+                        
                     });
                 }
 
