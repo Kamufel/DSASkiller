@@ -8,18 +8,24 @@ async function loadJson(url) {
         return null;
     }
 }
-
+var pflanzenDaten = null;
+var regionenDaten = null;
+var tiereDaten = null;
 async function initialize() {
-    const regionenData = await loadJson('regionen.json');
-    if (!regionenData) return;
-
-    populateRegions(regionenData);
-    setupRegionChangeListener(regionenData);
+    regionenDaten = await loadJson('regionen.json');
+    if (!regionenDaten) return;
+    pflanzenDaten = await loadJson('pflanzen.json');
+    if (!pflanzenDaten) return;
+    tiereDaten = await loadJson('tiere.json');
+    if (!tiereDaten) return;
+    populateRegions();
+    setupRegionChangeListener();
+    setupLandscapeChangeListener();
 }
 
-function populateRegions(regionenData) {
+function populateRegions() {
     const regionSelect = document.getElementById('region');
-    const regions = regionenData.regionen.map(region => Object.keys(region)[0]); // Extrahiert Regionennamen
+    const regions = regionenDaten.regionen.map(region => Object.keys(region)[0]); // Extrahiert Regionennamen
     
     regions.forEach(region => {
         const option = document.createElement('option');
@@ -29,27 +35,43 @@ function populateRegions(regionenData) {
     });
 }
 
-function setupRegionChangeListener(regionenData) {
+function setupRegionChangeListener() {
     const regionSelect = document.getElementById('region');
     const landscapeSelect = document.getElementById('landscape');
 
     regionSelect.addEventListener('change', () => {
         const selectedRegion = regionSelect.value.toLowerCase();
-        updateLandscapes(regionenData, selectedRegion, landscapeSelect);
+        updateLandscapes(regionenDaten, selectedRegion, landscapeSelect);
     });
 
     // Initiale Landschaftsbefüllung für die erste Region
     if (regionSelect.options.length > 0) {
         const initialRegion = regionSelect.options[0].value.toLowerCase();
-        updateLandscapes(regionenData, initialRegion, landscapeSelect);
+        updateLandscapes(regionenDaten, initialRegion, landscapeSelect);
     }
 }
 
-function updateLandscapes(regionenData, selectedRegion, landscapeSelect) {
+function setupLandscapeChangeListener() {
+    const landscapeSelect = document.getElementById('landscape');
+    const activitySelect = document.getElementById('activity');
+
+    landscapeSelect.addEventListener('change', () => {
+        const selectedActivity = activitySelect.value;
+
+        // Prüfen, ob die Aktivität "Kräutersuche" ist
+        if (selectedActivity === 'Kräutersuche') {
+            const plants = getPlantsForLandscape();
+            generatePlantTable(plants);
+            
+        }
+    });
+}
+
+function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
     // Landschaften für die gewählte Region sammeln
     const landscapes = new Set();
 
-    const regionData = regionenData.regionen.find(region => 
+    const regionData = regionenDaten.regionen.find(region => 
         Object.keys(region)[0].toLowerCase() === selectedRegion
     );
 
@@ -82,6 +104,86 @@ function updateLandscapes(regionenData, selectedRegion, landscapeSelect) {
         landscapeSelect.appendChild(option);
     });
 }
+function getPlantsForLandscape() {
+    const plants = [];
+    const selectedRegion = document.getElementById('region').value.toLowerCase();
+    const selectedLandscape = document.getElementById('landscape').value.toLowerCase();
+    // Finde die Daten für die ausgewählte Region
+    const regionData = regionenDaten.regionen.find(region => 
+        Object.keys(region)[0].toLowerCase() === selectedRegion.toLowerCase()
+    );
 
+    if (regionData) {
+        const regionEntries = Object.values(regionData)[0]; // Extrahiere die Inhalte der Region
+
+        regionEntries.forEach(entry => {
+            if (entry.Pflanzen) {
+                entry.Pflanzen.forEach(plant => {
+                    const plantLandscape = plant.Gebiet ? plant.Gebiet.toLowerCase() : "";
+
+                    // Bedingung: Pflanze gehört zur Region und ist nicht exklusiv für eine andere Landschaft
+                    if (!plantLandscape || plantLandscape === selectedLandscape.toLowerCase()) {
+                        plants.push(plant);
+                    }
+                });
+            }
+        });
+    }
+    console.log(plants);
+    return plants;
+}
+function generatePlantTable(plants) {
+    const contentDiv = document.querySelector('.content');
+    contentDiv.innerHTML = ''; // Vorherigen Inhalt entfernen
+
+    // Pflanzen-Daten aus pflanzenDaten ergänzen
+    const enrichedPlants = plants.map(plant => {
+        console.log(plant);
+        const matchingPlant = pflanzenDaten.Pflanzen.find(p => p.Name.toLowerCase() === plant.Name.toLowerCase());
+        if (matchingPlant) {
+            console.log(matchingPlant);
+            return {
+                Name: matchingPlant.Name,
+                Typ: matchingPlant.Typ,
+                Häufigkeit: plant.Häufigkeit // Fallback auf Verbreitung
+            };
+        }
+        console.log(plant);
+        return plant; // Falls kein Match gefunden wird, bleibt der Eintrag unverändert
+    });
+
+    // Tabelle erstellen
+    const table = document.createElement('table');
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+
+    // Tabellen-Header hinzufügen
+    const headerRow = document.createElement('tr');
+    ['Name', 'Typ', 'Häufigkeit'].forEach(headerText => {
+        const th = document.createElement('th');
+        th.textContent = headerText;
+        th.style.border = '1px solid #333';
+        th.style.padding = '8px';
+        th.style.backgroundColor = '#f4f4f4';
+        headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+
+    // Pflanzen-Daten hinzufügen
+    enrichedPlants.forEach(plant => {
+        const row = document.createElement('tr');
+        ['Name', 'Typ', 'Häufigkeit'].forEach(key => {
+            const td = document.createElement('td');
+            td.textContent = plant[key] || 'N/A'; // Fallback für fehlende Daten
+            td.style.border = '1px solid #333';
+            td.style.padding = '8px';
+            row.appendChild(td);
+        });
+        table.appendChild(row);
+    });
+
+    // Tabelle in den Content-Bereich einfügen
+    contentDiv.appendChild(table);
+}
 // Start der Initialisierung
 initialize();

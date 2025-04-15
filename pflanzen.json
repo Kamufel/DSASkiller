@@ -249,7 +249,7 @@
             ]
         },
         {
-            "Name": "Illmenblatt",
+            "Name": "Ilmenblatt",
             "Typ": "Nutzpflanze / Droge",
             "Gebiet": "Westküste Aventuriens südlich von Drôl, Insel Altoum, Zyklopeninseln",
             "Verbreitung": "Waldlichtungen (gelegentlich), Wiesen (gelegentlich), Gebirgshänge (sehr selten)",
@@ -273,7 +273,7 @@
             ]
         },
         {
-            "Name": "Kajubu",
+            "Name": "Kajubo",
             "Typ": "Nutzpflanze",
             "Gebiet": "Altoum, Souram und Nikkali",
             "Verbreitung": "Waldränder (selten), Küste (selten)",
@@ -310,7 +310,7 @@
             "Besonderheiten": "Es ist nicht bekannt, wie man die Wirkstoffe der Blätter extrahieren oder die Blätter haltbar machen kann, ohne dass sie die Wirkung verlieren."
         },
         {
-            "Name": "Färberlotus",
+            "Name": "Färberlotos",
             "Typ": "Nutzpflanze",
             "Gebiet": "ganz Aventurien südlich der Linie Havena-Perricum",
             "Verbreitung": "Teiche, Seeufer (jeweils gelegentlich)",
@@ -325,7 +325,7 @@
         },
 
         {
-            "Name": "Purpurner Lotus",
+            "Name": "Purpurner Lotos",
             "Typ": "Giftpflanze",
             "Verbreitung": "Teiche, Seeufer (jeweils selten)",
             "Bestimmung": "7",
@@ -351,7 +351,7 @@
                 ]
         },
         {
-            "Name": "Weißer Lotus",
+            "Name": "Weißer Lotos",
             "Typ": "Giftpflanze",
             "Gebiet": "Teiche, Seeufer (jeweils selten), Sumpf (sehr selten)",
             "Verbreitung": "Teiche, Seeufer (jeweils selten), Sumpf (sehr selten)",
@@ -375,7 +375,7 @@
             ]
         },
         {
-            "Name": "Weißgelber Lotus",
+            "Name": "Weißgelber Lotos",
             "Typ": "Nutzpflanze",
             "Gebiet": "ganz Aventurien südlich der Linie Havena–Perricum",
             "Verbreitung": "Teiche, Seeufer (jeweils gelegentlich)",
@@ -637,7 +637,7 @@
             ]
         },
         {
-            "Name": "Viagrieswurzel",
+            "Name": "Vragieswurzel",
             "Typ": "Giftpflanze",
             "Gebiet": "Ganz Aventurien südlich von Havena, am häufigsten an den westlichen Abhängen des Regengebirges",
             "Verbreitung": "Regenwald (gelegentlich), Gebirgshänge, Wald (jeweils selten), Hochland (sehr selten)",
@@ -704,8 +704,7 @@
             ],
             "Alchimistische Verwendung": "Wichtige Zutat des Heiltranks"
         },
-        {
-            "Zunderschwamm": {
+    {
                 "Name": "Zunderschwamm",
                 "Typ": "Nutzpflanze",
                 "Gebiet": "ganz Aventurien südlich des Blauen Sees",
@@ -715,44 +714,19 @@
                 "Grundmenge": "W6 Pilze",
                 "Dosis und Wirkung": "nach Trocknung leicht entzündbar",
                 "Haltbarkeit": "W6+2 Monate",
-                "Preis": "5 H pro Stein"
-            },
-            "Zunder": {
-                "Name": "Zunder",
-                "Typ": "Leuchtmittel",
-                "Verwendung": "Der Zunderschwamm wird zunächst weichgeklopft, mit einer starken Salzlösung getränkt und anschließend sorgfältig getrocknet. Die Konzentration der Salzlake wirkt sich entscheidend auf Haltbarkeit (hohe Konzentration) und Entzündbarkeit (niedrige Konzentration) aus.",
-                "Verarbeitung": "4",
-                "Dosis und Wirkung": "Behandelt verliert er mehr als zwei Drittel seines Gewichts und entzündet sich beim kleinsten Funken.",
-                "Haltbarkeit": "nahezu unbegrenzt, entscheidend ist vor allem eine trockene Lagerung.",
-                "Preis": "2 S für 4 Unzen im Zunderkistchen",
-                "Alchimistische Verwendung": "beliebt, um sich mit Adepten der Alchimie Scherze zu erlauben."
+                "Preis": "5 H pro Stein",
+                "Zubereitungen":[
+                    {
+                        "Name": "Zunder",
+                        "Typ": "Leuchtmittel",
+                        "Verwendung": "Der Zunderschwamm wird zunächst weichgeklopft, mit einer starken Salzlösung getränkt und anschließend sorgfältig getrocknet. Die Konzentration der Salzlake wirkt sich entscheidend auf Haltbarkeit (hohe Konzentration) und Entzündbarkeit (niedrige Konzentration) aus.",
+                        "Verarbeitung": "4",
+                        "Dosis und Wirkung": "Behandelt verliert er mehr als zwei Drittel seines Gewichts und entzündet sich beim kleinsten Funken.",
+                        "Haltbarkeit": "nahezu unbegrenzt, entscheidend ist vor allem eine trockene Lagerung.",
+                        "Preis": "2 S für 4 Unzen im Zunderkistchen",
+                        "Alchimistische Verwendung": "beliebt, um sich mit Adepten der Alchimie Scherze zu erlauben."
+                    }
+                ]
             }
-        },
-        {
-            "Name":"",
-            "Typ":"",
-            "Gebiet":"",
-            "Verbreitung":"",
-            "Bestimmung":"",
-            "Ernte":"",
-            "Grundmenge":"",
-            "Wirkung":"",
-            "Haltbarkeit":"",
-            "Preis":"",
-            "Alchimistische Verwendung":"",
-            "Besonderheiten":"",
-            "Rezepte":
-            [
-                {
-                    "Name":"",
-                    "Typ":"",
-                    "Zubereitung":"",
-                    "Verarbeitung":"",
-                    "Wirkung":"",
-                    "Haltbarkeit":"",
-                    "Preis":""
-                }
-            ]
-        }
     ]
 }
