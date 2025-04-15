@@ -92,6 +92,11 @@
                 const selectedRegion = regionenDropdown.value;
                 const selectedGebiet = gebietDropdown.value;
                 const selectedRegionData = regionenData.regionen.find(regionObj => Object.keys(regionObj)[0] === selectedRegion)[selectedRegion];
+                detailsDiv.innerHTML = `
+                    <h2>Region: ${regionenDropdown.value}</h2>
+                    <h3>Gebiet: ${gebietDropdown.value}</h3>
+                    <h4>Aktivität: ${selectedAktivitaet}</h4>
+                `;
                 let daten;
                 nameDropdown.disabled = false;
                 nameDropdown.innerHTML = '<option value="" disabled selected>-- Namen auswählen --</option>';
@@ -107,13 +112,25 @@
                                     option.value = item.Name;
                                     option.textContent = item.Name;
                                     nameDropdown.appendChild(option);
+                                    let tierdat = tiereData.Tiere.find(tier => tier.Name === item.Name);
+                                    console.log(tierdat.Name);
+                                    let jagbar;
+                                    if(tierdat.Jagd==="")
+                                        {
+                                            jagbar=true;
+                                        }
+                                    else
+                                    {
+                                        jagbar=false
+                                    }
+                                    detailsDiv.innerHTML += `<h5>Name: ${tierdat.Name} Jagbar: ${jagbar} Jagdschwierigkeit: ${tierdat.Jagd}</h5>`;
+
                                 }
                         
                         }
                     );
                 } else if (selectedAktivitaet === "Kräutersuche") {
                     daten = selectedRegionData[1];
-
                     daten.Pflanzen?.forEach(item => {
                         if(item.Gebiet === selectedGebiet || item.Gebiet === "")
                             {
@@ -130,11 +147,7 @@
 
 
 
-                detailsDiv.innerHTML = `
-                    <h2>Region: ${regionenDropdown.value}</h2>
-                    <h3>Gebiet: ${gebietDropdown.value}</h3>
-                    <h4>Aktivität: ${selectedAktivitaet}</h4>
-                `;
+                
             });
 
             nameDropdown.addEventListener('change', () => {
