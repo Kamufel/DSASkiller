@@ -18,11 +18,12 @@ async function initialize() {
     if (!pflanzenDaten) return;
     tiereDaten = await loadJson('tiere.json');
     if (!tiereDaten) return;
+
     populateRegions();
     setupRegionChangeListener();
     setupLandscapeChangeListener();
+    setupActivityAndCheckboxListeners(); // Neue Listener hinzufügen
 }
-
 function populateRegions() {
     const regionSelect = document.getElementById('region');
     const regions = regionenDaten.regionen.map(region => Object.keys(region)[0]); // Extrahiert Regionennamen
@@ -34,7 +35,6 @@ function populateRegions() {
         regionSelect.appendChild(option);
     });
 }
-
 function setupRegionChangeListener() {
     const regionSelect = document.getElementById('region');
     const landscapeSelect = document.getElementById('landscape');
@@ -50,7 +50,6 @@ function setupRegionChangeListener() {
         updateLandscapes(regionenDaten, initialRegion, landscapeSelect);
     }
 }
-
 function setupLandscapeChangeListener() {
     const landscapeSelect = document.getElementById('landscape');
     const activitySelect = document.getElementById('activity');
@@ -62,11 +61,25 @@ function setupLandscapeChangeListener() {
         if (selectedActivity === 'Kräutersuche') {
             const plants = getPlantsForLandscape();
             generatePlantTable(plants);
-            
+        }
+        if (selectedActivity === 'Jagd') {
+            const animals = getAnimalsForLandscape(); // Diese Funktion muss analog zu `getPlantsForLandscape` implementiert werden
+            generateAnimalTable(animals); // Diese Funktion muss erstellt werden
         }
     });
 }
+function setupActivityAndCheckboxListeners() {
+    const activitySelect = document.getElementById('activity');
+    const terrainCheck = document.getElementById('terrain');
+    const localCheck = document.getElementById('local');
 
+    // Listener für die Aktivität
+    activitySelect.addEventListener('change', updateTable);
+
+    // Listener für die Checkboxen
+    terrainCheck.addEventListener('change', updateTable);
+    localCheck.addEventListener('change', updateTable);
+}
 function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
     // Landschaften für die gewählte Region sammeln
     const landscapes = new Set();
@@ -132,6 +145,33 @@ function getPlantsForLandscape() {
 
     return plants;
 }
+function getAnimalsForLandscape() {
+    const animals = [];
+    const selectedRegion = document.getElementById('region').value.toLowerCase();
+    const selectedLandscape = document.getElementById('landscape').value.toLowerCase();
+    // Finde die Daten für die ausgewählte Region
+    const regionData = regionenDaten.regionen.find(region => 
+        Object.keys(region)[0].toLowerCase() === selectedRegion.toLowerCase()
+    );
+
+    if (regionData) {
+        const regionEntries = Object.values(regionData)[0]; // Extrahiere die Inhalte der Region
+
+        regionEntries.forEach(entry => {
+            if (entry.Tiere) {
+                entry.Tiere.forEach(tier => {
+                    const animalLandscape = tier.Gebiet ? tier.Gebiet.toLowerCase() : "";
+
+                    // Bedingung: Pflanze gehört zur Region und ist nicht exklusiv für eine andere Landschaft
+                    if (!animalLandscape || animalLandscape === selectedLandscape.toLowerCase()) {
+                        animals.push(tier);
+                    }
+                });
+            }
+        });
+    }
+    return animals;
+}
 function generatePlantTable(plants) {
     const contentDiv = document.querySelector('.content');
     contentDiv.innerHTML = ''; // Vorherigen Inhalt entfernen
@@ -188,6 +228,66 @@ function generatePlantTable(plants) {
     // Tabelle in den Content-Bereich einfügen
     contentDiv.appendChild(table);
 }
+function generateAnimalTable(animals) {
+    const contentDiv = document.querySelector('.content');
+    contentDiv.innerHTML = ''; // Vorherigen Inhalt entfernen
+
+    // Tier-Daten aus regionen.json und tiere.json kombinieren
+    const enrichedAnimals = animals.map(animal => {
+        // Finde das entsprechende Tier in tiere.json
+        const matchingAnimal = tiereDaten.Tiere.find(a => a.Name.toLowerCase() === animal.Name.toLowerCase());
+        let frequencyValue = calculateFinaldifficulty(animal.Häufigkeit); // Numerische Häufigkeit aus regionen.json
+
+        // Falls ein passendes Tier in tiere.json gefunden wird, addiere den Jagd-Wert
+        if (matchingAnimal && matchingAnimal.Jagd) {
+            const jagdValue = parseInt(matchingAnimal.Jagd, 10); // Konvertiere den Jagd-Wert in eine Zahl
+            if (!isNaN(jagdValue)) {
+                frequencyValue += jagdValue; // Addiere den Jagd-Wert zur Häufigkeit
+            }
+        }
+
+        return {
+            Name: animal.Name,
+            Jagd: matchingAnimal && matchingAnimal.Jagd ? 'Ja' : 'Nein', // Ja oder Nein basierend auf dem Jagd-Wert
+            Angriff: matchingAnimal && matchingAnimal.Angriff ? 'Ja' : 'Nein', // Ja oder Nein basierend auf dem Angriff-Wert
+            Beute: matchingAnimal && matchingAnimal.Beute ? matchingAnimal.Beute : 'Keine Beute', // Inhalt des Beute-Feldes oder Fallback
+            Gesamterschwernis: frequencyValue // Kombinierte Häufigkeit
+        };
+    });
+
+    // Tabelle erstellen
+    const table = document.createElement('table');
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+
+    // Tabellen-Header hinzufügen
+    const headerRow = document.createElement('tr');
+    ['Name', 'Jagd', 'Angriff', 'Beute', 'Gesamterschwernis'].forEach(headerText => {
+        const th = document.createElement('th');
+        th.textContent = headerText;
+        th.style.border = '1px solid #333';
+        th.style.padding = '8px';
+        th.style.backgroundColor = '#f4f4f4';
+        headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+
+    // Tier-Daten hinzufügen
+    enrichedAnimals.forEach(animal => {
+        const row = document.createElement('tr');
+        ['Name', 'Jagd', 'Angriff', 'Beute', 'Gesamterschwernis'].forEach(key => {
+            const td = document.createElement('td');
+            td.textContent = animal[key] || 'N/A';
+            td.style.border = '1px solid #333';
+            td.style.padding = '8px';
+            row.appendChild(td);
+        });
+        table.appendChild(row);
+    });
+
+    // Tabelle in den Content-Bereich einfügen
+    contentDiv.appendChild(table);
+}
 function calculateFinaldifficulty(frequency) {
     let difficulty = 0; // Initialisierung der Schwierigkeit
     const terraincheck = document.getElementById('terrain');
@@ -224,6 +324,17 @@ function calculateFinaldifficulty(frequency) {
 
     console.log(`Final difficulty: ${difficulty}`);
     return difficulty;
+}
+function updateTable() {
+    const selectedActivity = document.getElementById('activity').value;
+
+    if (selectedActivity === 'Kräutersuche') {
+        const plants = getPlantsForLandscape();
+        generatePlantTable(plants);
+    } else if (selectedActivity === 'Jagd') {
+        const animals = getAnimalsForLandscape(); // Diese Funktion muss analog zu `getPlantsForLandscape` implementiert werden
+        generateAnimalTable(animals); // Diese Funktion muss erstellt werden
+    }
 }
 // Start der Initialisierung
 initialize();
