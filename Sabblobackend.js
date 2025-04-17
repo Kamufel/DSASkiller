@@ -90,20 +90,22 @@ function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
 
     if (regionData) {
         const regionEntries = Object.values(regionData)[0]; // Extrahiert die Inhalte der Region
+        landscapes.add(selectedRegion.toUpperCase()); // sexy Landschaftsname  
         regionEntries.forEach(entry => {
             if (entry.Tiere) {
                 entry.Tiere.forEach(animal => {
-                    if (animal.Gebiet && animal.Gebiet.trim() !== "") {
+                    if (animal.Gebiet) {
                         landscapes.add(animal.Gebiet);
                     }
                 });
             }
             if (entry.Pflanzen) {
                 entry.Pflanzen.forEach(plant => {
-                    if (plant.Gebiet && plant.Gebiet.trim() !== "") {
+                    if (plant.Gebiet) {
                         landscapes.add(plant.Gebiet);
                     }
                 });
+               
             }
         });
     }
