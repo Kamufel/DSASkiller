@@ -18,7 +18,6 @@ async function initialize() {
     if (!pflanzenDaten) return;
     tiereDaten = await loadJson('tiere.json');
     if (!tiereDaten) return;
-
     populateRegions();
     setupRegionChangeListener();
     setupLandscapeChangeListener();
@@ -83,7 +82,6 @@ function setupActivityAndCheckboxListeners() {
 }
 function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
     const landscapes = new Set();
-
     const regionData = regionenDaten.regionen.find(region => 
         Object.keys(region)[0].toLowerCase() === selectedRegion
     );
@@ -409,7 +407,7 @@ function calculateFinaldifficulty(frequency) {
         difficulty -= 7; // Reduktion der Schwierigkeit durch Ortskunde
     }
 
-    console.log(`Final difficulty: ${difficulty}`);
+
     return difficulty;
 }
 function updateTable() {
