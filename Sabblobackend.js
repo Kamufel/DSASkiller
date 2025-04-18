@@ -82,7 +82,6 @@ function setupActivityAndCheckboxListeners() {
     localCheck.addEventListener('change', updateTable);
 }
 function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
-    // Landschaften für die gewählte Region sammeln
     const landscapes = new Set();
 
     const regionData = regionenDaten.regionen.find(region => 
@@ -90,8 +89,8 @@ function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
     );
 
     if (regionData) {
-        const regionEntries = Object.values(regionData)[0]; // Extrahiert die Inhalte der Region
-        landscapes.add(selectedRegion.toUpperCase()); // sexy Landschaftsname  
+        const regionEntries = Object.values(regionData)[0];
+        landscapes.add("ALLE"); // Option "ALLE" hinzufügen
         regionEntries.forEach(entry => {
             if (entry.Tiere) {
                 entry.Tiere.forEach(animal => {
@@ -106,12 +105,10 @@ function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
                         landscapes.add(plant.Gebiet);
                     }
                 });
-               
             }
         });
     }
 
-    // Landschafts-Combobox aktualisieren
     landscapeSelect.innerHTML = ""; // Vorherige Einträge entfernen
     Array.from(landscapes).forEach(landscape => {
         const option = document.createElement('option');
@@ -124,6 +121,8 @@ function getPlantsForLandscape() {
     const plants = [];
     const selectedRegion = document.getElementById('region').value.toLowerCase();
     const selectedLandscape = document.getElementById('landscape').value.toLowerCase();
+    const uniqueNames = new Set(); // Set für eindeutige Namen
+
     // Finde die Daten für die ausgewählte Region
     const regionData = regionenDaten.regionen.find(region => 
         Object.keys(region)[0].toLowerCase() === selectedRegion.toLowerCase()
@@ -137,9 +136,11 @@ function getPlantsForLandscape() {
                 entry.Pflanzen.forEach(plant => {
                     const plantLandscape = plant.Gebiet ? plant.Gebiet.toLowerCase() : "";
 
-                    // Bedingung: Pflanze gehört zur Region und ist nicht exklusiv für eine andere Landschaft
-                    if (!plantLandscape || plantLandscape === selectedLandscape.toLowerCase()) {
+                    // Bedingung: Zeige alle Pflanzen, wenn "ALLE" ausgewählt ist
+                    if ((selectedLandscape === "alle" || !plantLandscape || plantLandscape === selectedLandscape) &&
+                        !uniqueNames.has(plant.Name.toLowerCase())) {
                         plants.push(plant);
+                        uniqueNames.add(plant.Name.toLowerCase()); // Füge den Namen zum Set hinzu
                     }
                 });
             }
@@ -152,6 +153,8 @@ function getAnimalsForLandscape() {
     const animals = [];
     const selectedRegion = document.getElementById('region').value.toLowerCase();
     const selectedLandscape = document.getElementById('landscape').value.toLowerCase();
+    const uniqueNames = new Set(); // Set für eindeutige Namen
+
     // Finde die Daten für die ausgewählte Region
     const regionData = regionenDaten.regionen.find(region => 
         Object.keys(region)[0].toLowerCase() === selectedRegion.toLowerCase()
@@ -165,20 +168,27 @@ function getAnimalsForLandscape() {
                 entry.Tiere.forEach(tier => {
                     const animalLandscape = tier.Gebiet ? tier.Gebiet.toLowerCase() : "";
 
-                    // Bedingung: Pflanze gehört zur Region und ist nicht exklusiv für eine andere Landschaft
-                    if (!animalLandscape || animalLandscape === selectedLandscape.toLowerCase()) {
-                        animals.push(tier);
+                    // Bedingung: Zeige alle Tiere mit Jagdwert, wenn "ALLE" ausgewählt ist
+                    if ((selectedLandscape === "alle" || !animalLandscape || animalLandscape === selectedLandscape) &&
+                        !uniqueNames.has(tier.Name.toLowerCase())) {
+                        const matchingAnimal = tiereDaten.Tiere.find(a => a.Name.toLowerCase() === tier.Name.toLowerCase());
+                        if (matchingAnimal && matchingAnimal.Jagd) {
+                            animals.push(tier);
+                            uniqueNames.add(tier.Name.toLowerCase()); // Füge den Namen zum Set hinzu
+                        }
                     }
                 });
             }
         });
     }
+
     return animals;
 }
 function getAnimalsWithoutHuntingValue() {
     const animals = [];
     const selectedRegion = document.getElementById('region').value.toLowerCase();
     const selectedLandscape = document.getElementById('landscape').value.toLowerCase();
+    const uniqueNames = new Set(); // Set für eindeutige Namen
 
     // Finde die Daten für die ausgewählte Region
     const regionData = regionenDaten.regionen.find(region =>
@@ -193,15 +203,20 @@ function getAnimalsWithoutHuntingValue() {
                 entry.Tiere.forEach(tier => {
                     const animalLandscape = tier.Gebiet ? tier.Gebiet.toLowerCase() : "";
 
-                    // Bedingung: Tier gehört zur Region und ist nicht exklusiv für eine andere Landschaft
-                    if ((!animalLandscape || animalLandscape === selectedLandscape.toLowerCase()) &&
-                        (!tier.Jagd || tier.Jagd.toLowerCase() === 'nein')) {
-                        animals.push(tier);
+                    // Bedingung: Zeige alle Tiere ohne Jagdwert, wenn "ALLE" ausgewählt ist
+                    if ((selectedLandscape === "alle" || !animalLandscape || animalLandscape === selectedLandscape) &&
+                        !uniqueNames.has(tier.Name.toLowerCase())) {
+                        const matchingAnimal = tiereDaten.Tiere.find(a => a.Name.toLowerCase() === tier.Name.toLowerCase());
+                        if (!matchingAnimal || !matchingAnimal.Jagd || matchingAnimal.Jagd.toLowerCase() === 'nein') {
+                            animals.push(tier);
+                            uniqueNames.add(tier.Name.toLowerCase()); // Füge den Namen zum Set hinzu
+                        }
                     }
                 });
             }
         });
     }
+
     return animals;
 }
 function generatePlantTable(plants) {

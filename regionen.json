@@ -9,7 +9,7 @@
                         {
                             "Name": "Alligator",
                             "Häufigkeit": "häufig",
-                            "Gebiet": "Flussläufe"
+                            "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Fledermaus",
@@ -19,256 +19,262 @@
                         {
                             "Name": "Moosäffchen",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Otan-Otan",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
-                            "Name": "Sumpfratte",
+                            "Name": "Sumpf und Moorratte",
                             "Häufigkeit": "häufig",
-                            "Gebiet": "Sumpf"
+                            "Gebiet": "Sumpf und Moor"
                         },
                         {
-                            "Name": "Sumpfratte",
+                            "Name": "Sumpf und Moorratte",
                             "Häufigkeit": "häufig",
-                            "Gebiet": "Flussläufe"
+                            "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Selemferkel",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Baumspinne",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Blattkopfotter",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Blutfisch",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": "Flussläufe"
+                            "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Gaukelweihe",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Löwenaffe",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Moskito",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Mysobviper",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Panzerechse",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Purzelaffe",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Riesenkaiman",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Wolfsratte",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Würgeschlange",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Fischechse",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Fleckenpanther",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Greifkatze",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Gürtelechse",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Harpyie",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Höhlenspinne",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Klammermoloch",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Palmviper",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Pei-Pei-Assel",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Ratte",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Riesenamöbe",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Springchamäleon",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Vampirfledermaus",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Vogelspinne",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Zwergelefant",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Basilisken-Panzerkröte",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Borbarad-Moskito",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Brabaker Waldelefant",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Dschungeltiger",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Feuerskorpion",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Grünschrecke",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Lioma",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Nachtwind",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Olruksbraut",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Riesenaffe",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         }
                     ]
                 },
                   {"Pflanzen":
                     [
+                        
                         {
                             "Name": "Arganstrauch",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Boronie",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Boronsschlinge",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Carlog",
                             "Häufigkeit": "selten",
-                            "Gebiet": "Seeufer"
+                           "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Carlog",
                             "Häufigkeit": "sehr selten",
                             "Gebiet": "Flussauen"
+                        },
+                        {
+                            "Name": "Carlog",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Küste und Strand"
                         },
                         {
                             "Name": "Cheria-Kaktus",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Disdychonda",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Eitriger Krötenschemel",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Eitriger Krötenschemel",
@@ -276,129 +282,179 @@
                             "Gebiet": "Flussauen"
                         },
                         {
+                            "Name": "Eitriger Krötenschemel",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Sumpf und Moor"
+                        },
+                        {
                             "Name": "Finage",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Höllenkraut",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Höllenkraut",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Waldrand"
                         },
                         {
                             "Name": "Ilmenblatt",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Ilmenblatt",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Gebirge"
                         },
                         {
                             "Name": "Kajubo",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Küste und Strand"
+                        },
+                        {
+                            "Name": "Kajubo",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Waldrand"
                         },
                         {
                             "Name": "Kukuka",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Färberlotos",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": "Teiche"
-                        },
-                        {
-                            "Name": "Färberlotos",
-                            "Häufigkeit": "gelegentlich",
-                            "Gebiet": "Seeufer"
+                            "Gebiet":  "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Purpurner Lotos",
                             "Häufigkeit": "selten",
-                            "Gebiet": "Teiche"
-                        },
-                        {
-                            "Name": "Purpurner Lotos",
-                            "Häufigkeit": "selten",
-                            "Gebiet": "Seeufer"
+                            "Gebiet":  "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Weißer Lotos",
                             "Häufigkeit": "selten",
-                            "Gebiet": "Seeufer"
-                        },
-                        {
-                            "Name": "Weißer Lotos",
-                            "Häufigkeit": "selten",
-                            "Gebiet": "Teiche"
+                           "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Weißgelber Lotos",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": "Seeufer"
-                        },
-                        {
-                            "Name": "Weißgelber Lotos",
-                            "Häufigkeit": "gelegentlich",
-                            "Gebiet": "Teiche"
+                            "Gebiet":  "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Merach-Strauch",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Mirhamer Seidenliane",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Mirhamer Seidenliane",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Gebirge"
+                        },
+                        {
+                            "Name": "Mirhamer Seidenliane",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         {
                             "Name": "Orazal",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Quinja",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Quinja",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Waldrand"
                         },
                         {
                             "Name": "Rahjalieb",
                             "Häufigkeit": "häufig",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Rahjalieb",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Sumpf und Moor"
                         },
                         {
                             "Name": "Rote Pfeilblüte",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Rote Pfeilblüte",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Küste und Strand"
+                        },
+                        {
+                            "Name": "Rote Pfeilblüte",
+                            "Häufigkeit": "gelegentlich",
+                            "Gebiet": "Sumpf und Moor"
                         },
                         {
                             "Name": "Schleichender Tod",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": "Flussufer"
+                            "Gebiet": "Fluss-, Seeufer und Teiche"
+                        },
+                        {
+                            "Name": "Schleichender Tod",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Waldrand"
                         },
                         {
                             "Name": "Shurinstrauch",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Vragieswurzel",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Vragieswurzel",
+                            "Häufigkeit": "selten",
+                            "Gebiet": "Gebirge"
                         },
                         {
                             "Name": "Waldwebe",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Wirselkraut",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Würgedattel",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Regenwald"
+                        },
+                        {
+                            "Name": "Würgedattel",
+                            "Häufigkeit": "sehr selten",
+                            "Gebiet": "Waldrand"
                         },
                         {
                             "Name": "Zunderschwamm",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         }
 
                     ]
@@ -423,50 +479,50 @@
                             "Gebiet": "Höhlen"
                         },
                         {
-                            "Name": "Sumpfratte",
+                            "Name": "Sumpf und Moorratte",
                             "Häufigkeit": "häufig",
-                            "Gebiet": "Sumpf"
+                            "Gebiet": "Sumpf und Moor"
                         },
                         {
-                            "Name": "Sumpfratte",
+                            "Name": "Sumpf und Moorratte",
                             "Häufigkeit": "häufig",
-                            "Gebiet": "Flussläufe"
+                            "Gebiet": "Fluss-, Seeufer und Teiche"
                         },
                         
                         {
                             "Name": "Moskito",
                             "Häufigkeit": "sehr selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Mysobviper",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Panzerechse",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Riesenkaiman",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Fischechse",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Palmviper",
                             "Häufigkeit": "selten",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         },
                         {
                             "Name": "Borbarad-Moskito",
                             "Häufigkeit": "gelegentlich",
-                            "Gebiet": ""
+                            "Gebiet": "Regenwald"
                         }
                         
                     ]
