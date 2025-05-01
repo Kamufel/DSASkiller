@@ -227,7 +227,8 @@ function generatePlantTable(plants) {
             return {
                 Name: matchingPlant.Name,
                 Typ: matchingPlant.Typ,
-                Häufigkeit: plant.Häufigkeit
+                Häufigkeit: plant.Häufigkeit,
+                Bestimmung: matchingPlant.Bestimmung
             };
         }
         return plant;
@@ -247,12 +248,12 @@ function generatePlantTable(plants) {
         headerRow.appendChild(th);
     });
     table.appendChild(headerRow);
-
+    console.log(enrichedPlants);
     enrichedPlants.forEach(plant => {
         const row = document.createElement('tr');
         ['Name', 'Typ', 'Häufigkeit'].forEach(key => {
             const td = document.createElement('td');
-            td.textContent = key === 'Häufigkeit' ? calculateFinaldifficulty(plant[key]) || 'N/A' : plant[key] || 'N/A';
+            td.textContent = key === 'Häufigkeit' ? calculateFinaldifficulty(plant[key],plant.Bestimmung) || 'N/A' : plant[key] || 'N/A';
             td.style.border = '1px solid #333';
             td.style.padding = '8px';
             row.appendChild(td);
@@ -409,6 +410,41 @@ function calculateFinaldifficulty(frequency) {
 
 
     return difficulty;
+}
+function calculateFinaldifficulty(frequency, identification) {
+    let difficulty = 0; // Initialisierung der Schwierigkeit
+    let identificationValue = parseInt(identification); // Initialisierung des Identifikationswerts
+    const terraincheck = document.getElementById('terrain');
+    const localcheck = document.getElementById('local');
+    // Konvertiere die Häufigkeit in eine numerische Schwierigkeit
+    switch (frequency.toLowerCase()) {
+        case 'sehr häufig':
+            difficulty = 1;
+            break;
+        case 'häufig':
+            difficulty = 2;
+            break;
+        case 'gelegentlich':
+            difficulty = 4;
+            break;
+        case 'selten':
+            difficulty = 8;
+            break;
+        case 'sehr selten':
+            difficulty = 16;
+            break;
+        default:
+            difficulty = 0; // Fallback für unbekannte Häufigkeiten
+    }
+
+    // Anpassung der Schwierigkeit basierend auf Checkboxen
+    if (terraincheck.checked) {
+        difficulty -= 3; // Reduktion der Schwierigkeit durch Geländekunde
+    }
+    if (localcheck.checked) {
+        difficulty -= 7; // Reduktion der Schwierigkeit durch Ortskunde
+    }
+    return difficulty+identificationValue;
 }
 function updateTable() {
     const selectedActivity = document.getElementById('activity').value;
