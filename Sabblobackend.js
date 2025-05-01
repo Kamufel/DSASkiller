@@ -21,6 +21,7 @@ async function initialize() {
     populateRegions();
     setupRegionChangeListener();
     setupLandscapeChangeListener();
+    setupMonthListeners(); 
     setupActivityAndCheckboxListeners(); // Neue Listener hinzufügen
 }
 function populateRegions() {
@@ -79,6 +80,11 @@ function setupActivityAndCheckboxListeners() {
     // Listener für die Checkboxen
     terrainCheck.addEventListener('change', updateTable);
     localCheck.addEventListener('change', updateTable);
+}
+function setupMonthListeners() 
+{
+    const monthSelect = document.getElementById('month');
+    monthSelect.addEventListener('change', updateTable);
 }
 function updateLandscapes(regionenDaten, selectedRegion, landscapeSelect) {
     const landscapes = new Set();
@@ -253,7 +259,7 @@ function generatePlantTable(plants) {
         const row = document.createElement('tr');
         ['Name', 'Typ', 'Häufigkeit'].forEach(key => {
             const td = document.createElement('td');
-            td.textContent = key === 'Häufigkeit' ? calculateFinaldifficulty(plant[key],plant.Bestimmung) || 'N/A' : plant[key] || 'N/A';
+            td.textContent = key === 'Häufigkeit' ? calculateFinaldifficultyPlants(plant[key],plant.Bestimmung) || 'N/A' : plant[key] || 'N/A';
             td.style.border = '1px solid #333';
             td.style.padding = '8px';
             row.appendChild(td);
@@ -408,10 +414,10 @@ function calculateFinaldifficulty(frequency) {
         difficulty -= 7; // Reduktion der Schwierigkeit durch Ortskunde
     }
 
-
+    //getSeasonDifficulty()
     return difficulty;
 }
-function calculateFinaldifficulty(frequency, identification) {
+function calculateFinaldifficultyPlants(frequency, identification) {
     let difficulty = 0; // Initialisierung der Schwierigkeit
     let identificationValue = parseInt(identification); // Initialisierung des Identifikationswerts
     const terraincheck = document.getElementById('terrain');
@@ -444,7 +450,8 @@ function calculateFinaldifficulty(frequency, identification) {
     if (localcheck.checked) {
         difficulty -= 7; // Reduktion der Schwierigkeit durch Ortskunde
     }
-    return difficulty+identificationValue;
+    let seasonValue = parseInt(getSeasonDifficulty());
+    return difficulty+identificationValue+seasonValue;
 }
 function updateTable() {
     const selectedActivity = document.getElementById('activity').value;
@@ -498,5 +505,53 @@ function makeTableSortable(table, defaultSortIndex = null) {
         }
     }
 }
+function getSeasonDifficulty()
+{
+    const selectedMonth = document.getElementById('month').value;
+    const selectedRegion = document.getElementById('region').value;
+    const selectedActivity = document.getElementById('activity').value;
+    let selectedSeason;
+    switch (selectedMonth) {
+        case 'ingerimm':
+        case 'rahja':
+        case 'praios':
+            selectedSeason = 'Sommer';
+            break;
+        case 'rondra':
+        case 'efferd':
+        case 'travia':
+            selectedSeason = 'Herbst';
+            break;
+        case 'boron':
+        case 'hesinde':
+        case 'firun':
+            selectedSeason = 'Winter';
+            break;
+        case 'tsa':
+        case 'phex':
+        case 'peraine':
+            selectedSeason = 'Frühling';
+            break;
+    }
+    
+    // Regionendaten für die ausgewählte Region abrufen
+    const regionData = regionenDaten.regionen.find(region =>
+        Object.keys(region)[0].toLowerCase() === selectedRegion
+    );
+
+    const regionEntries = Object.values(regionData)[0];
+
+    const seasonData = regionEntries.find(entry => entry.Jahreszeiten);
+
+    const seasonValue = Object.values(seasonData)[0][0][selectedActivity][0][selectedSeason];
+
+    if(seasonValue === undefined)
+    {
+        return 0;
+    }
+
+    return seasonValue;
+    
+    }
 // Start der Initialisierung
 initialize();

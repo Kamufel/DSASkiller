@@ -228,7 +228,7 @@
                         }
                     ]
                 },
-                  {"Pflanzen":
+                {"Pflanzen":
                     [
                         
                         {
@@ -459,6 +459,65 @@
 
                     ]
                 },
+                {"Jahreszeiten":[
+                    {
+                        "Jagd": 
+                        [
+                            {
+                                "Frühling": "0",
+                                "Sommer": "0",
+                                "Herbst": "0",
+                                "Winter": "0"
+
+                            }
+                            
+                        ],
+                        "Hetzjagd": 
+                        [
+                            {
+                                "Frühling": "4",
+                                "Sommer": "4",
+                                "Herbst": "4",
+                                "Winter": "4"
+
+                            }
+                            
+                        ],
+                        "Fallenstellen": 
+                        [
+                            {
+                                "Frühling": "-4",
+                                "Sommer": "-4",
+                                "Herbst": "-4",
+                                "Winter": "-4"
+
+                            }
+                            
+                        ],
+                        "Angeln": 
+                        [
+                            {
+                                "Frühling": "0",
+                                "Sommer": "0",
+                                "Herbst": "0",
+                                "Winter": "0"
+
+                            }
+                            
+                        ],
+                        "Kräutersuche":
+                        [
+                            {
+                                "Frühling": "-2",
+                                "Sommer": "-2",
+                                "Herbst": "-2",
+                                "Winter": "-2"
+
+                            }
+                            
+                        ]
+                    }
+                ]},
                 {"Infos":[
                     {
                         "Gebiete": "Regenwald (Waldgebiete der östlichen Echsensümpfe, Arra tistan, beiderseits des Regengebirges, Hochland von H’Rabaal, Syl lanische Halbinsel, Großteil der Waldinseln), Nebelwald (Altimont, Berge der Waldinseln), regengrüner Wald (Südelemitische Halbinsel: Südwestseite der Syllanischen Halbinsel und größerer Waldinseln), Strandwald (Hexeninsel, Strand der meisten Waldinseln)",
@@ -487,8 +546,7 @@
                             "Name": "Sumpf und Moorratte",
                             "Häufigkeit": "häufig",
                             "Gebiet": "Fluss-, Seeufer und Teiche"
-                        },
-                        
+                        },        
                         {
                             "Name": "Moskito",
                             "Häufigkeit": "sehr selten",
