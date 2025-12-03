@@ -588,10 +588,11 @@
                 {"Pflanzen":
                     [
                         {
-                            "Name": "Testplfanze",
+                            "Name": "Eitriger Krötenschemel",
                             "Häufigkeit": "gelegentlich",
                             "Gebiet": "Sumpf und Moor"
                         }
+                        
                     ]
                 },
                 {"Jahreszeiten":[

@@ -12,11 +12,11 @@ var pflanzenDaten = null;
 var regionenDaten = null;
 var tiereDaten = null;
 async function initialize() {
-    regionenDaten = await loadJson('ZooBot/regionen.json');
+    regionenDaten = await loadJson('regionen.json');
     if (!regionenDaten) return;
-    pflanzenDaten = await loadJson('ZooBot/pflanzen.json');
+    pflanzenDaten = await loadJson('pflanzen.json');
     if (!pflanzenDaten) return;
-    tiereDaten = await loadJson('ZooBot/tiere.json');
+    tiereDaten = await loadJson('tiere.json');
     if (!tiereDaten) return;
     populateRegions();
     setupRegionChangeListener();

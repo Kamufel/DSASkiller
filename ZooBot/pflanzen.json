@@ -1,0 +1,710 @@
+{
+    "Pflanzen":
+    [
+        {
+            "Name":"Arganstrauch",
+            "Typ":"Heilpflanze",
+            "Gebiet":"Wälder um Regengebirge, Mysobgebiet, Waldinseln",
+            "Verbreitung":"Regenwald (gelegentlich), Sumpf (selten), feuchte Waldgebiete (sehr selten)",
+            "Bestimmung":"4",
+            "Ernte":"ganzjährig",
+            "Grundmenge":"eine Wurzel",
+            "Wirkung":"Die Wurzel gibt 1W6+10 LeP über 7 Stunden Ruhe zurück. Unternimmt man in diesem Zeitraum große Anstrengungen (z.B. Kämpfe oder Gewaltmärsche), bekommt der Patient nur W6 LeP. Beim Wundfieberwurf (siehe GA 208) werden 4 Punkte abgezogen. Wird im Lauf der 7 Stunden eine weitere Wurzel eingenommen, wirkt diese ebenfalls heilkräftig, lähmt aber alle Glieder (für einen Tag GE, FF, KK je –5).",
+            "Haltbarkeit":"2W6+18 Stunden",
+            "Preis":"7 S",
+            "Alchimistische Verwendung": "Substitut und Bestandteil der Heiltränke in Südaventurien",
+            "Besonderheiten":"",
+            "Rezepte":
+            [
+                {
+                    "Name":"Argansud",
+                    "Typ":"Heilmittel",
+                    "Zubereitung":"Knolle zerstampfen und knapp mit heißem, aber nicht kochendem Wasser bedecken. Etwa 10 Stunden ziehen lassen.",
+                    "Verarbeitung":"5",
+                    "Wirkung":"Der Absud aus einer Wurzel ergibt etwa einen Flux Sud. Eingenommen gibt er im Verlauf von 4 Stunden 3W6+3 LeP zurück. Bei Anstrengung in diesem Zeitraum erhält der Patient keine LeP.",
+                    "Haltbarkeit":"W6+10 Tage",
+                    "Preis":"17 D"
+                }
+            ]
+        },
+        {
+            "Name": "Boronie",
+            "Typ": "Übernatürliche Pflanze",
+            "Gebiet": "Südaventurien",
+            "Verbreitung": "Regenwald (selten), Wiesen (sehr selten)",
+            "Bestimmung": "–2",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "5 Blüten, möglichst kurz vor dem Verblühen",
+            "Wirkung": "Die Boronie ist ihrem namensgebenden Gott nicht nur gefällig, sondern womöglich gar von ihm gesegnet. Die geernteten Blüten werden im alanfanischen Kult für verschiedene Liturgien eingesetzt, aber bereits der Duft der blühenden Pflanze kann die Wirkung eines Grabsegens (AG 97) oder sogar einer Weihe der letzten Ruhestatt (AG 114) entfalten, so dass es den Schergen Thargunitoths unmöglich ist, sich einer Boronie zu nähern.",
+            "Haltbarkeit": "5 Stunden nach dem Pflücken ist der Blütenduft verflogen.",
+            "Preis": "Im Herrschaftsbereich des Al’Anfaner Boron-Kultes hat die Kirche ein Monopol auf den Besitz der Pflanze, Zuwiderhandlungen werden strengstens bestraft. Unverarbeitete Blüten werden nicht verkauft, sind aber womöglich – ähnlich wie bei der Alveranie – für jeden außer dem Pflücker wertlos.",
+            "Alchimistische Verwendung": "Die Blüten können die Wirkung von Weihrauch und Lotos in verschiedenen boronheiligen Ritualen ersetzen oder sogar verstärken. Die Rezepturen werden von der Al’Anfaner Kirche allerdings eifersüchtig gehütet – bis zu der Schenkung für Boronia, das Mahnmal an der Trollpforte, war im Norden nicht einmal die Existenz dieser Pflanze bekannt.",
+            "Besonderheiten": "Die Wirkung des Duftes steigt mit der Zahl der Blüten. Ein blühendes Boronienbeet kann eine Fläche von Hunderten von Rechtschritt vor Untoten und anderen boronfrevlerischen Wesen beschützen. Dabei scheint die Boronie loser mit den Gefilden der Götter verknüpft zu sein als die Alveranie. Einerseits ist sie nämlich ohne besonderen Kraftaufwand zu zerstören. Andererseits ist sie aber auch während der Namenlosen Tage an ihrem Ort zu finden."
+        },
+        {   "Name": "Boronsschlinge",
+            "Typ": "Gefährliche Pflanze",
+            "Gebiet": "Süd- und Mittelaventurien",
+            "Verbreitung": "Wald (sehr selten, meist auf Lichtungen), Regenwald (sehr selten, meist auf Lichtungen)",
+            "Bestimmung": "15",
+            "Ernte": "",
+            "Grundmenge": "",
+            "Wirkung": "Wer sich der Boronsschlinge auf einen halben Schritt nähert, wird vom beinahe geruchlosen Blütenduft eingenebelt (4/A). Gelingt nicht sofort eine KO-Probe +4, schläft das Opfer binnen einer Minute ein. Nach einer halben Stunde wachsen die Ranken aus dem Boden und beginnen, das Opfer zu umschlingen. Jede halbe Stunde sinken KK und GE des Opfers in den Fesseln der Blume um je einen Punkt, bis die Ranke den Betroffenen völlig gefangen hat (wenn KK und GE beide auf 0 gesunken sind). Jede Stunde legt das Opfer eine KO-Probe +12 ab, bei Gelingen erwacht es in den Fesseln der Ranke und kann sich, sofern nicht ganz gefangen, befreien. Das dauert ohne fremde Hilfe genau so viele SR, wie bis dahin Einbußen auf KK und GE hingenommen wurden. Der Versuch, die Ranke zu durchschneiden, führt zu einer schmerzlichen Erfahrung: Der austretende Pflanzensaft ist ätzend und verursacht pro SR 1W SP (Kontaktgift, Stufe 1).",
+            "Haltbarkeit": "",
+            "Preis": "",
+            "Alchimistische Verwendung": "Substitut im Schlafgift (SRD 97)",
+            "Besonderheiten": "Die nah verwandte Moorwurz, im Volksmund auch ‘Brechblume’, gedeiht in Nordaventurien auf mageren Moorböden. Sie bildet keine Ranken aus. Ihr ‘Blütenduft’ wirkt Brechreiz erregend: Gelingt dem Opfer nicht sofort eine KO-Probe, so übergibt es sich und verhilft damit der Pflanze zu Dünger."
+        },
+        {
+            "Name": "Carlog",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "aventurische Westküste zwischen Thorwal und Brabak, auch am Yslisee und im Gebiet um Vallusa",
+            "Verbreitung": "Küsten- und Brackwassersümpfe (gelegentlich), Seeufer (selten), Flussauen (sehr selten)",
+            "Bestimmung": "5",
+            "Ernte": "Peraine oder Efferd",
+            "Grundmenge": "W6 Blüten mit je einem Stempel",
+            "Wirkung": "Nach Einnahme von ein oder zwei rohen Blüten kann man nachts für W6+12 SR etwa so gut sehen wie in der frühen Dämmerung.",
+            "Haltbarkeit": "2W6+18 Stunden",
+            "Preis": "5 S pro Blüte",
+            "Alchimistische Verwendung": "Vielfach alchimistische Experimente, wird auch mit dem Pestsporenpilz zusammen verarbeitet.",
+            "Besonderheiten": "Tagsüber erscheint alles derart grell, dass der Meister selbst für das Erkennen alltäglicher Dinge erschwerte Sinnenschärfe-Proben verlangen sollte (Richtlinie: +5 in der Dämmerung bis +20 in der grellen Mittagssonne). Der Held leidet unter starken Kopfschmerzen (MU –2, KL –4) und schwankt ungeschickt durch die Gegend (GE –3). Der Blick in die Sonne führt zu vorübergehender Erblindung (W3+6 Stunden).",
+            "Rezepte": [
+                {
+                    "Name": "Carlog-Essenz",
+                    "Typ": "Stärkungsmittel",
+                    "Zubereitung": "Blütenstempel in Alkohol einlegen (auf 5 Stempel einen Flux Alkohol verwenden)",
+                    "Verarbeitung": "2",
+                    "Wirkung": "Wie oben, der Alkohol dämpft jedoch die Wirkung, verlängert dagegen die Haltbarkeit deutlich. Fünf Blütenstempel rufen die gleiche Wirkung hervor wie ein bis zwei roh eingenommene Blüten. Bei Misslingen der Verarbeitungsprobe wird ein W20 gerollt. Eine gerade Zahl bedeutet, dass zu wenig Alkohol verwendet wurde, die Haltbarkeit wird durch die gewürfelte Zahl geteilt. Fällt dagegen eine ungerade Zahl, wurde zu viel Alkohol beigegeben. Die Wirkungsdauer verringert sich dann um die erwürfelte Augenzahl in SR, die Wirkung ist zudem bei hohen Ergebnissen entsprechend zu vermindern.",
+                    "Haltbarkeit": "W3+5 Monate",
+                    "Preis": "4 D (für 5 eingelegte Blüten)"
+                }
+            ]
+        },
+        {
+            "Name": "Cheria-Kaktus",
+            "Typ": "Giftpflanze",
+            "Gebiet": "südliche Randgebiete der Khôm, Shadif, Szintotal",
+            "Verbreitung": "Wüste (selten), Wüstenrandgebiete (selten)",
+            "Bestimmung": "4",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "1W6 halbe Stein Kaktusfleisch und pro Stein 3W6+8 Stacheln",
+            "Wirkung": "Der ‘Genuss’ von einer Unze rohen Kaktusfleischs bewirkt nur eine leichte Sinnestrübung (KL, IN je –2 für 2W6 SR), wohingegen ein Stich eines Stachels Gift in größerer Menge freisetzt. Werden bei der Kaktusernte keine dicken Lederhandschuhe getragen, muss eine FF-Probe abgelegt werden. Misslingt diese, so ist die Zahl der fehlenden Punkte auch die Zahl der Stacheln, an denen man sich verletzt hat (entsprechende SP-Zahl). Das Gift eines jeden Stachels senkt KL, IN und FF um W3 Punkte und hat stark halluzinogene Wirkung.",
+            "Gift": {
+                "Beginn": "1 SR",
+                "Stufe": "1"
+            },
+            "Haltbarkeit": "Fruchtfleisch W6 Tage, Stacheln bzw. deren Gift 3W6 Tage",
+            "Preis": "1 S pro Unze",
+            "Alchimistische Verwendung": "Weissagungspulver (SRD 99)",
+            "Besonderheiten": "Mitglieder der Bruderschaft der Salzgänger scheinen teilweise immun gegen die Auswirkungen einer Cheria-Vergiftung zu sein.",
+            "Rezepte": [
+                {
+                    "Name": "Cheriacha",
+                    "Typ": "Rauschgift",
+                    "Zubereitung": "Das getrocknete Kaktusfleisch, graue, verschrumpelte Bröckchen, wird zusammen mit Pfeifenkraut oder alleine in einer Wasserpfeife geraucht.",
+                    "Verarbeitung": "0",
+                    "Wirkung": "Der Rauch von 5 Skrupeln Cheriacha verschafft für etwa drei SR eine wohlige Lethargie (KL, IN, GE, FF je –2), die die Hälfte der Zeit mit leichten Halluzinationen (vor allem Farben und Gerüche) einhergeht. Übermäßiger und lang anhaltender Gebrauch führen zu Apathie und einem Nachlassen des rahjanischen Interesses.",
+                    "Beginn": "30 KR",
+                    "Giftstufe": "1",
+                    "Haltbarkeit": "2W+12 Monate",
+                    "Preis": "5 S pro Unce"
+                }
+            ]
+        },
+        {
+            "Name": "Disdychonda",
+            "Typ": "Gefährliche Pflanze",
+            "Gebiet": "Südlich der Eternen, Echsensümpfe, Südmaraskan und umgebende Inseln",
+            "Verbreitung": "Regenwald (sehr selten), übrige Wälder (sehr selten)",
+            "Bestimmung": "5",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "4 Blätter",
+            "Wirkung": "Die ausgewachsene Disdychonda besitzt 20 LeP im Stamm und 10 LeP in jedem Blatt (für die ganze Pflanze gilt RS 3). Um ein Opfer einzufangen, kann sie mit jedem Blatt höchstens zwei Attacken mit dem Wert 8 durchführen. Jeder Held, der in einem Blatt gefangen ist, kann sich nur durch die Regeln für den Schwitzkasten (MWW 52) befreien – die Pflanze würfelt keine weiteren Attacken. Jede Kampfrunde verursachen die Nesseln W3 SP. Sobald 5 SP erreicht worden sind, beginnt das Gift zu wirken (2W6 SP und vollständige Lähmung). Der Held kann befreit werden, wenn man dem Blatt 10 SP zufügt oder dem Stamm deren 20 – wozu aber Magie oder Fernkampf eingesetzt werden muss, will man nicht selbst von den Blättern attackiert werden.",
+            "Raubnesseln": {
+                "Beschreibung": "Befindet sich ein Held in dem ca. 16 Schritt durchmessenden Areal von Raubnesseln, so können ihn gleichzeitig W3 der 2W20 Pflanzen attackieren. Jede besitzt 5 LeP und einen RS von 1. Raubnesseln attackieren unermüdlich mit AT 12 und fügen 1W–2 SP zu (Giftwirkung siehe oben)."
+            },
+            "Haltbarkeit": "W3+7 Tage",
+            "Preis": "3 D pro Blatt",
+            "Besonderheiten": "Zur Fortpflanzung hat die Disdychonda ein ausgeklügeltes System: Nur alle 5 Jahre bildet die Pflanze eine Samenkapsel von der Größe eines Apfels. Diese wird einem kurz für diesen Zweck gefangenen Tier angeklebt, das die Samenkapsel dann unfreiwillig möglichst weit hinfortschleppt (die Disdychonda braucht ein großes ‘Jagdgebiet’ und ist dementsprechend selten). Wenn das Tier schließlich doch dem Lähmungsgift erliegt, springt die Kapsel auf und verteilt Samen in einem Umkreis von acht Schritt. Hier knospen dann Dutzende von Jung-Disdychonden, die im Aussehen der auch in Mittelaventurien vorkommenden Rahjafliegenfalle ähneln, bis zu drei Spann hoch werden und violette Fangapparate tragen. Im Folianth der Kreutherkunde sind sie als Raubnesseln beschrieben, da auch ihre Rolle als unfertige Disdychonda weitestgehend unbekannt ist. Ein solches Feld von Raubnesseln kann auch größere Tiere als Mäuse verschlingen, indem sie von den Fangtaschen geradezu zerrissen werden. Die Pflanze, die am meisten Futter fängt und am größten wächst, überflügelt alle anderen bald, so dass diese eingehen und nur eine einzelne Disdychonda übrig bleibt.",
+            "Rezepte": [
+                {
+                    "Name": "Kelmon",
+                    "Typ": "Waffen- und Kontaktgift",
+                    "Zubereitung": "Der Saft aus vier Blättern wird mit Braunöl und Orazal gesiedet. Je nach Größe der zu bestreichenden Stelle kann die Paste für bis zu vier Anwendungen reichen (etwa Türknauf-Größe).",
+                    "Verarbeitung": "8",
+                    "Wirkung": "Bei Berührung oder wenn sie (als Waffengift benutzt) in die Blutbahn gelangt, verursacht die Paste 4W6 SP. Nach kurzer Zeit tritt eine Lähmung des ganzen Körpers ein, die etwa eine halbe Stunde andauert.",
+                    "Beginn": "5 KR",
+                    "Giftstufe": "5",
+                    "Haltbarkeit": "W6+9 Monate",
+                    "Preis": "25 D pro Blatt"
+                }
+            ]
+        },
+        {
+            "Name": "Disdychonda(Raubnesseln)",
+            "Typ": "Gefährliche Pflanze",
+            "Gebiet": "Südlich der Eternen, Echsensümpfe, Südmaraskan und umgebende Inseln",
+            "Verbreitung": "Regenwald (sehr selten), übrige Wälder (sehr selten)",
+            "Bestimmung": "13",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "4 Blätter",
+            "Wirkung": "Die ausgewachsene Disdychonda besitzt 20 LeP im Stamm und 10 LeP in jedem Blatt (für die ganze Pflanze gilt RS 3). Um ein Opfer einzufangen, kann sie mit jedem Blatt höchstens zwei Attacken mit dem Wert 8 durchführen. Jeder Held, der in einem Blatt gefangen ist, kann sich nur durch die Regeln für den Schwitzkasten (MWW 52) befreien – die Pflanze würfelt keine weiteren Attacken. Jede Kampfrunde verursachen die Nesseln W3 SP. Sobald 5 SP erreicht worden sind, beginnt das Gift zu wirken (2W6 SP und vollständige Lähmung). Der Held kann befreit werden, wenn man dem Blatt 10 SP zufügt oder dem Stamm deren 20 – wozu aber Magie oder Fernkampf eingesetzt werden muss, will man nicht selbst von den Blättern attackiert werden.",
+            "Raubnesseln": {
+                "Beschreibung": "Befindet sich ein Held in dem ca. 16 Schritt durchmessenden Areal von Raubnesseln, so können ihn gleichzeitig W3 der 2W20 Pflanzen attackieren. Jede besitzt 5 LeP und einen RS von 1. Raubnesseln attackieren unermüdlich mit AT 12 und fügen 1W–2 SP zu (Giftwirkung siehe oben)."
+            },
+            "Haltbarkeit": "W3+7 Tage",
+            "Preis": "3 D pro Blatt",
+            "Besonderheiten": "Zur Fortpflanzung hat die Disdychonda ein ausgeklügeltes System: Nur alle 5 Jahre bildet die Pflanze eine Samenkapsel von der Größe eines Apfels. Diese wird einem kurz für diesen Zweck gefangenen Tier angeklebt, das die Samenkapsel dann unfreiwillig möglichst weit hinfortschleppt (die Disdychonda braucht ein großes ‘Jagdgebiet’ und ist dementsprechend selten). Wenn das Tier schließlich doch dem Lähmungsgift erliegt, springt die Kapsel auf und verteilt Samen in einem Umkreis von acht Schritt. Hier knospen dann Dutzende von Jung-Disdychonden, die im Aussehen der auch in Mittelaventurien vorkommenden Rahjafliegenfalle ähneln, bis zu drei Spann hoch werden und violette Fangapparate tragen. Im Folianth der Kreutherkunde sind sie als Raubnesseln beschrieben, da auch ihre Rolle als unfertige Disdychonda weitestgehend unbekannt ist. Ein solches Feld von Raubnesseln kann auch größere Tiere als Mäuse verschlingen, indem sie von den Fangtaschen geradezu zerrissen werden. Die Pflanze, die am meisten Futter fängt und am größten wächst, überflügelt alle anderen bald, so dass diese eingehen und nur eine einzelne Disdychonda übrig bleibt.",
+            "Rezepte": [
+                {
+                    "Name": "Kelmon",
+                    "Typ": "Waffen- und Kontaktgift",
+                    "Zubereitung": "Der Saft aus vier Blättern wird mit Braunöl und Orazal gesiedet. Je nach Größe der zu bestreichenden Stelle kann die Paste für bis zu vier Anwendungen reichen (etwa Türknauf-Größe).",
+                    "Verarbeitung": "8",
+                    "Wirkung": "Bei Berührung oder wenn sie (als Waffengift benutzt) in die Blutbahn gelangt, verursacht die Paste 4W6 SP. Nach kurzer Zeit tritt eine Lähmung des ganzen Körpers ein, die etwa eine halbe Stunde andauert.",
+                    "Beginn": "5 KR",
+                    "Giftstufe": "5",
+                    "Haltbarkeit": "W6+9 Monate",
+                    "Preis": "25 D pro Blatt"
+                }
+            ]
+        },
+        {
+            "Name": "Eitriger Krötenschemel",
+            "Typ": "Giftpflanze",
+            "Gebiet": "Ganz Aventurien südlich von Riva",
+            "Verbreitung": "Sumpf (gelegentlich), Waldgebiete (sehr selten), Flussauen (selten)",
+            "Bestimmung": "2",
+            "Ernte": "Efferd bis Boron, in südlicheren Gebieten auch ganzjährig",
+            "Grundmenge": "2W6 Pilzhäute pro Fundort",
+            "Wirkung": "Einnahme eines Eitrigen Krötenschemels führt zu einer schweren Magenverstimmung (1W SP, KK und IN je –1), die etwa eine Stunde anhält.",
+            "Beginn": "1 SR",
+            "Giftstufe": "2",
+            "Haltbarkeit": "W6+1 Tage",
+            "Preis": "5 S für die Haut eines Pilzes",
+            "Alchimistische Verwendung": "Größere Mengen Eitrigen Krötenschemel können als Substitut für den Maraskenstachel bei der Herstellung von Purpurblitz (SRD 97) verwendet werden.",
+            "Besonderheiten": "Der Eitrige Krötenschemel gilt als Lieblingsspeise der Maraskantarantel, die effektiver als jeder menschliche Alchemist ihr gefährliches Stachelgift daraus gewinnt.",
+            "Rezepte": [
+                {
+                    "Name": "Krötenschemel-Gift",
+                    "Typ": "je nach Zubereitung ein Waffen- bzw. Einnahmegift",
+                    "Zubereitung": "1 Unze Nussöl und 1 Unze Orazal je 4 Pilzhäute ergeben 2 Unzen Waffengift; 1 Schank Alkohol je 4 Pilzhäute ergibt 2 Unzen Einnahmegift.",
+                    "Verarbeitung": "8 / 4",
+                    "Wirkung": "Eine halbe Unze auf eine Waffe aufgetragen bzw. eingenommen, rufen beim Opfer heftige Magenkrämpfe und Erbrechen hervor (für 4 Stunden 1W+2 SP pro Stunde; Beginn der Wirkung nach etwa einer Stunde); charakteristisch ist auch die Blaufärbung des Gesichts und der Hände.",
+                    "Beginn": "1 Stunde",
+                    "Giftstufe": "4",
+                    "Haltbarkeit": "beide Gifte W3+1 Monate",
+                    "Preis": "12 D für eine Anwendung als Waffengift, 10 D für eine Portion Einnahmegift"
+                }
+            ]
+        },
+        {
+            "Name": "Finage",
+            "Typ": "Heilpflanze",
+            "Gebiet": "Südaventurien ab der Linie Neetha–Thalusa",
+            "Verbreitung": "Wald und Regenwald (selten), Grasland (sehr selten)",
+            "Bestimmung": "5",
+            "Ernte": "Triebe im Peraine, Bast in Boron bis Firun",
+            "Grundmenge": "ein Baum mit W20 Trieben",
+            "Wirkung": "Der Sud aus 7 Trieben hebt eine beliebige Gute Eigenschaft bzw. senkt eine Schlechte Eigenschaft (Ausnahme: Jähzorn) wieder auf ihren Grundwert, falls die Veränderung durch Gift, Zauberei, Erschöpfung oder ähnliches zustande gekommen ist. Bei häufiger Einnahme von Finage (mehr als dreimal in 9 Tagen) kann der Sud bei gleichbleibender Wirkung zu einer erhöhten Reizbarkeit führen. Der Meister überprüft dies, indem er ein W20 rollt. Bei 19–20 steigt der Jähzorn des Behandelten für 9 Tage um 2W6 (bzw. er erwirbt für diese Zeit den Nachteil ‚Jähzorn‘).",
+            "Haltbarkeit": "W3+3 Monate",
+            "Preis": "6 S pro 7 Triebe",
+            "Alchimistische Verwendung": "Zahlreiche Verwendung als Zutat in alchimistischen Tränken wie den Elixieren der Tugenden (SRD 90)",
+            "Rezepte": [
+                {
+                    "Name": "Finagebast",
+                    "Typ": "Heilmittel",
+                    "Zubereitung": "Der Bast eines Baumes wird in schmale Fasern geteilt und zu mattenartigen Lappen verwoben (etwa 5 Anwendungen).",
+                    "Verarbeitung": "3",
+                    "Wirkung": "Wird Finagebast als Verbandszeug bei Wunden verwendet, so darf einer der beiden Erfolgswürfe bei Heilkunde Wunden wiederholt werden. Gültig ist der wiederholte Wurf.",
+                    "Haltbarkeit": "W3+4 Monate",
+                    "Preis": "8 D"
+                }
+            ]
+        },
+        {
+            "Name": "Höllenkraut",
+            "Typ": "Nutzpflanze / Giftpflanze",
+            "Gebiet": "Südwestaventurien südlich von Mengbilla, Waldinseln",
+            "Verbreitung": "Regenwald (häufig), Wald (selten), Waldrand (sehr selten)",
+            "Bestimmung": "8",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "1W20 halbe Stein der Ranken",
+            "Wirkung": "Unverarbeitet sind sowohl Ranken als auch Blüten einfach nur ungenießbar.",
+            "Haltbarkeit": "W6+6 Monate (abgeschlagene Ranken)",
+            "Preis": "10 S pro Stein",
+            "Alchimistische Verwendung": "Angstgift (SRD 96)",
+            "Rezepte": [
+                {
+                    "Name": "Wurara",
+                    "Typ": "Leichtes Waffengift",
+                    "Zubereitung": "Die inneren Fasern aus einem halben Stein der Ranke werden mit einer halben Unze Kalk zerkaut. Eingekocht ergibt dies etwa 1 Unze Gift.",
+                    "Verarbeitung": "4",
+                    "Wirkung": "Eine Wurara-Vergiftung (1W SP pro Stunde für 1W Stunden) beim Menschen geht mit Sehstörungen und Kälteschauern (IN, FF, GE je –1) einher. Dazu wird etwa ein Skrupel des Giftes verbraucht.",
+                    "Beginn": "1 SR",
+                    "Giftstufe": "4",
+                    "Haltbarkeit": "W6+1 Monate",
+                    "Preis": "10 D pro Unze",
+                    "Besonderheiten": "Alle Waldmenschen sind offensichtlich gegen die Wirkung des Wurara immun."
+                }
+            ]
+        },
+        {
+            "Name": "Ilmenblatt",
+            "Typ": "Nutzpflanze / Droge",
+            "Gebiet": "Westküste Aventuriens südlich von Drôl, Insel Altoum, Zyklopeninseln",
+            "Verbreitung": "Waldlichtungen (gelegentlich), Wiesen (gelegentlich), Gebirgshänge (sehr selten)",
+            "Bestimmung": "2",
+            "Ernte": "Travia und Ingerimm",
+            "Grundmenge": "W20 Blätter und Blüten",
+            "Wirkung": "Leichte Bewusstseinstrübungen und Entspannung beim Essen von W6 frischen Blättern und Blüten.",
+            "Haltbarkeit": "s.u.",
+            "Preis": "2 D pro Unze",
+            "Alchimistische Verwendung": "Vielfältig, so im Klugheitselixier, in Liebestränken, im Friedenswasser, im Regenbogenstaub und im Schlafgift.",
+            "Rezepte": [
+                {
+                    "Name": "Ilmenblatt",
+                    "Typ": "Rauschmittel",
+                    "Zubereitung": "Getrocknete und gehäckselte Blätter und Blüten / ausgepresstes Harz.",
+                    "Verarbeitung": "0 / 4",
+                    "Wirkung": "Getrocknetes Kraut / klebrige Harzkrümel mit Pfeifenkraut, geraucht oder auf Steinen geröstet, wirkt 4W6 Stunden lang extrem beruhigend (MU, KL, FF, GE, KK je –3).",
+                    "Haltbarkeit": "Als getrocknete Blätter 2W+24 Monate, als Harz praktisch unbegrenzt.",
+                    "Preis": "6 D pro Unze"
+                }
+            ]
+        },
+        {
+            "Name": "Kajubo",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "Altoum, Souram und Nikkali",
+            "Verbreitung": "Waldränder (selten), Küste (selten)",
+            "Bestimmung": "4",
+            "Ernte": "Phex bis Travia",
+            "Grundmenge": "2W6 Knospen, von denen Haipu immer höchstens die Hälfte abpflücken, damit der Strauch geschont wird.",
+            "Dosis und Wirkung": "5 Knospen ermöglichen es maximal 3 SR gänzlich ohne Luft auszukommen. Eine Verlängerung ist nicht möglich.",
+            "Haltbarkeit": "W6+10 Tage",
+            "Preis": "2 S pro Knospe",
+            "Besonderheiten": "Den Haipu ist Kajubo heilig. Wenn nach der Frühlingsregenzeit die Knospung beginnt, suchen die Haipu die Küsten und Waldränder nach der seltenen Pflanze ab. Ein Teil der Knospen wird in Kokosöl eingelegt und dem Vorrat des Dorfes zugefügt, der im Fall der weltweiten Überschwemmung das Überleben sichern soll. Kein Wunder, dass selbst die weltoffensten Haipu misstrauisch werden, wenn fremde Blasshäute die heiligen Sträucher plündern wollen.",
+            "Rezepte": [
+                {
+                    "Name": "Kajubo in Öl",
+                    "Typ": "Stärkungsmittel",
+                    "Zubereitung": "In Dattel- oder Nussöl eingelegte Knospen",
+                    "Verarbeitung": "4",
+                    "Dosis und Wirkung": "Mit 5 Knospen muss der Anwender für maximal 1 SR nicht atmen, auch hier gilt die Obergrenze von 3 SR. Eine Verlängerung ist nicht möglich.",
+                    "Haltbarkeit": "W6+20 Wochen",
+                    "Preis": "10 D (5 Knospen)"
+                }
+            ]
+        },{
+            "Name": "Kukuka",
+            "Typ": "Nutzpflanze / Giftpflanze",
+            "Gebiet": "westliches Regengebirge (Dschungel)",
+            "Verbreitung": "Regenwald (selten)",
+            "Bestimmung": "10",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "1W3 x 20 Blätter",
+            "Dosis und Wirkung": "Das Zerkauen eines Blattes bewirkt für drei Stunden eine Verdoppelung der AuP und eine generell Unempfindlichkeit gegen jeglichen physischen Schmerz (keine Abzüge infolge LeP-Verlust, keine Selbstbeherrschungs-Proben) sowie gegen Überanstrengung (keine Proben-Abzüge bei Überanstrengung). Nach Genuss findet der Anwender für 12 Stunden keinen Schlaf, fällt danach jedoch für mindestens 8 Stunden in einen Tiefschlaf, aus dem er nur mit Gewalt geweckt werden kann (8 Punkte Überanstrengung, von denen jeweils einer pro Stunde Schlaf abgebaut wird).",
+            "Haltbarkeit": "1W6+1 Tage",
+            "Preis": "5 D pro Blatt",
+            "Alchimistische Verwendung": "keine",
+            "Besonderheiten": "Es ist nicht bekannt, wie man die Wirkstoffe der Blätter extrahieren oder die Blätter haltbar machen kann, ohne dass sie die Wirkung verlieren."
+        },
+        {
+            "Name": "Färberlotos",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "ganz Aventurien südlich der Linie Havena-Perricum",
+            "Verbreitung": "Teiche, Seeufer (jeweils gelegentlich)",
+            "Bestimmung": "5",
+            "Ernte": "Ingerimm bis Praios",
+            "Grundmenge": "2W6+1 Blüten pro Fundort",
+            "Dosis und Wirkung": "Die Einnahme der meisten Blüten ist minder giftig (1 SP pro Blüte), Lotosfarbe ist nicht sehr sonnenbeständig und muss in mehreren alchimistischen Bädern fixiert werden.",
+            "Haltbarkeit": "W3+6 Monate (getrocknete Blätter, licht- und luftdicht aufbewahrt)",
+            "Preis": "1 bis 5 S pro 5 Blüten (je nach Farbe, ausreichend für 2 bis 5 Stein Bausch, Leinen oder ‘Halbseide')",
+            "Alchimistische Verwendung": "als Farbzusatz in Schminke, alchimistischen Elixiren (um misslungene Tinkturen als gelungen auszugeben), in Augentropfen zum Ändern der Augenfarbe (Lotos mit Tarnblatt und Chamäleonaugen, siehe SRD 106)",
+            "Besonderheiten": "Ohne aufwendige alchimistische Aufbereitung färbt der Lotos nur Pflanzenfasern."
+        },
+        {
+            "Name": "Purpurner Lotos",
+            "Typ": "Giftpflanze",
+            "Verbreitung": "Teiche, Seeufer (jeweils selten)",
+            "Bestimmung": "7",
+            "Ernte": "Ingerimm bis Praios",
+            "Grundmenge": "W6+1 Blüten pro Fundort",
+            "Dosis und Wirkung": "Eine Blüte liefert etwa ein Karat Blütenstaub. Eingeatmet macht dieser 1W SP, KL, IN und GE –1 für 1 SR.",
+            "Beginn": "5 KR",
+            "Giftstufe": "3",
+            "Haltbarkeit": "W6+2 Tage",
+            "Preis": "6 S pro Blüte",
+            "Alchimistische Verwendung": "Purpurblitz (SRD 97)",
+            "Rezepte":[
+                {
+                    "Name": "Purpurner Lotosstaub",
+                    "Typ": "Atemgift",
+                    "Zubereitung": "den Blütenstaub von 5 Blüten in der Sonne trocknen und kurz rösten.",
+                    "Verarbeitung": "4",
+                    "Dosis und Wirkung": "wie Schwarzer Lotos, jedoch nur 1W6 SP für 1 SR und kein halluzinogener Effekt",
+                    "Giftstufe": "8",
+                    "Haltbarkeit": "W+4 Monate",
+                    "Preis": "etwa 5 D / Skrupel"
+                    }
+                ]
+        },
+        {
+            "Name": "Weißer Lotos",
+            "Typ": "Giftpflanze",
+            "Gebiet": "Teiche, Seeufer (jeweils selten), Sumpf (sehr selten)",
+            "Verbreitung": "Teiche, Seeufer (jeweils selten), Sumpf (sehr selten)",
+            "Bestimmung": "10",
+            "Ernte": "Ingerimm bis Praios",
+            "Grundmenge": "W6+1 Blüten pro Fundort",
+            "Dosis und Wirkung": "Eine Blüte liefert etwa ein Karat Blütenstaub, eingeatmet führt dies zu 1W–1 SP und KL, IN –1 für 1 SR.",
+            "Haltbarkeit": "W6+2 Tage",
+            "Preis": "12 S pro Blüte",
+            "Rezepte": [
+                {
+                    "Name": "Marbos Odem",
+                    "Typ": "Rauschgift / Atemgift",
+                    "Zubereitung": "Der Blütenstaub von 5 Blüten wird mit zwei Flux verdünnter Unauer Salzlake vermischt, getrocknet und zermalen.",
+                    "Verarbeitung": "5",
+                    "Dosis und Wirkung": "Eine Blume ...",
+                    "Haltbarkeit": "W+14 Tage",
+                    "Preis": "20 D (zwei Anwendungen)",
+                    "Besonderheiten": "Abhängigkeit ..."
+                }
+            ]
+        },
+        {
+            "Name": "Weißgelber Lotos",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "ganz Aventurien südlich der Linie Havena–Perricum",
+            "Verbreitung": "Teiche, Seeufer (jeweils gelegentlich)",
+            "Bestimmung": "5 (Lotos allgemein) bzw. +10, jedoch nicht von Weißem Lotos zu unterscheiden.",
+            "Ernte": "Ingerimm bis Praios",
+            "Grundmenge": "W3 Blüten",
+            "Dosis und Wirkung": "Die Blüten sind minder giftig (1 SP), ihre Einnahme führt zu einem kurzzeitigen heftigen Halluzinationsschub aller Sinne. Dem Betroffenen ist danach so, als habe er Erinnerungslücken (das ist auch so: Verlust von 3 AP).",
+            "Haltbarkeit": "W3+6 Monate",
+            "Preis": "5 D (zwei Anwendungen)",
+            "Rezepte": [
+                {
+                    "Name": "Lotosstrunk",
+                    "Typ": "Stärkungsmittel",
+                    "Zubereitung": "Blätter ...",
+                    "Verarbeitung": "15",
+                    "Dosis und Wirkung": "...",
+                    "Haltbarkeit": "W3+6 Wochen",
+                    "Preis": "25 D (zwei Anwendungen)",
+                    "Alchimistische Verwendung": "..."
+                }
+            ]
+        },
+        {
+            "Name": "Merach-Strauch",
+            "Typ": "Nutzpflanze / Giftpflanze",
+            "Gebiet": "Mhanadistan, Thalusien, Unauer Berge, Regengebirge",
+            "Verbreitung": "Regenwald (selten), Wald (sehr selten), auch in Hausgärten",
+            "Bestimmung": "2",
+            "Ernte": "Efferd bis Travia",
+            "Grundmenge": "2W20 reife Früchte pro Strauch",
+            "Dosis und Wirkung": "Vom ‘Süßen Tod’ droht keinerlei Gefahr, falls nicht binnen dreier Tage vor oder nach dem Verzehr Alkohol genossen wird, denn nur dann entfaltet sich seine unheilvolle Wirkung: Das Opfer wird von Atemnot und drohendem Herzstillstand überrascht und erleidet 5W20 SP beim Verzehr der ganzen Frucht. Meistens wird die Frucht jedoch nicht komplett aufgegessen, sodass nur 1–2W20 SP anfallen. Etwa 1 Spielrunde dauert die Wirkung, und wenn das Opfer bis dahin nicht gestorben ist, so normalisieren sich seine Körperfunktionen wieder. Vorsicht geboten ist auch bei überreifen Früchten, die durch Eigenvergärung Alkohol entwickelt haben können.",
+            "Beginn": "5 KR",
+            "Giftstufe": "10",
+            "Haltbarkeit": "W6+7 Tage",
+            "Preis": "um 1 H pro Frucht",
+            "Alchimistische Verwendung": "unüblich, da eine herkömmliche Beimischung zu Speisen für eine Vergiftung ausreicht.",
+            "Rezepte": [
+                {
+                    "Name": "Merach-Frucht als Nahrungsmittel",
+                    "Typ": "Lebensmittel",
+                    "Zubereitung": "gekocht als Aroma oder Bestandteil alkoholischer Getränke",
+                    "Verarbeitung": "2",
+                    "Wirkung": "...",
+                    "Haltbarkeit": "...",
+                    "Preis": "..."
+                }
+            ]
+        },
+        {
+            "Name": "Mirhamer Seidenliane",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "westlich des Regengebirges ab Höhe Mengbilla, südöstlich des Regengebirges zwischen Brabak und Mirham",
+            "Verbreitung": "Regenwald (selten), Gebirgshänge (sehr selten), Flussufer (sehr selten)",
+            "Bestimmung": "4",
+            "Ernte": "ganzjährig außer Hesinde und Firun; giftige Knoten nur von Tsa bis Ingerimm nutzbar",
+            "Grundmenge": "eine Ranke (mit 2 bis 3 Knoten)",
+            "Dosis und Wirkung": "Die ganze Liane kann ausgedroschen werden; die äußeren Fasern werden weggeworfen, die mittleren und inneren Fasern werden versponnen und zu so genannten ‘Seidenseilen’ gedreht. Gröbere Fasern werden zu Tauen verarbeitet, die Innenfasern auch zur so genannten ‘Schwindelseide’. Diese ist bei unsachgemäßer Verarbeitung schwach giftig. Auf der Haut getragene Kleidung verursacht Juckreiz und leichte Muskellähmung.",
+            "Haltbarkeit": "sowohl als Seil als auch als unverarbeitete Liane bei sachgemäßer Lagerung praktisch unbegrenzt",
+            "Preis": "6 D für eine ganze Ranke",
+            "Alchimistische Verwendung": "Kukris, Prophylaktikum (SRD 95)",
+            "Rezepte": [
+                {
+                    "Name": "Kukris",
+                    "Typ": "Einnahme-/Waffengift",
+                    "Zubereitung": "Man lässt 3 Knoten der Ranke verfaulen. Dann wird das Gift mit 2 Unzen Schwefligem Orazal gelöst, mit 1 Schank Vitriol gereinigt und anschließend mehrfach destilliert.",
+                    "Verarbeitung": "Kochen +9 oder Alchimie +6",
+                    "Dosis und Wirkung": "...",
+                    "Beginn": "15 KR",
+                    "Giftstufe": "12",
+                    "Haltbarkeit": "W3+2 Monate",
+                    "Preis": "90 D pro Portion"
+                }
+            ]
+        },
+        {
+            "Name": "Orazal",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "Südaventurien südlich von Mengbilla",
+            "Verbreitung": "Regenwald (selten), Wald (sehr selten)",
+            "Bestimmung": "4",
+            "Ernte": "ganzjährig",
+            "Grundmenge": "W6 verholzte Stängel",
+            "Dosis und Wirkung": "Ohne weitere Verarbeitung ist Orazal nutzlos. Die Berührung mit frischem Pflanzensaft (FF-Probe bei Kletterpartien auf orazalbewachsenen Baumwipfeln) führt zu Verätzungen (2W+6 SP). Selbst Lederrüstungen werden vom Pflanzenextrakt angegriffen (RS –1). Als Feuerholz verwendet, entwickelt Orazal einen beißenden Qualm, der die Augen zum Tränen bringt und starke Kopfschmerzen hervorruft (KL und IN je –5).",
+            "Haltbarkeit": "mehrere Jahre",
+            "Preis": "12 S pro 10 Stein Liane",
+            "Alchimistische Verwendung": "etliche erfolglose Versuche, die konservierende Wirkung auf alchimistische Produkte zu übertragen.",
+            "Rezepte": [
+                {
+                    "Name": "Orazalkleber",
+                    "Typ": "Klebstoff",
+                    "Zubereitung": "lange eingekochter Absud aus der ganzen Pflanze",
+                    "Verarbeitung": "6",
+                    "Dosis und Wirkung": "Die zähe Masse trocknet an der Luft binnen etwa einer Stunde und wirkt so als Klebstoff (1 Rechtspann hält etwa 10 Stein Gewicht an einer senkrechten Wand oder 5 Stein an der Decke fest). Wird der Saft zu sehr eingekocht, verhärtet der Orazalabsud und wird (wie auch der verwendete Topf) unbrauchbar. Zu wenig Geduld beeinträchtigt die Eigenschaft des Klebstoffs. Beim Umfüllen in Gefäße ist eine GE-Probe abzulegen, ansonsten muss man sich eine Weile mit der Klebewirkung auseinandersetzen.",
+                    "Haltbarkeit": "2W6+15 Monate (Aufbewahrung im luftdichten Gefäß)",
+                    "Preis": "5 D für eine Unze Klebstoff (reicht für 1 Rechtschritt)",
+                    "Alchimistische Verwendung": "..."
+                },
+                {
+                    "Name": "Schwefliger Orazal",
+                    "Typ": "Konservierungsmittel",
+                    "Zubereitung": "Lösung mit Schwefel und Weinstein",
+                    "Verarbeitung": "8",
+                    "Dosis und Wirkung": "Die Lösung dient als Konservierungsmittel für einfache (nichtalchimistische) Kräuterabsude und verdoppelt deren Haltbarkeit.",
+                    "Haltbarkeit": "mehrere Jahrzehnte",
+                    "Preis": "8 D für eine Unze Schwefliger Orazal"
+                }
+            ]
+        },
+        {
+            "Name": "Quinja",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "südlich des Loch Harodrôl",
+            "Verbreitung": "Regenwald (häufig), Wald (gelegentlich), Waldränder (selten)",
+            "Bestimmung": "6",
+            "Ernte": "Ingerimm bis Travia",
+            "Grundmenge": "W3+2 Beeren",
+            "Dosis und Wirkung": "KK+1 für 2 Stunden, die Einnahme mehrerer Beeren gleichzeitig bringt keine weitere Wirkung.",
+            "Haltbarkeit": "1W6+12 Stunden",
+            "Preis": "1 S für eine Beere",
+            "Alchimistische Verwendung": "Die Beere ist ein beliebtes Aufputschmittel der Echsenmenschen (für Achaz +W20 AuP pro Beere), die aus ihr und anderen Beeren auch einen ungemein wirkungsvollen Schnaps destillieren.",
+            "Besonderheiten": "Verwechslung mit Scheinquinja möglich (eine zweite Pflanzenkunde-Probe +8 entscheidet darüber). Falscher Quinja ist minder giftig und führt zu Magenverstimmungen und leichten Sehstörungen (Giftstufe: 2, W3 SP; für W6 Stunden KL –1 und Sinnenschärfe –3).",
+            "Rezepte": [
+                {
+                    "Name": "getrocknete Quinja-Beeren",
+                    "Typ": "Stärkungsmittel",
+                    "Zubereitung": "Beeren im Rauch trocknen und schwefeln.",
+                    "Verarbeitung": "5",
+                    "Dosis und Wirkung": "Wie frische Beeren, jedoch wird die dreifache Menge benötigt. Werden die Beeren nicht richtig verarbeitet, lässt sich nur eine kurze Haltbarkeit von etwa einer Woche erzielen.",
+                    "Haltbarkeit": "W20+20 Monate",
+                    "Preis": "4 D für drei Beeren",
+                    "Alchimistische Verwendung": "Grundlage des Kraftelixiers (SRD 93)"
+                }
+            ]
+        },
+        {
+            "Name": "Rahjalieb",
+            "Typ": "Nutzpflanze",
+            "Gebiet": "ganz Aventurien südlich von Festum",
+            "Verbreitung": "Wald, Wiesen, Sumpf (jeweils gelegentlich), Regenwald (häufig)",
+            "Bestimmung": "5",
+            "Ernte": "Phex bis Firun",
+            "Grundmenge": "2W6 Blätter",
+            "Dosis und Wirkung": "12 Blätter haben zuverlässig empfängnisverhütende Wirkung für W3+1 Tage.",
+            "Haltbarkeit": "3 Tage",
+            "Preis": "1 S",
+            "Alchimistische Verwendung": "Das Rahjalieb wird als Zutat zu allerlei Rahjaika verwendet, wo es neben der empfängnisverhütenden auch eine luststeigernde Wirkung haben soll (häufig wird in solchen Mixturen jedoch keine der beiden erzielt). Außerdem ist die Verwendung von Rahjalieb eine mögliche Substitution im Liebestrunk.",
+            "Besonderheiten": "Wirkung nicht auf Achaz.",
+            "Rezepte": [
+                {
+                    "Name": "Rahjalieb-Tee",
+                    "Typ": "empfängnisverhütendes Mittel",
+                    "Zubereitung": "Blattspitzen trocknen und zerreiben, bei Anwendung mit heißem Wasser aufkochen.",
+                    "Verarbeitung": "3",
+                    "Dosis und Wirkung": "wie frische Blätter",
+                    "Haltbarkeit": "W3+3 Monate",
+                    "Preis": "2 S"
+                }
+            ]
+        },
+        {
+            "Name": "Rote Pfeilblüte",
+            "Typ": "Heilpflanze",
+            "Gebiet": "ganz Südaventurien südlich der Linie Neetha–Thalusa",
+            "Verbreitung": "Küstensümpfe, Regenwald (jeweils gelegentlich), Wald (sehr selten)",
+            "Bestimmung": "7",
+            "Ernte": "Peraine bis Rahja",
+            "Grundmenge": "W6 Blüten",
+            "Dosis und Wirkung": "Drei Blüten werden zu einem Tee aufgegossen, der 3W6+2 LeP binnen drei Stunden bringt. Eine Zugabe weiterer Blüten zum Tee bewirkt nichts, wenn man davon absieht, dass das liebliche Getränk dadurch bitter wird.",
+            "Haltbarkeit": "W6 Stunden",
+            "Preis": "1 S pro Blüte",
+            "Alchimistische Verwendung": "Versuche zur Verwendung als Substitut in Heiltränken",
+            "Besonderheit": "Roh genossen bringen die Blütenknospen CH +1 für 12 Stunden.",
+            "Rezepte": [
+                {
+                    "Name": "Pfeilblütentee",
+                    "Typ": "Heilmittel",
+                    "Zubereitung": "Blütenblätter und Stempel werden getrennt voneinander getrocknet, aber gemeinsam aufgekocht.",
+                    "Verarbeitung": "1",
+                    "Dosis und Wirkung": "Wie frische Blüten, jedoch müssen fünf Blüten verwendet werden. Der Tee ist weniger aromatisch, dafür etwas bitterer.",
+                    "Haltbarkeit": "W3+5 Monate",
+                    "Preis": "2 S pro Blüte"
+                },
+                {
+                    "Name": "Pfeilblütenpunsch",
+                    "Typ": "Heilmittel",
+                    "Zubereitung": "Kräftiger Blütenaufguss (7 Blüten, 1 Flux Wasser) mit etwas Orazal und 1 Flux Alkohol versetzt.",
+                    "Verarbeitung": "4",
+                    "Wirkung": "Wie frisch aufgegossener Tee, jedoch ist der ‘Pfeilblütenpunsch’ nur mit Überwindung zu genießen. Eine Überdosierung ruft Beengungsgefühle im Brustraum hervor.",
+                    "Haltbarkeit": "2W6+18 Monate",
+                    "Preis": "10 D"
+                }
+            ]
+        },
+        {
+            "Name": "Schleichender Tod",
+            "Typ": "Nutzpflanze / Droge",
+            "Gebiet": "Südaventurien südlich des Loch Harodrôl",
+            "Verbreitung": "Flussufer (sehr selten), Waldrand (sehr selten)",
+            "Bestimmung": "6",
+            "Ernte": "Ingerimm bis Rahja",
+            "Grundmenge": "W6 Blüten",
+            "Dosis und Wirkung": "Siehe unten",
+            "Haltbarkeit": "W6 Tage",
+            "Preis": "15 S",
+            "Alchimistische Verwendung": "Liebestrunk, Mengbiller Bannbalöl, Regenbogenstaub (SRD 98–99)",
+            "Besonderheiten": "Große Gefahr der Selbstvergiftung",
+            "Rezepte": [
+                {
+                    "Name": "Samthauch",
+                    "Typ": "Droge / Atemgift",
+                    "Zubereitung": "Die Blüten werden getrocknet, mitunter wird der Blütenstaub in kleinen Papiertüten abgepackt.",
+                    "Verarbeitung": "3",
+                    "Dosis und Wirkung": "Die Pollen von zwei Blüten, konzentriert eingeatmet, erzeugen rauschhafte Träume (1W6 Stunden ekstatisches Delirium, danach 3W6 Stunden schwerer Kater (gute Eigenschaften je –2)). In Überdosierung (Pollen von 5 Blüten) findet Samthauch Anwendung als schweres und oftmals tödliches Atemgift, das einem Opfer ins Gesicht geblasen wird (Stufe: 5, 2W6 SP pro Stunde für W6 Stunden). Die gefährliche Handhabung ...",
+                    "Beginn": "1 SR",
+                    "Giftstufe": "2 (5)",
+                    "Haltbarkeit": "W6+4 Wochen",
+                    "Preis": "4 D pro Skrupel (Ein Skrupel entspricht dem Inhalt einer Blüte.)",
+                    "Besonderheiten": "Häufiger Genuss von Samthauch führt zur Abhängigkeit (Krankheit der 5. Stufe). Kann nicht mindestens alle 3 Tage Samthauch eingeatmet werden, führt der Entzug zu Schlafstörungen."
+                }
+            ]
+        },
+        {
+            "Name": "Shurinstrauch",
+            "Typ": "Giftpflanze",
+            "Gebiet": "Ganz Aventurien zwischen Riva und Al’Anfa",
+            "Verbreitung": "Steppe (selten), Grasland (selten), Wald (sehr selten)",
+            "Bestimmung": "2",
+            "Ernte": "Ingerimm bis Rondra",
+            "Grundmenge": "W20 Knollen (Fruchtkörper)",
+            "Dosis und Wirkung": "Die Verwendung von unbehandelten Pflanzenteilen ist unüblich, der Genuss einer rohen Knolle fügt 1W+4 SP zu.",
+            "Giftstufe": "2",
+            "Haltbarkeit": "W6+4 Tage (Knolle), W3+1 Tage (Blätter)",
+            "Preis": "8 D für 3 Knollen",
+            "Besonderheiten": "Wirkt ...",
+            "Rezepte": [
+                {
+                    "Name": "Shurinknollengift",
+                    "Typ": "Einnahme-/Waffengift",
+                    "Zubereitung": "3 Knollen ...",
+                    "Verarbeitung": "7",
+                    "Dosis und Wirkung": "...",
+                    "Beginn": "6 SR",
+                    "Giftstufe": "6",
+                    "Haltbarkeit": "W3+1 Monate",
+                    "Preis": "70 D (fertiges Gift)"
+                }
+            ]
+        },
+        {
+            "Name": "Vragieswurzel",
+            "Typ": "Giftpflanze",
+            "Gebiet": "Ganz Aventurien südlich von Havena, am häufigsten an den westlichen Abhängen des Regengebirges",
+            "Verbreitung": "Regenwald (gelegentlich), Gebirgshänge, Wald (jeweils selten), Hochland (sehr selten)",
+            "Bestimmung": "6",
+            "Ernte": "Efferd bis Travia (Südaventurien bis Boron)",
+            "Grundmenge": "1 Wurzel (außerhalb von Plantagen)",
+            "Dosis und Wirkung": "Kauen einer unbehandelten Wurzel führt zu Übelkeit und Erbrechen (2 SP, 1 Punkt Überanstrengung) und unterbindet für einen halben Tag jede Aufnahme von Nahrung oder Flüssigkeit.",
+            "Giftstufe": "1",
+            "Haltbarkeit": "W+7 Tage",
+            "Preis": "2 S pro Wurzel",
+            "Alchimistische Verwendung": "Traumpulver (Regenbogenstaub, SRD 99)",
+            "Rezepte": [
+                {
+                    "Name": "Boronwein",
+                    "Typ": "Droge",
+                    "Zubereitung": "Für eine Unze Rohsaft benötigt man 3 Wurzeln, die zerkleinert und eingekocht werden. Dem zähen, milchigweißen Saft wird meistens etwas pflanzliches Öl zugegeben, damit er flüssiger und trinkbarer wird.",
+                    "Verarbeitung": "12",
+                    "Dosis und Wirkung": "...",
+                    "Haltbarkeit": "W6+2 Wochen",
+                    "Preis": "7 D pro Unze Boronwein",
+                    "Alchimistische Verwendung": "Schlafgift (SRD 97)"
+                }
+            ]
+        },
+        {
+            "Name": "Waldwebe",
+            "Typ": "Gefährliche Pflanze",
+            "Gebiet": "Ganz Aventurien",
+            "Verbreitung": "Wald (gelegentlich)",
+            "Bestimmung": "9",
+            "Dosis und Wirkung": "Aufmerksame Beobachter können die Netze während des Sommers an den gefangenen Insekten erkennen, allerdings rankt das Gewächs auch an Bäumen hoch, wo es nicht so leicht auffällt. Sofern das Netz nicht durch besondere Umstände leichter zu erkennen ist, muss eine Sinnenschärfe-Probe +12 gelingen, um das feine Webwerk auszumachen. Hat sich ein Held erst in dem Netz verfangen, kann es vorkommen, dass er sich durch seine Befreiungsversuche immer mehr in der Flechte verstrickt. Oft wird das Netz bei der ersten Berührung wie eine Spinnwebe belanglos beiseite gewischt, dies kann bereits ein entscheidender Fehler sein. Zur Befreiung müssen sowohl eine GE- als auch eine FF-Probe gelingen. Inwieweit der Held bereits zu Beginn durch die Webe behindert wird, legt der Meister fest (GE und FF um 0 bis 5 Punkte vermindert). Misslingt eine der beiden Proben, werden GE und FF um je einen Punkt gesenkt, so dass die folgenden Proben schwerer werden. Sinken auf diese Weise GE oder FF auf 0, ist der Held hilflos gefangen. Pro Stunde sinkt der RS um einen Punkt und der Gefangene muss 2 TP hinnehmen. Befreiungsversuche durch andere sind möglich, indem die Webe mit einer scharfen Hiebwaffe zerschlagen wird (GE-Probe, Zuschläge nach Ermessen des Meisters). Bei Misslingen der Probe ist nicht nur die Waffe mit der klebrigen Flechte überzogen, überdies droht der Helfer selbst ins Netz zu gehen (sofort eine weitere GE- und FF-Probe). Größere Beute (also auch Helden), die sich in der Webe verfangen hat, wird manchmal zusätzlich von Raubtieren bedrängt. Bisweilen verfangen sich auch diese in der Webe, so dass die Helden durchaus durch ein völlig verstricktes Tier auf die Webe aufmerksam werden können.",
+            "Alchimistische Verwendung": "Wenngleich das Sekret für die Alchimie sicherlich von Interesse wäre, ist die Gewinnung der Substanz so beschwerlich, dass sich bisher noch niemand eingehender mit der Pflanze beschäftigt hat."
+        },
+        {
+            "Name": "Wirselkraut",
+            "Typ": "Heilpflanze",
+            "Gebiet": "Ganz Aventurien",
+            "Verbreitung": "Steppen (häufig), Grasländer (gelegentlich)",
+            "Bestimmung": "5",
+            "Ernte": "jede Zeit außer Winter",
+            "Grundmenge": "W6+4 Blätter",
+            "Dosis und Wirkung": "Unbehandeltes Wirselkraut auf einer Wunde aufgelegt, stoppt die Blutung und bringt im Laufe eines Tages 5 LeP zurück, eingenommen jedoch nur 3 LeP. Zwerge können das Kraut überhaupt nur mit einer gelungenen Selbstbeherrschungs-Probe +6 zu sich nehmen – und auch dann können sowohl bei äußerlicher wie auch innerer Anwendung nur 2 LeP zurückgewonnen werden.",
+            "Haltbarkeit": "2W6+18 Stunden",
+            "Preis": "1 D",
+            "Zubereitungen": [
+                {
+                    "Name": "Heilsalbe",
+                    "Typ": "Heilmittel",
+                    "Zubereitung": "3 Wirselkräuter werden sehr fein zerrieben und mit Salbenfett vermengt.",
+                    "Verarbeitung": "0",
+                    "Dosis und Wirkung": "Auf Verbände gestrichen, stoppt die Salbe bei frischen Wunden Blutungen und bringt 1W+4 LeP innerhalb einer Stunde zurück. Für die innere Anwendung geeignet (evtl. Probe auf Heilkunde Wunden, um einem Bewusstlosen den Trank einzuflößen).",
+                    "Haltbarkeit": "W3+4 Monate",
+                    "Preis": "5 D"
+                }
+            ],
+            "Alchimistische Verwendung": "Wichtige Zutat des Heiltranks"
+        },
+    {
+                "Name": "Zunderschwamm",
+                "Typ": "Nutzpflanze",
+                "Gebiet": "ganz Aventurien südlich des Blauen Sees",
+                "Verbreitung": "Wald (häufig), Regenwald (gelegentlich)",
+                "Bestimmung": "4",
+                "Ernte": "ganzjährig",
+                "Grundmenge": "W6 Pilze",
+                "Dosis und Wirkung": "nach Trocknung leicht entzündbar",
+                "Haltbarkeit": "W6+2 Monate",
+                "Preis": "5 H pro Stein",
+                "Zubereitungen":[
+                    {
+                        "Name": "Zunder",
+                        "Typ": "Leuchtmittel",
+                        "Verwendung": "Der Zunderschwamm wird zunächst weichgeklopft, mit einer starken Salzlösung getränkt und anschließend sorgfältig getrocknet. Die Konzentration der Salzlake wirkt sich entscheidend auf Haltbarkeit (hohe Konzentration) und Entzündbarkeit (niedrige Konzentration) aus.",
+                        "Verarbeitung": "4",
+                        "Dosis und Wirkung": "Behandelt verliert er mehr als zwei Drittel seines Gewichts und entzündet sich beim kleinsten Funken.",
+                        "Haltbarkeit": "nahezu unbegrenzt, entscheidend ist vor allem eine trockene Lagerung.",
+                        "Preis": "2 S für 4 Unzen im Zunderkistchen",
+                        "Alchimistische Verwendung": "beliebt, um sich mit Adepten der Alchimie Scherze zu erlauben."
+                    }
+                ]
+            }
+    ]
+}

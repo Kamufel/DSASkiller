@@ -13,11 +13,11 @@
         }
 
         async function init() {
-            const regionenData = await loadJson('ZooBot/regionen.json');
+            const regionenData = await loadJson('regionen.json');
             if (!regionenData) return;
-            const pflanzenData = await loadJson('ZooBot/pflanzen.json');
+            const pflanzenData = await loadJson('pflanzen.json');
             if (!pflanzenData) return;
-            const tiereData = await loadJson('ZooBot/tiere.json');
+            const tiereData = await loadJson('tiere.json');
             if (!tiereData) return;
 
             const regionenDropdown = document.getElementById('regionenDropdown');
@@ -143,11 +143,10 @@
                     });
                 }
 
+            
 
 
 
-
-                
             });
 
             nameDropdown.addEventListener('change', () => {
